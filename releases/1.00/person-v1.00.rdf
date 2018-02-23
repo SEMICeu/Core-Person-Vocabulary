@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="rdf2html0.8.2.xsl"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY xsd     "http://www.w3.org/2001/XMLSchema#">
+  <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs    "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY owl     "http://www.w3.org/2002/07/owl#">
+  <!ENTITY dcterms "http://purl.org/dc/terms/">
+  <!ENTITY dcDoc   "dublincore.org/documents/dcmi-terms/">
+  <!ENTITY foaf    "http://xmlns.com/foaf/0.1/">
+  <!ENTITY foafSpec "http://xmlns.com/foaf/spec/">
+  <!ENTITY sioc    "http://rdfs.org/sioc/ns#">
+  <!ENTITY schema  "http://schema.org/">
+  <!ENTITY schemaowl  "http://schema.org/docs/schemaorg.owl">
+  <!ENTITY cc      "http://creativecommons.org/ns#">
+  <!ENTITY skos    "http://www.w3.org/2004/02/skos/core#">
+  <!ENTITY skosDoc "http://www.w3.org/TR/skos-primer/">
+  <!ENTITY xhv     "http://www.w3.org/1999/xhtml/vocab#">
+  <!ENTITY wdrs    "http://www.w3.org/2007/05/powder-s#">
+  <!ENTITY vann    "http://purl.org/vocab/vann/">
+  <!ENTITY person  "http://www.w3.org/ns/person#">
+  <!ENTITY legal   "http://www.w3.org/ns/legal#">
+  <!ENTITY locn    "http://www.w3.org/ns/locn#">
+  <!ENTITY adms    "http://www.w3.org/ns/adms#">
+  <!ENTITY title   "Person Core Vocabulary">
+  <!ENTITY documentation "https://joinup.ec.europa.eu/system/files/project/Core_Vocabularies-Business_Location_Person-Specification-v0.3_0.zip">
+  <!ENTITY documentationTitle "Person Core Vocabulary">
+  <!ENTITY methodology "https://joinup.ec.europa.eu/elibrary/document/isa-deliverable-process-and-methodology-developing-core-vocabularies">
+  <!ENTITY methodologyTitle "Process and Methodology for Developing Core Vocabularies">
+  <!ENTITY forum "http://joinup.ec.europa.eu/asset/core_person/topic/public-comments-core-person-vocabulary-v02">
+  <!ENTITY forumTitle "Public comments on the Core Person Vocabulary v0.2">
+]>
+
+<rdf:RDF xmlns:xsd     = "&xsd;"
+         xmlns:rdf     = "&rdf;"
+         xmlns:rdfs    = "&rdfs;"
+         xmlns:owl     = "&owl;"
+         xmlns:dcterms = "&dcterms;"
+         xmlns:foaf    = "&foaf;"
+         xmlns:sioc    = "&sioc;"
+         xmlns:schema  = "&schema;"
+         xmlns:cc      = "&cc;"
+         xmlns:skos    = "&skos;"
+         xmlns:xhv     = "&xhv;"
+         xmlns:wdrs    = "&wdrs;"
+         xmlns:vann    = "&vann;"
+         xmlns:legal   = "&legal;"
+         xmlns:locn    = "&locn;"
+         xmlns         = "&person;"
+         xml:base      = "&person;"
+         xml:lang = "en">
+
+<!-- Document metadata -->
+
+  <owl:Ontology rdf:about="&person;">
+    <rdfs:label xml:lang="en">&documentationTitle;</rdfs:label>
+    <rdfs:comment xml:lang="en">This file specifies the set of RDF classes and properties used in the &documentationTitle;</rdfs:comment>
+    <owl:versionInfo xml:lang="en">Version 1.00 07 May 2012</owl:versionInfo>
+    <dcterms:modified rdf:datatype="&xsd;date">2012-05-07</dcterms:modified>
+    <xhv:last rdf:resource=""/>
+<!--    
+    <xhv:prev rdf:resource=""/>
+    <xhv:next rdf:resource=""/>
+-->    
+    <vann:preferredNamespaceUri>&person;</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>person</vann:preferredNamespacePrefix>
+    <dcterms:creator rdf:parseType="Resource">
+      <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
+      <foaf:name>Phil Archer</foaf:name>
+      <foaf:homepage rdf:resource="http://philarcher.org/"/>
+      <schema:affiliation rdf:parseType="Resource">
+        <foaf:name>W3C/ERCIM</foaf:name>
+      </schema:affiliation>
+    </dcterms:creator>
+    <dcterms:creator rdf:parseType="Resource">
+      <rdfs:seeAlso rdf:resource="http://andrea-perego.name/foaf/#me"/>
+      <foaf:name>Andrea Perego</foaf:name>
+      <foaf:homepage rdf:resource="http://andrea-perego.name/"/>
+      <schema:affiliation rdf:parseType="Resource">
+        <foaf:name>European Commission, Joint Research Centre (JRC)</foaf:name>
+      </schema:affiliation>
+    </dcterms:creator>
+    <foaf:maker rdf:parseType="Resource">
+      <foaf:name>Core Vocabularies Working Group (Person Task Force)</foaf:name>
+      <foaf:page rdf:resource="http://joinup.ec.europa.eu/asset/core_person/home"/>
+    </foaf:maker>
+    <dcterms:abstract>The Person Core Vocabulary provides a minimum set of classes and properties for
+    describing a natural person, i.e. the individual as opposed to any role they may play in 
+    society or the relationships they have to other people, organisations and property; 
+    all of which contribute significantly to the broader concept of identity. The vocabulary is
+    closely integrated with the Location and Business Core Vocabularies.</dcterms:abstract>
+    <dcterms:description>This is the RDF encoding of the Person Core Vocabulary developed under the European Commission's ISA Programme, specifically under SEMIC Phase II, directed by Vassilios Peristeras of DG DIGIT. It re-uses terms from several other vocabularues, notably FOAF (Friend of a Friend), schema.org and Dublin Core. 
+    </dcterms:description>
+    <foaf:depiction>
+      <rdf:Description rdf:about="Core_Vocabularies_1.0.png">
+        <rdfs:label>Core Vocabularies (CVs) Combined UML Class Diagram</rdfs:label>
+      </rdf:Description>
+    </foaf:depiction>
+    <wdrs:describedby>
+      <rdf:Description rdf:about="&documentation;">
+        <dcterms:title>&documentationTitle;</dcterms:title>
+      </rdf:Description>
+    </wdrs:describedby>
+    <dcterms:conformsTo>
+      <rdf:Description rdf:about="&methodology;">
+        <dcterms:title>&methodologyTitle;</dcterms:title>
+      </rdf:Description>
+    </dcterms:conformsTo>
+    <dcterms:relation>
+      <sioc:Forum rdf:about="&forum;">
+        <dcterms:title>&forumTitle;</dcterms:title>
+      </sioc:Forum>
+    </dcterms:relation>
+    <dcterms:rights>Copyright &#169; 2012 European Commission.</dcterms:rights>
+    <dcterms:license>
+      <rdf:Description rdf:about="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11">
+        <dcterms:title>ISA Open Metadata Licence v1.1</dcterms:title>
+        <cc:attributionName>European Commission</cc:attributionName>
+        <cc:attributionURL rdf:resource="http://ec.europa.eu/"/>
+      </rdf:Description>
+    </dcterms:license>
+    <cc:attributionName>European Commission</cc:attributionName>
+    <cc:attributionURL rdf:resource="http://ec.europa.eu/"/>
+  </owl:Ontology>  
+
+<!-- This vocabulary defines just one class-->
+
+  <rdfs:Class rdf:about="&person;Person">
+    <rdfs:label xml:lang="en">Person</rdfs:label>
+    <rdfs:comment xml:lang="en">An individual person who may be dead or alive, 
+    but not imaginary. It is that restriction that makes person:Person a
+    sub class of both foaf:Person and schema:Person which both cover imaginary
+    characters as well as real people.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&person;"/>
+    <rdfs:subClassOf rdf:resource="&foaf;Person" />
+    <rdfs:subClassOf rdf:resource="&schema;Person" />
+    <dcterms:identifier>person:Person</dcterms:identifier>
+  </rdfs:Class>
+
+  <rdf:Description rdf:about="&skos;Concept"> 
+    <rdfs:label xml:lang="en">Code</rdfs:label>
+    <rdfs:comment rdf:parseType="Literal"><p>The Conceptual Model includes a 'Code' datatype that 
+      is used for the <a href="#schema:gender">gender</a> property. This is expressed using the <a href="&skosDoc;">SKOS vocabulary</a> with
+      a particular 'code' usually being a skos:Concept that is part of a scheme. 
+      The intention is that the skos:Concept class be used as follows;</p><ul>
+      <li>for the content property, use skos:notation</li>
+      <li>the 'list' property will be taken care of by means of the skos:inScheme property;</li>
+      <li>the list agency property is likely to be applied to the scheme as a whole for which dcterms:creator is appropriate;</li>
+      <li>the list version property can be fulfilled using schema:version (see <a href="http://schema.org/CreativeWork">http://schema.org/CreativeWork</a>)</li></ul>
+    </rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&skosDoc;" />
+    <dcterms:identifier>skos:Concept</dcterms:identifier>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&adms;Identifier">
+    <rdfs:label xml:lang="en">Identifier</rdfs:label>
+    <rdfs:comment xml:lang="en">The ADMS class of Identifier fully represents the Person Core Vocabulary term of the same name</rdfs:comment>
+    <vann:usageNote xml:lang="en" rdf:parseType="Literal"><p>The Identifier class represents any identifier issued by any authority, whether a 
+    government agency or not. It captures the identifier itself and details of the issuing authority, 
+    the date on which the identifier was issued and so on.</p>
+    <p>This class is based on the UN/CEFACT Identifier complex type defined in See Section 5.8 of 
+       <a href="http://www.unece.org/fileadmin/DAM/cefact/codesfortrade/CCTS/CCTS-DTCatalogueVersion3p1.pdf">Core Components Data Type Catalogue Version 3.1</a></p>
+    <p>The various conceptual properties can be fulfilled as follows:</p><ul>
+    <li>use <a href="&skos;#notation">skos:notation</a> to provide the actual identifier (the 
+    Identifier class is effectively meaningless without this property and conceptually it is mandatory);</li>
+    <li>use <a href="&dcterms;type">dcterms:type</a> to provide an identifier for the type of identifier issued;</li>
+    <li>use <a href="&dcterms;created">dcterms:created</a> to provide the date on which the identifier was issued.</li>
+    <li>use <a href="#schemeagency">adms:schemeAgency</a> to provide the name of the agency that created the identifier (as an rdfs:Literal).</li>
+    <li>use <a href="&dcterms;creator">dcterms:creator</a> to link to a URI of an Agent class describing the issuing Agency;</li></ul></vann:usageNote>
+    <rdfs:isDefinedBy rdf:resource="&legal;"/>
+    <dcterms:identifier>adms:Identifier</dcterms:identifier>
+  </rdf:Description>
+
+<!-- Person properties -->
+
+  <rdf:Description rdf:about="&foaf;name">
+    <rdfs:label xml:lang="en">name</rdfs:label>
+    <rdfs:comment xml:lang="en">The foaf:name property fully represents the Person Core Vocabulary term of full name</rdfs:comment>
+    <vann:usageNote xml:lang="en">The full name contains the complete name of a person 
+    as one string. In addition to the content of given name, family name and, in some 
+    systems, patronymic name, this can carry additional parts of a person&apos;s name 
+    such as titles, middle names or suffixes like &quot;the third&quot; or names which are neither 
+    a given nor a family name.</vann:usageNote>
+    <rdfs:isDefinedBy rdf:resource="&foafSpec;"/>
+    <dcterms:identifier>foaf:name</dcterms:identifier>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&foaf;givenName">
+    <rdfs:label xml:lang="en">given name</rdfs:label>
+    <rdfs:comment xml:lang="en">The foaf:givenName property fully represents the Person Core Vocabulary term of given name</rdfs:comment>
+    <vann:usageNote xml:lang="en">A given name, or multiple given names, are the denominator(s) that identify an individual 
+    within a family. These are given to a person by his or her parents at birth or may be legally recognised 
+    as 'given names' through a formal process. All given names are ordered in one field so that, 
+    for example, the given name for Johan Sebastian Bach is &apos;Johan Sebastian.&apos;</vann:usageNote>
+    <rdfs:isDefinedBy rdf:resource="&foafSpec;"/>
+    <dcterms:identifier>foaf:givenName</dcterms:identifier>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&foaf;familyName">
+    <rdfs:label xml:lang="en">family name</rdfs:label>
+    <rdfs:comment xml:lang="en">The foaf:familyName property fully represents the Person Core Vocabulary term of family name</rdfs:comment>
+    <vann:usageNote xml:lang="en">A family name is usually shared by members of a family. This attribute also carries prefixes or suffixes which are part of the Family Name, e.g. &quot;de Boer&quot;, &quot;van de Putte&quot;, &quot;von und zu Orlow&quot;. Multiple family names, such as are commonly found in Hispanic countries, are recorded in the single Family Name field so that, for example, Miguel de Cervantes Saavedra's Family Name would be recorded as &quot;Cervantes Saavedra.&quot;</vann:usageNote>
+    <rdfs:isDefinedBy rdf:resource="&foafSpec;"/>
+    <dcterms:identifier>foaf:familyName</dcterms:identifier>
+  </rdf:Description>
+
+  <rdf:Property rdf:about="&person;patronymicName">
+    <rdfs:label xml:lang="en">patronymic name</rdfs:label>
+    <rdfs:comment xml:lang="en">Patronymic names are important in some countries. Iceland 
+    does not have a concept of family name in the way that many other European countries 
+    do, for example. In Bulgaria and Russia, patronymic names are in every day usage, 
+    for example, the &quot;Sergeyevich&quot; (Сергеевич) in &quot;Mikhail Sergeyevich Gorbachev&quot; 
+    (Михаил Сергеевич Горбачёв).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&person;"/>
+    <dcterms:identifier>person:patronymicName</dcterms:identifier>
+  </rdf:Property>
+
+  <rdf:Description rdf:about="&dcterms;alternative">
+    <rdfs:label xml:lang="en">alternative name</rdfs:label>
+    <rdfs:comment xml:lang="en">The dcterms:alternative property fully represents the Person Core Vocabulary property of alternative name.</rdfs:comment>
+    <vann:usage xml:lang="en">Any name by which an individual is known. Many individuals use a short form of their name, a &quot;middle&quot; name as a &quot;first&quot; name or a professional name. For example, the British politician and former UN High Representative for Bosnia and Herzegovina, Jeremy John Durham Ashdown, Baron Ashdown of Norton-sub-Hamdon, is usually referred to simply as Paddy Ashdown or Lord Ashdown. </vann:usage>
+    <rdfs:isDefinedBy rdf:resource="&person;"/>
+    <wdrs:describedby rdf:resource="&documentation;"/>
+    <vann:usageNote xml:lang="en">It is not the role of the alternative name field to record nick names, 
+    pet names or other 'familiar names' that will be of no consequence in public sector data exchange (foaf:nick would be appropriate for that).</vann:usageNote>
+    <dcterms:identifier>dcterms:alternative</dcterms:identifier>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&schema;gender">
+    <rdfs:label xml:lang="en">gender</rdfs:label>
+    <rdfs:comment xml:lang="en">The schema:gender property fully represents the Person Core Vocabulary term of the same name.</rdfs:comment>
+    <vann:usageNote xml:lang="en" rdf:parseType="Literal">The gender of an individual should be recorded using a controlled vocabulary 
+    that is appropriate for the specific context. In some cases the chromosomal or physical state of an 
+    individual will be more important than the gender that they express, in others the reverse will be true. 
+    What is always important is that the controlled vocabulary used to describe an individual's gender 
+    is stated explicitly. To do this use a skos:Concept as described in the <a href="#skos:Concept">Code</a> class.
+    The <a href="&documentation;">&documentationTitle;</a> includes an example of such a SKOS concept scheme.</vann:usageNote>
+    <rdfs:isDefinedBy rdf:resource="&schemaowl;"/>
+    <dcterms:identifier>schema:gender</dcterms:identifier>
+  </rdf:Description>
+
+  <rdf:Property rdf:about="&person;birthName">
+    <rdfs:label xml:lang="en">birth name</rdfs:label>
+    <rdfs:comment xml:lang="en">All data associated with an individual are subject to change. Names can change for 
+    a variety of reasons, either formally or informally, and new information may come to light that means that 
+    a correction or clarification can be made to an existing record. Birth names tend to be persistent 
+    however and for this reason they are recorded by some public sector information systems. There is 
+    no granularity for birth name - the full name should be recorded in a single field.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&person;"/>
+    <dcterms:identifier>person:birthName</dcterms:identifier>
+  </rdf:Property>
+
+  <rdf:Description rdf:about="&schema;birthDate">
+    <rdfs:label xml:lang="en">date of birth</rdfs:label>
+    <rdfs:comment xml:lang="en">The schema:birthDate property fully represents the Person Core Vocabulary term of date of birth</rdfs:comment>
+    <vann:usageNote xml:lang="en">A date that specifies the birth date of a person. The date 
+    should be provided as a literal and data typed if applicable.</vann:usageNote>
+    <rdfs:isDefinedBy rdf:resource="&schemaowl;"/>
+    <dcterms:identifier>schema:birthDate</dcterms:identifier>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&schema;deathDate">
+    <rdfs:label xml:lang="en">date of death</rdfs:label>
+    <rdfs:comment xml:lang="en">The schema:deathDate property fully represents the Person Core Vocabulary term of date of death.</rdfs:comment>
+    <vann:usageNote xml:lang="en">A date that specifies the death date of a person. The date should be 
+    provided as a literal and data typed if applicable.</vann:usageNote>
+    <rdfs:isDefinedBy rdf:resource="&schemaowl;"/>
+    <dcterms:identifier>schema:deathDate</dcterms:identifier>
+  </rdf:Description>
+
+  <rdf:Property rdf:about="&person;placeOfBirth">
+    <rdfs:label xml:lang="en">place of birth</rdfs:label>
+    <rdfs:comment xml:lang="en">The range of place of birth is dcterms:Location and schema:Place.</rdfs:comment>
+    <rdfs:range rdf:resource="&schema;Place" />
+    <rdfs:range rdf:resource="&dcterms;Location" />
+    <rdfs:isDefinedBy rdf:resource="&person;"/>
+    <dcterms:identifier>person:placeOfBirth</dcterms:identifier>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&person;placeOfDeath">
+    <rdfs:label xml:lang="en">place of death</rdfs:label>
+    <rdfs:comment xml:lang="en">The range of place of death is dcterms:Location and schema:Place.</rdfs:comment>
+    <rdfs:range rdf:resource="&schema;Place" />
+    <rdfs:range rdf:resource="&dcterms;Location" />
+    <rdfs:isDefinedBy rdf:resource="&person;"/>
+    <dcterms:identifier>person:placeOfDeath</dcterms:identifier>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&person;countryOfBirth">
+    <rdfs:label xml:lang="en">country of birth</rdfs:label>
+    <rdfs:comment xml:lang="en">The range of country of birth is dcterms:Location and schema:Place.</rdfs:comment>
+    <rdfs:range rdf:resource="&schema;Place" />
+    <rdfs:range rdf:resource="&dcterms;Location" />
+    <rdfs:isDefinedBy rdf:resource="&person;"/>
+    <dcterms:identifier>person:countryOfBirth</dcterms:identifier>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&person;countryOfDeath">
+    <rdfs:label xml:lang="en">country of death</rdfs:label>
+    <rdfs:comment xml:lang="en">The range of country of death is dcterms:Location and schema:Place.</rdfs:comment>
+    <rdfs:range rdf:resource="&schema;Place" />
+    <rdfs:range rdf:resource="&dcterms;Location" />
+    <rdfs:isDefinedBy rdf:resource="&person;"/>
+    <wdrs:describedby rdf:resource="&documentation;"/>
+    <dcterms:identifier>person:countryOfDeath</dcterms:identifier>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&person;citizenship">
+    <rdfs:label xml:lang="en">citizenship</rdfs:label>
+    <rdfs:comment xml:lang="en">The range of citizenship is dcterms:Jurisdiction.</rdfs:comment>
+    <rdfs:range rdf:resource="&dcterms;Jurisdiction" />
+    <rdfs:isDefinedBy rdf:resource="&person;"/>
+    <dcterms:identifier>person:citizenship</dcterms:identifier>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&person;residency">
+    <rdfs:label xml:lang="en">residency</rdfs:label>
+    <rdfs:comment xml:lang="en">The range of residency is dcterms:Jurisdiction.</rdfs:comment>
+    <rdfs:range rdf:resource="&dcterms;Jurisdiction" />
+    <rdfs:isDefinedBy rdf:resource="&person;"/>
+    <dcterms:identifier>person:residency</dcterms:identifier>
+  </rdf:Property>
+
+  <rdf:Description rdf:about="&dcterms;identifier">
+    <rdfs:label xml:lang="en">identifer</rdfs:label>
+    <rdfs:comment xml:lang="en">dcterms:identifier fully represents the Core Vocabulary property of the same name</rdfs:comment>
+    <vann:usageNote xml:lang="en">The identifier relation is used to link a person to any formally issued identifier for that person.</vann:usageNote>
+    <rdfs:isDefinedBy rdf:resource="&dcDoc;"/>
+    <dcterms:identifier>dcterms:identifier</dcterms:identifier>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&adms;identifies">
+    <rdfs:label xml:lang="en">identifies</rdfs:label>
+    <rdfs:comment xml:lang="en">adms:identifies fully represents the Core Vocabulary property of the same name</rdfs:comment>
+    <vann:usageNote xml:lang="en">The identifies relation is used to link an adms:Identifier class to whatever resource it identifies (such as a business or a person).</vann:usageNote>
+    <rdfs:isDefinedBy rdf:resource="&adms;"/>
+    <dcterms:identifier>adms:identifies</dcterms:identifier>
+  </rdf:Description>
+  
+
+</rdf:RDF>
