@@ -35,11 +35,11 @@
 		},
 		"fullName":{
 			"@id":"http://xmlns.com/foaf/0.1/name",
-			"@type":"http://www.w3.org/2001/XMLSchema#string"
+			"@type":"http://www.w3.org/2000/01/rdf-schema#Literal"
 		},
 		"gender":{
 			"@id":"http://schema.org/gender",
-			"@type":"http://www.w3.org/2000/01/rdf-schema#Literal"
+			"@type":"http://schema.org/GenderType"
 		},
 		"givenName":{
 			"@id":"http://xmlns.com/foaf/0.1/givenName",
@@ -47,7 +47,7 @@
 		},
 		"identifier":{
 			"@id":"http://purl.org/dc/terms/identifier",
-			"@type":"http://www.w3.org/2001/XMLSchema#string"
+			"@type":"http://www.w3.org/ns/adms#Identifier"
 		},
 		"patronymicName":{
 			"@id":"http://www.w3.org/ns/person#patronymicName",
