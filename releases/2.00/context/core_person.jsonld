@@ -1,0 +1,163 @@
+{
+  "@context": {
+    "Address": "http://www.w3.org/ns/locn#Address",
+    "Address.addressArea": {
+      "@id": "http://www.w3.org/ns/locn#addressArea",
+      "@type": "@id"
+    },
+    "Address.addressId": {
+      "@id": "http://www.w3.org/ns/locn#addressID",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Address.administrativeUnitLevel1 (country)": {
+      "@id": "http://www.w3.org/ns/locn#adminUnitL1",
+      "@type": ""
+    },
+    "Address.administrativeUnitLevel2 (country/region/state)": {
+      "@id": "http://www.w3.org/ns/locn#adminUnitL2",
+      "@type": "@id"
+    },
+    "Address.fullAddress": {
+      "@id": "http://www.w3.org/ns/locn#fullAddress",
+      "@type": "@id"
+    },
+    "Address.locatorDesignator": {
+      "@id": "http://www.w3.org/ns/locn#locatorDesignator",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Address.locatorName": {
+      "@id": "http://www.w3.org/ns/locn#locatorName",
+      "@type": "@id"
+    },
+    "Address.postCode": {
+      "@id": "http://www.w3.org/ns/locn#postCode",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Address.postName (city)": {
+      "@id": "http://www.w3.org/ns/locn#postName",
+      "@type": "@id"
+    },
+    "Address.postOfficeBox": {
+      "@id": "http://www.w3.org/ns/locn#poBox",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Address.thoroughfare": {
+      "@id": "http://www.w3.org/ns/locn#thoroughfare",
+      "@type": "@id"
+    },
+    "Concept": "http://www.w3.org/2004/02/skos/core#Concept",
+    "Identifier": "http://www.w3.org/ns/adms#Identifier",
+    "Identifier.dateOfIssue": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Identifier.identifier": {
+      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Identifier.identifies": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#identifies",
+      "@type": "@id"
+    },
+    "Identifier.issuingAuthority": {
+      "@id": "http://www.w3.org/ns/adms#schemeAgency",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Identifier.issuingAuthorityUri": {
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "Jurisdiction": "http://purl.org/dc/terms/Jurisdiction",
+    "Jurisdiction.id": {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "Jurisdiction.name": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+      "@type": "@id"
+    },
+    "Location": "http://purl.org/dc/terms/Location",
+    "Location.geographicIdentifier": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "Location.geographicName": {
+      "@id": "http://www.w3.org/ns/locn#geographicName",
+      "@type": "@id"
+    },
+    "Person": "http://xmlns.com/foaf/0.1/Person",
+    "Person.alternativeName": {
+      "@id": "http://purl.org/dc/terms/alternative",
+      "@type": "@id"
+    },
+    "Person.birthName": {
+      "@id": "http://www.w3.org/ns/person#birthName",
+      "@type": "@id"
+    },
+    "Person.citizenship": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/citizenship",
+      "@type": "@id"
+    },
+    "Person.countryOfBirth": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/person#countryOfBirth",
+      "@type": "@id"
+    },
+    "Person.countryOfDeath": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/person#countryOfDeath",
+      "@type": "@id"
+    },
+    "Person.dateOfBirth": {
+      "@id": "http://schema.org/birthDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Person.dateOfDeath": {
+      "@id": "http://schema.org/deathDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Person.familyName (surname)": {
+      "@id": "http://xmlns.com/foaf/0.1/familyName",
+      "@type": "@id"
+    },
+    "Person.fullName": {
+      "@id": "http://xmlns.com/foaf/0.1/name",
+      "@type": "@id"
+    },
+    "Person.gender": {
+      "@container": "@set",
+      "@id": "http://schema.org/gender",
+      "@type": "@id"
+    },
+    "Person.givenName (forename)": {
+      "@id": "http://xmlns.com/foaf/0.1/givenName",
+      "@type": "@id"
+    },
+    "Person.identifier": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "@id"
+    },
+    "Person.patronymicName": {
+      "@id": "http://www.w3.org/ns/person#patronymicName",
+      "@type": "@id"
+    },
+    "Person.placeOfBirth": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/person#countryOfBirth",
+      "@type": "@id"
+    },
+    "Person.placeOfDeath": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/person#countryOfBirth",
+      "@type": "@id"
+    },
+    "Person.residency": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/person#countryOfBirth",
+      "@type": "@id"
+    }
+  }
+}
