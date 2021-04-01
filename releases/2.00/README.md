@@ -1,5 +1,3 @@
-![SEMIC Core Vocabulary](/html/semic-icon.png)
-
 # Core Person Vocabulary (CPV) - Version 2.00
 
 The version 2.00 of the Core Person Vocabulary (CPV) is available as: 
