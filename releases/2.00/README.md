@@ -1,4 +1,4 @@
-![SEMIC Core Vocabulary](/images/semic-icon-small.png)
+![SEMIC Core Vocabulary](/html/semic-icon.png)
 
 # Core Person Vocabulary (CPV) - Version 2.00
 
