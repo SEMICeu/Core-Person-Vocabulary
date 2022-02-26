@@ -148,7 +148,7 @@
     },
     "Person.dateOfDeath": {
       "@container": "@set",
-      "@id": "http://data.europa.eu/deathDate",
+      "@id": "http://data.europa.eu/m8g/deathDate",
       "@type": "http://data.europa.eu/m8g/Date"
     },
     "Person.domicile": {
