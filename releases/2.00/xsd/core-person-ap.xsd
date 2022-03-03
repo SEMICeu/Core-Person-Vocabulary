@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns="https://data.europa.eu/m8g/xml/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://data.europa.eu/m8g/xml/" version="2.0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:cv="https://data.europa.eu/m8g/xml/">
+  <xs:element name="Jurisdiction" type="JurisdictionType"/>
+  <xs:element name="Location" type="LocationType"/>
+  <xs:element name="Identifier" type="IdentifierType"/>
+  <xs:element name="Address" type="AddressType"/>
+  <xs:element name="Person" type="PersonType"/>
+  <xs:element name="Agent" type="AgentType"/>
+  <xs:element name="Person" type="PersonType"/>
+  <xs:complexType name="JurisdictionType">
+    <xs:sequence>
+      <xs:element name="id" type="http://www.w3.org/2001/XMLSchema#anyURI" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="name" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LocationType">
+    <xs:sequence>
+      <xs:element name="geographicIdentifier" type="http://www.w3.org/2001/XMLSchema#anyURI" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="geographicName" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IdentifierType">
+    <xs:sequence>
+      <xs:element name="dateOfIssue" type="http://www.w3.org/2001/XMLSchema#date" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="notation" type="http://www.w3.org/2000/01/rdf-schema#Literal" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="identifies" ref="Person" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="issuingAuthorityName" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="issuingAuthorityUri" ref="Agent" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="schemeName" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="schemeUri" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AddressType">
+    <xs:sequence>
+      <xs:element name="addressArea" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="addressId" type="http://www.w3.org/2001/XMLSchema#string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="administrativeUnitLevel1 (country)" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="administrativeUnitLevel2 (country/region/state)" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="fullAddress" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="locatorDesignator" type="http://www.w3.org/2001/XMLSchema#string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="locatorName" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="postOfficeBox" type="http://www.w3.org/2001/XMLSchema#string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="postCode" type="http://www.w3.org/2001/XMLSchema#string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="postName (city)" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="thoroughfare" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PersonType">
+    <xs:sequence>
+      <xs:element name="alternativeName" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="birthName" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="citizenship" ref="Jurisdiction" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="countryOfBirth" ref="Location" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="countryOfDeath" ref="Location" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="dateOfBirth" type="http://data.europa.eu/m8g/Date" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="dateOfDeath" type="http://data.europa.eu/m8g/Date" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="domicile" ref="Address" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="familyName (surname)" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="fullName" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="gender" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="givenName (forename)" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="identifier" ref="Identifier" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="matronymicName" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="patronymicName" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="placeOfBirth" ref="Location" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="placeOfDeath" ref="Location" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element name="residency" ref="Jurisdiction" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AgentType">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="PersonType">
+    <xs:sequence/>
+  </xs:complexType>
+</xs:schema>
