@@ -191,7 +191,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <dt>Source</dt><dd><a href="https://github.com/SEMICeu/Core-Person-Vocabulary/tree/master/releases/2.00">https://github.com/SEMICeu/Core-Person-Vocabulary/tree/master/releases/2.00</a></dd>
-              <!--<dt>Changelog</dt><dd><a href="git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/5ac8d990848877c64927d82fe696e5a0907054fa/CHANGELOG">git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/5ac8d990848877c64927d82fe696e5a0907054fa/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/bf659059abb5abae956ba78249bae36e83e21955/CHANGELOG">git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/bf659059abb5abae956ba78249bae36e83e21955/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues">https://github.com/SEMICeu/Core-Person-Vocabulary/issues</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="Core-Person-Vocabulary">Core-Person-Vocabulary</a></dd>-->
 
@@ -267,7 +267,7 @@
                       <a href="#Identifier">Identifier</a> |
                       <a href="#Jurisdiction">Jurisdiction</a> |
                       <a href="#Location">Location</a> |
-                      <a href="#FoafPerson">Person</a> |
+                      <a href="#Person">Person</a> |
                       <a href="#Person">Person</a> |
                     </p>
                   </div>
@@ -292,15 +292,15 @@
                   <dl>
                     <dt>Definition</dt><dd>A spatial object that in a human-readable way identifies a fixed location.</dd>
                     
-                    <dt>Usage</dt><dd>An "address representation" as conceptually defined by the INSPIRE Address Representation data type: "Representation of an address spatial object for use in external application schemas that need to include the basic, address information in a readable way.".
+                    <dt>Usage</dt><dd>An "address representation" as conceptually defined by the <a href="https://inspire-regadmin.jrc.ec.europa.eu/dataspecification/ScopeObjectDetail.action?objectDetailId=9353">INSPIRE Address Representation data type</a>: "Representation of an address spatial object for use in external application schemas that need to include the basic, address information in a readable way.".
 
-The representation of Addresses varies widely from one country's postal system to another. Even within countries, there are almost always examples of Addresses that do not conform to the stated national standard. However, ISO 19160-1 provides a method through which different Addresses can be converted from one conceptual model to another.
+The representation of Addresses varies widely from one country's postal system to another. Even within countries, there are almost always examples of Addresses that do not conform to the stated national standard. However, <a href="https://www.iso.org/standard/61710.html">ISO 19160-1</a> provides a method through which different Addresses can be converted from one conceptual model to another.
 
 This specification was heavily based on the INSPIRE Address Representation data type. It is noteworthy that if an Address is provided using the detailed breakdown suggested by the properties for this class, then it will be INSPIRE-conformant. To this very granular set of properties, we add two further properties:
 
 - full address (the complete address as a formatted string)
 - addressID (a unique identifier for the address)
-The first of these allows publishers to simply provide the complete Address as one string, with or without formatting. This is analogous to vCard's label property.
+The first of these allows publishers to simply provide the complete Address as one string, with or without formatting. This is analogous to <a href="http://www.w3.org/2006/vcard/ns#label">vCard's label property</a>.
 
 The addressID is part of the INSPIRE guidelines and provides a hook that can be used to link the Address to an alternative representation, such as vCard or OASIS xAL.</dd>
                     
@@ -373,11 +373,11 @@ The addressID is part of the INSPIRE guidelines and provides a hook that can be 
                         <td property="rdfs:comment">A globally unique identifier for each instance of an Address.</td>
                         <td property="skos:scopeNote">The concept of adding a globally unique identifier for each instance of an address is a crucial part of the INSPIRE data spec. A number of EU countries have already implemented an ID (a UUID) in their Address Register/gazetteer, among them Denmark. OASIS xAL also includes an address identifier. It is the address Identifier that allows an address to be represented in a format other than INSPIRE whilst remaining conformant to the Core Vocabulary.
 
-The INSPIRE method of representing addresses is very detailed, designed primarily for use in databases of addresses. Whilst data that is published in full conformance with the INSPIRE data structure can be made available using the Location Core Vocabulary the reverse is not true since the Core Vocabulary allows much greater flexibility.
+The INSPIRE method of representing addresses is very detailed, designed primarily for use in databases of addresses. Whilst data that is published in full conformance with the INSPIRE data structure can be made available using the Core Location Vocabulary the reverse is not true since the Core Vocabulary allows much greater flexibility.
 
 Many datasets that include address data as one piece of information about something else are likely to have that data in simpler formats. These might be tailored to the specific need of the dataset, follow a national norm, or make use of a standard like vCard.
 
-To provide maximum flexibility in the Core Vocabulary, whilst remaining interoperable with INSPIRE Address Guidelines (which EU Member States are obliged to use), the Location Core Vocabulary provides the extra property of full address and makes use of INSPIRE's addressID.</td>
+To provide maximum flexibility in the Core Vocabulary, whilst remaining interoperable with INSPIRE Address Guidelines (which EU Member States are obliged to use), the Core  Location Vocabulary provides the extra property of full address and makes use of INSPIRE's addressID.</td>
                         <td></td>
                       </tr>
                     
@@ -396,7 +396,7 @@ To provide maximum flexibility in the Core Vocabulary, whilst remaining interope
                           
                         </td>
                         <td property="rdfs:comment">The name of the uppermost level of the address, almost always a country.</td>
-                        <td property="skos:scopeNote">Best practice is to use the ISO 3166-1 code but if this is inappropriate for the context, country names should be provided in a consistent manner to reduce ambiguity. For example, either write 'France' or 'FRA' consistently throughout the dataset and avoid mixing the two. The Country controlled vocabulary from the Publications Office can be reused for this.</td>
+                        <td property="skos:scopeNote">Best practice is to use the ISO 3166-1 code but if this is inappropriate for the context, country names should be provided in a consistent manner to reduce ambiguity. For example, either write 'France' or 'FRA' consistently throughout the dataset and avoid mixing the two. The <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country>Country controlled vocabulary</a> from the Publications Office can be reused for this.</td>
                         <td></td>
                       </tr>
                     
@@ -415,7 +415,7 @@ To provide maximum flexibility in the Core Vocabulary, whilst remaining interope
                           
                         </td>
                         <td property="rdfs:comment">The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities.</td>
-                        <td property="skos:scopeNote">Some recommended codelists from the EU Publications Office include: Administrative Territorial Units (ATU), NUTS and Local Administrative Units (LAU). The first arrondissement of Paris is for example expressed as "http://publications.europa.eu/resource/authority/atu/FRA\_AR\_PAR01" in the ATU controlled vocabulary.</td>
+                        <td property="skos:scopeNote">Some recommended codelists from the EU Publications Office and Eurostat include: <a href="https://op.europa.eu/fr/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/atu">Administrative Territorial Units (ATU)</a>, <a href="https://ec.europa.eu/eurostat/web/nuts/background">NUTS</a> and <a href="https://ec.europa.eu/eurostat/web/nuts/local-administrative-units">Local Administrative Units (LAU)</a>. The first arrondissement of Paris is for example expressed as "http://publications.europa.eu/resource/authority/atu/FRA\_AR\_PAR01" in the ATU controlled vocabulary.</td>
                         <td></td>
                       </tr>
                     
@@ -927,11 +927,11 @@ Where a country has changed its name or no longer exists (such as Czechoslovakia
                   <dl>
                     <dt>Definition</dt><dd>A individual human being who may be dead or alive, but not imaginary.</dd>
                     
-                    <dt>Usage</dt><dd>The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of both foaf:Person and schema:Person which both cover imaginary characters as well as real people. The Person Class is a subclass of the more general 'Agent' class</dd>
+                    <dt>Usage</dt><dd>The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of both foaf:Person and schema:Person which both cover imaginary characters as well as real people. The Person Class is a subclass of the more general <a href="#Agent">'Agent' class</a></dd>
                     
 		     
 		    <dt>Subclass of<dt><dd>
-                        <a href="#FoafPerson">Person</a>
+                        <a href="#Person">Person</a>
 		   </dd>
                     
                     <dt>Properties</dt>
@@ -1007,7 +1007,7 @@ Where a country has changed its name or no longer exists (such as Czechoslovakia
                           
                         </td>
                         <td property="rdfs:comment">Full name of the Person given upon their birth</td>
-                        <td property="skos:scopeNote">The birth name may apply to the surname, the given name, or the entire name. Where births are required to be officially registered, the entire name entered onto a births register or birth certificate may by that fact alone become the person's legal name. https://en.wikipedia.org/wiki/Birth\_name
+                        <td property="skos:scopeNote">The birth name may apply to the surname, the given name, or the entire name. Where births are required to be officially registered, the entire name entered onto a births register or birth certificate may by that fact alone become the person's legal name. https://en.wikipedia.org/wiki/Birth\_name .
 
 All data associated with an individual are subject to change. Names can change for a variety of reasons, either formally or informally, and new information may come to light that means that a correction or clarification can be made to an existing record. Birth names tend to be persistent however and for this reason they are recorded by some public sector information systems. There is no granularity for birth name - the full name should be recorded in a single field.</td>
                         <td></td>
@@ -1338,7 +1338,7 @@ A name usually sticks with a person for a long time period. In some European cou
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="FoafPerson"><a href="http://xmlns.com/foaf/0.1/Person" data-toggle="tooltip" data-content="http://xmlns.com/foaf/0.1/Person" data-placement="right">Person</a></h3>
+              <h3 class="h3" id="Person"><a href="http://xmlns.com/foaf/0.1/Person" data-toggle="tooltip" data-content="http://xmlns.com/foaf/0.1/Person" data-placement="right">Person</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Definition</dt><dd>A person that is alive, dead, real, or imaginary.</dd>
@@ -1396,7 +1396,7 @@ A changelog describing the (major) changes to the previous version (1.0.0) of th
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">RDF representation</h2>
                 (non-normative)
                 
-		<p>A reusable RDF representation (in turtle) for this Core Vocabulary is retrievable <a href="./voc/core-person.ttl" target="_blank">here</a>.
+		<p>A reusable RDF representation (in turtle) for this Core Vocabulary is retrievable <a href="./voc/core-person-ap.ttl" target="_blank">here</a>.
 		<br>
                 This RDF file contains only the terminology for which the URI is minted in the Core Vocabularies domain http://data.europa.eu/m8g.
                 Terms that are mapped on an existing URI (hence reused from other vocabularies) are not included.
@@ -1408,7 +1408,7 @@ A changelog describing the (major) changes to the previous version (1.0.0) of th
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">JSON-LD context</h2>
                 (non-normative)
                 
-		<p>A reusable JSON-LD context definition for this Core Vocabulary is retrievable <a href="./context/core-person.jsonld" target="_blank">here</a>.</p>
+		<p>A reusable JSON-LD context definition for this Core Vocabulary is retrievable <a href="./context/core-person-ap.jsonld" target="_blank">here</a>.</p>
                 
             </div>
 	    
@@ -1416,7 +1416,7 @@ A changelog describing the (major) changes to the previous version (1.0.0) of th
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">SHACL template</h2>
                 (non-normative)
                 
-		<p>A reusable SHACL template for this Core Vocabulary is retrievable <a href="./shacl/core-person-SHACL.ttl" target="_blank">here</a>.</p>
+		<p>A reusable SHACL template for this Core Vocabulary is retrievable <a href="./shacl/core-person-ap-SHACL.ttl" target="_blank">here</a>.</p>
                 
             </div>
 	    
