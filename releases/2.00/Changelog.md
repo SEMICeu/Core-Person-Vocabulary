@@ -34,7 +34,9 @@ The table below gives an overview of the classes (and their definitions) within 
 | P5 | **Definition of Person.dateOfBirth/dateOfDeath:** &quot;A date that specifies the birth/death date of a Person.&quot; | &quot;The day on which the Person was born/died.&quot; | Improved definitions based on SDG WP4. | Change |
 | R2 | **Definition of Person.placeOfBirth/placeOfDeath:**&quot;A Person&#39;s place of birth/death.&quot; | &quot;The Location where the Person was born / died.&quot; | Improved definitions based on SDG WP4. | Change |
 
-# Changes since April 2021 
+## Changes since April 2021 
+
+### Tems
 
 | Nr | Core Person Vocabulary v2.0.0 2021 | Core Person Vocabulary v2.0.0 2022   | Rationale                                                                  | GitHub/Change                                                                                                              |
 | -- | ---------------------------------- | ------------------------------------ | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -51,5 +53,7 @@ The table below gives an overview of the classes (and their definitions) within 
 | D1 | Person.dateOfBirth:DateTime        | Person.dateOfBirth:GenericDate       | the new date is more generic                                               | [https://github.com/SEMICeu/Core-Person-Vocabulary/issues/17](https://github.com/SEMICeu/Core-Person-Vocabulary/issues/17) |
 | D2 | Person.dateOfDeath:DateTime        | Person.dateOfDeath:GenericDate       | the new date is more generic                                               | [https://github.com/SEMICeu/Core-Person-Vocabulary/issues/17](https://github.com/SEMICeu/Core-Person-Vocabulary/issues/17) |
 | D3 | Identifier.dateOfIssue:DateTime    | Identifier.dateOfIssue:Date          | the property is more generic                                               |
+
+### Definitions
 
 Changes in definitions are registered in this [this file](Changelog_definitions.md.md)
