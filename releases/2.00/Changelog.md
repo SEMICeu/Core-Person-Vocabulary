@@ -36,7 +36,7 @@ The table below gives an overview of the classes (and their definitions) within 
 
 ## Changes since April 2021 
 
-### Tems
+### Terms
 
 | Nr | Core Person Vocabulary v2.0.0 2021 | Core Person Vocabulary v2.0.0 2022   | Rationale                                                                  | GitHub/Change                                                                                                              |
 | -- | ---------------------------------- | ------------------------------------ | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
