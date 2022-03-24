@@ -1,10 +1,11 @@
-# Transition from Core Person v1.0.0 to v2.0.0
+# Core Person Changelog
 
 ## Introduction
 
 This document describes the (major) changes to [the current version 1.0.0](https://github.com/SEMICeu/Core-Person-Vocabulary/tree/master/releases/1.00) of the Core Person Vocabulary for which a new version is being proposed ([version 2.0.0](https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/)). The list of changes results in the new version to be considered as a major release.
 
-## Detailed changes
+
+## Detailed changes from v1.0.0 to v2.0.0
 
 The table below gives an overview of the classes (and their definitions) within both data models. Classes that are related are juxta-positioned.
 
@@ -51,3 +52,4 @@ The table below gives an overview of the classes (and their definitions) within 
 | D2 | Person.dateOfDeath:DateTime        | Person.dateOfDeath:GenericDate       | the new date is more generic                                               | [https://github.com/SEMICeu/Core-Person-Vocabulary/issues/17](https://github.com/SEMICeu/Core-Person-Vocabulary/issues/17) |
 | D3 | Identifier.dateOfIssue:DateTime    | Identifier.dateOfIssue:Date          | the property is more generic                                               |
 
+Changes in definitions are registered in this [this file](Changelog_definitions.md.md)
