@@ -191,7 +191,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <dt>Source</dt><dd><a href="https://github.com/SEMICeu/Core-Person-Vocabulary/tree/master/releases/2.00">https://github.com/SEMICeu/Core-Person-Vocabulary/tree/master/releases/2.00</a></dd>
-              <!--<dt>Changelog</dt><dd><a href="git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/c35ee68751c4f24c0633cd29f0827b7bb7fefc3f/CHANGELOG">git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/c35ee68751c4f24c0633cd29f0827b7bb7fefc3f/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/1b418b4708a7397ec267f710b503dd937954ed85/CHANGELOG">git@uri.semic.eu-thema:SEMICeu/uri.semic.eu-thema.git/blob/1b418b4708a7397ec267f710b503dd937954ed85/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues">https://github.com/SEMICeu/Core-Person-Vocabulary/issues</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="Core-Person-Vocabulary">Core-Person-Vocabulary</a></dd>-->
 
@@ -273,6 +273,14 @@
                   </div>
                   
 		  
+                  <div class="region region--no-space-top">
+                    <p> This document describes the usage of the following datatypes for a correct usage of the Core Vocabulary:
+                      <br />
+                      |
+                      <a href="#GenericDate">GenericDate</a> |
+                    </p>
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -299,7 +307,8 @@ The representation of Addresses varies widely from one country's postal system t
 This specification was heavily based on the INSPIRE Address Representation data type. It is noteworthy that if an Address is provided using the detailed breakdown suggested by the properties for this class, then it will be INSPIRE-conformant. To this very granular set of properties, we add two further properties:
 
 - full address (the complete address as a formatted string)
-- addressID (a unique identifier for the address)
+- addressID (a unique identifier for the address).
+
 The first of these allows publishers to simply provide the complete Address as one string, with or without formatting. This is analogous to <a href="https://www.w3.org/TR/vcard-rdf/#d4e953">vCard's label property</a>.
 
 The addressID is part of the INSPIRE guidelines and provides a hook that can be used to link the Address to an alternative representation, such as vCard or OASIS xAL.
@@ -906,8 +915,8 @@ even when the geographic name is given as EL or UK.</td>
                         <td property="rdfs:comment">A textual description for a Location.</td>
                         <td property="skos:scopeNote">The INSPIRE Data Specification on Geographical Names provides a detailed model for describing a 'named place', including methods for providing multiple names in multiple scripts. INSPIRE's definition is the following: Names of areas, regions, localities, cities, suburbs, towns or settlements, or any geographical or topographical feature of public or historical interest. This is beyond what is necessary for the Core Location Vocabulary but, importantly, the concept of a geographic name used here is consistent.
 <br/><br/>
-A geographic name is a proper noun applied to a spatial object. Taking the example used in the INSPIRE document (page 15), the following are all valid geographic names for the Greek capital:
-- "&Alpha;&theta;?&nu;&alpha;"@gr-Grek (the Greek endonym written in the Greek script)
+A geographic name is a proper noun applied to a spatial object. Taking the example used in the <a href="https://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_GN_v3.0.1.pdf">INSPIRE document</a> (page 18), the following are all valid geographic names for the Greek capital:
+- "A&theta;n&nu;a"@gr-Grek (the Greek endonym written in the Greek script)
 - "Athína"@gr-Latn (the standard Romanisation of the endonym)
 - "Athens"@en (the English language exonym)
 INSPIRE has a detailed (XML-based) method of providing metadata about a geographic name and in XML-data sets that may be the most appropriate method to follow. When using the Core Location Vocabulary in data sets that are not focussed on environmental/geographical data (the use case for INSPIRE), the Code datatype or a simple language identifier may be used to provide such metadata.
@@ -1085,9 +1094,9 @@ Citizenship is information needed by many cross-border use cases and is a legal 
                         </td>
                         <td>
                           
-			     
-			    <a href="http://data.europa.eu/m8g/Date" data-toggle="tooltip" data-content="http://data.europa.eu/m8g/Date" data-placement="right">GenericDate</a>
-                            
+			    
+			    <a href="#GenericDate" data-placement="right">GenericDate</a>
+			    
                           
                         </td>
                         <td property="rdfs:comment">The point in time on which the Person was born.</td>
@@ -1107,9 +1116,9 @@ Citizenship is information needed by many cross-border use cases and is a legal 
                         </td>
                         <td>
                           
-			     
-			    <a href="http://data.europa.eu/m8g/Date" data-toggle="tooltip" data-content="http://data.europa.eu/m8g/Date" data-placement="right">GenericDate</a>
-                            
+			    
+			    <a href="#GenericDate" data-placement="right">GenericDate</a>
+			    
                           
                         </td>
                         <td property="rdfs:comment">The point in time on which the Person died.</td>
@@ -1363,6 +1372,29 @@ Languages are represented by two character codes, optionally followed by a local
             </div>
             
 
+            
+            <div class="region region--no-space-top">
+              <h2 class="h2">Datatypes</h2>
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="GenericDate"><a href="http://data.europa.eu/m8g/GenericDate" data-toggle="tooltip" data-content="http://data.europa.eu/m8g/GenericDate" data-placement="right">GenericDate</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Definition</dt><dd>The GenericDate data type is the union of  xs:date, xs:gYearMonth and xs:gYear</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		    
+                    <dd>There are no properties defined for this datatype.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
             
 	    
 	    <!--

@@ -6,7 +6,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://semiceu.github.io//shacl/core-person-ap-SHACL_en> <https://semiceu.github.io//shacl/core-person-ap-SHACL_enshapes> <https://semiceu.github.io//shacl/core-person-ap-SHACL_en#JurisdictionShape>,
+<https://semiceu.github.io//shacl/core-person-ap-SHACL_en> <https://semiceu.github.io//shacl/core-person-ap-SHACL_enshapes> <https://semiceu.github.io//shacl/core-person-ap-SHACL_en#GenericDateShape>,
+    <https://semiceu.github.io//shacl/core-person-ap-SHACL_en#JurisdictionShape>,
     <https://semiceu.github.io//shacl/core-person-ap-SHACL_en#LocationShape>,
     <https://semiceu.github.io//shacl/core-person-ap-SHACL_en#IdentifierShape>,
     <https://semiceu.github.io//shacl/core-person-ap-SHACL_en#AddressShape>,
@@ -77,6 +78,10 @@
 <https://semiceu.github.io//shacl/core-person-ap-SHACL_en#AgentShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass foaf:Agent .
+
+<https://semiceu.github.io//shacl/core-person-ap-SHACL_en#GenericDateShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://data.europa.eu/m8g/GenericDate> .
 
 <https://semiceu.github.io//shacl/core-person-ap-SHACL_en#IdentifierShape> a shacl:NodeShape;
   shacl:closed false;
@@ -176,12 +181,12 @@
     shacl:name "country of death"@en;
     shacl:path <http://www.w3.org/ns/person#countryOfDeath>
   ], [
-    shacl:datatype <http://data.europa.eu/m8g/Date>;
+    shacl:datatype <http://data.europa.eu/m8g/GenericDate>;
     shacl:description "The point in time on which the Person was born."@en;
     shacl:name "date of birth"@en;
     shacl:path <http://data.europa.eu/m8g/birthDate>
   ], [
-    shacl:datatype <http://data.europa.eu/m8g/Date>;
+    shacl:datatype <http://data.europa.eu/m8g/GenericDate>;
     shacl:description "The point in time on which the Person died."@en;
     shacl:name "date of death"@en;
     shacl:path <http://data.europa.eu/m8g/deathDate>
