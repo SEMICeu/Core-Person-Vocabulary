@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<rdf:RDF xmlns:dc='http://purl.org/dc/terms/' xmlns:foaf='http://xmlns.com/foaf/0.1/' xmlns:ns0='http://www.w3.org/2001/02pd/rec54#' xmlns:owl='http://www.w3.org/2002/07/owl#' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:rdfs='http://www.w3.org/2000/01/rdf-schema#' xmlns:schemas='https://schema.org/'>
+<rdfs:Class rdf:about='http://www.w3.org/ns/person#Person'>
+<rdfs:label xml:lang='en'>Person</rdfs:label>
+
+</rdfs:Class>
+
+<owl:Ontology rdf:about='https://data.europa.eu/m8g'>
+<rdfs:label xml:lang='en'>core-person-voc</rdfs:label>
+ <rdfs:label xml:lang='nl'>core-person-voc</rdfs:label>
+
+<dc:contributor>
+<foaf:Person rdf:nodeID='g46945533381220'>
+<foaf:firstName>Seth</foaf:firstName>
+
+<foaf:lastName>van Hooland</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g46945533380840'>
+<foaf:name>European Commission</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</dc:contributor>
+
+<dc:issued>TODO</dc:issued>
+
+<dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
+ <dc:license rdf:resource='https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic' />
+
+<dc:mediator>
+<rdf:Description rdf:nodeID='g46945533363700'>
+<foaf:homepage rdf:resource='https://semic.eu' />
+
+<foaf:name>Semantic Interoperability Community (SEMIC)</foaf:name>
+
+</rdf:Description>
+
+</dc:mediator>
+
+<rdfs:seeAlso rdf:resource='http://www.w3.org/ns/person#Person' />
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://xmlns.com/foaf/0.1/name'>
+<rdfs:label xml:lang='en'>full name</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://xmlns.com/foaf/0.1/givenName'>
+<rdfs:label xml:lang='en'>given name (forename)</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://xmlns.com/foaf/0.1/familyName'>
+<rdfs:label xml:lang='en'>family name (surname)</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://www.w3.org/ns/person#placeOfDeath'>
+<rdfs:label xml:lang='en'>place of death</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://www.w3.org/ns/person#placeOfBirth'>
+<rdfs:label xml:lang='en'>place of birth</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://www.w3.org/ns/person#patronymicName'>
+<rdfs:label xml:lang='en'>patronymic name</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://www.w3.org/ns/person#countryOfDeath'>
+<rdfs:label xml:lang='en'>country of death</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://www.w3.org/ns/person#countryOfBirth'>
+<rdfs:label xml:lang='en'>residency</rdfs:label>
+ <rdfs:label xml:lang='en'>country of birth</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://www.w3.org/ns/person#birthName'>
+<rdfs:label xml:lang='en'>birth name</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://purl.org/dc/terms/identifier'>
+<rdfs:label xml:lang='en'>identifier</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://purl.org/dc/terms/citizenship'>
+<rdfs:label xml:lang='en'>citizenship</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://purl.org/dc/terms/alternative'>
+<rdfs:label xml:lang='en'>alternative name</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://data.europa.eu/m8g/matronymicName'>
+<rdfs:label xml:lang='en'>matronymic name</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://data.europa.eu/m8g/gender'>
+<rdfs:label xml:lang='en'>gender</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://data.europa.eu/m8g/domicile'>
+<rdfs:label xml:lang='en'>domicile</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://data.europa.eu/m8g/deathDate'>
+<rdfs:label xml:lang='en'>date of death</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+ <rdfs:seeAlso>
+<rdf:Property rdf:about='http://data.europa.eu/m8g/birthDate'>
+<rdfs:label xml:lang='en'>date of birth</rdfs:label>
+
+</rdf:Property>
+
+</rdfs:seeAlso>
+
+<ns0:editor>
+<foaf:Person rdf:nodeID='g46945533362600'>
+<foaf:firstName>Bert</foaf:firstName>
+
+<foaf:lastName>Van Nuffelen</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g46945533362220'>
+<foaf:name>TenForce</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</ns0:editor>
+ <ns0:editor>
+<foaf:Person rdf:nodeID='g46945533386300'>
+<foaf:firstName>Emidio</foaf:firstName>
+
+<foaf:lastName>Stani</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g46945533385920'>
+<foaf:name>PwC EU Services</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</ns0:editor>
+ <ns0:editor>
+<foaf:Person rdf:nodeID='g46945533385460'>
+<foaf:firstName>Dimitri</foaf:firstName>
+
+<foaf:lastName>Schepers</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g46945533385080'>
+<foaf:name>PwC EU Services</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</ns0:editor>
+ <ns0:editor>
+<foaf:Person rdf:nodeID='g46945533384620'>
+<foaf:firstName>Pavlina</foaf:firstName>
+
+<foaf:lastName>Fragkou</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g46945533384240'>
+<foaf:name>European Commission</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</ns0:editor>
+ <ns0:editor>
+<foaf:Person rdf:nodeID='g46945533383780'>
+<foaf:firstName>Michiel</foaf:firstName>
+
+<foaf:lastName>De Keyzer</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g46945533383400'>
+<foaf:name>PwC EU Services</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</ns0:editor>
+ <ns0:editor>
+<foaf:Person rdf:nodeID='g46945533382940'>
+<foaf:firstName>Alexandre</foaf:firstName>
+
+<foaf:lastName>Beaufays</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g46945533382560'>
+<foaf:name>PwC EU Services</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</ns0:editor>
+ <ns0:editor>
+<foaf:Person rdf:nodeID='g46945533382100'>
+<foaf:firstName>Florian</foaf:firstName>
+
+<foaf:lastName>Barthelemy</foaf:lastName>
+
+<schemas:affiliation>
+<rdf:Description rdf:nodeID='g46945533381720'>
+<foaf:name>PwC EU Services</foaf:name>
+
+</rdf:Description>
+
+</schemas:affiliation>
+
+</foaf:Person>
+
+</ns0:editor>
+
+<foaf:maker>
+<foaf:Person rdf:nodeID='g46945533363040'>
+<foaf:firstName>Core Vocabularies Working Group</foaf:firstName>
+
+</foaf:Person>
+
+</foaf:maker>
+
+</owl:Ontology>
+
+</rdf:RDF>
