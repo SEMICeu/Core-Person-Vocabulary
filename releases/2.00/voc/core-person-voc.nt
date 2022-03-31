@@ -1,0 +1,115 @@
+<https://data.europa.eu/m8g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://data.europa.eu/m8g> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
+<https://data.europa.eu/m8g> <http://purl.org/dc/terms/license> <https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic> .
+<https://data.europa.eu/m8g> <http://purl.org/dc/terms/mediator> _:g47106478064440 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#label> "core-person-voc"@en .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#label> "core-person-voc"@nl .
+<https://data.europa.eu/m8g> <http://xmlns.com/foaf/0.1/maker> _:g47106478063780 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2001/02pd/rec54#editor> _:g47106478087880 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2001/02pd/rec54#editor> _:g47106478087040 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2001/02pd/rec54#editor> _:g47106478086200 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2001/02pd/rec54#editor> _:g47106478085360 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2001/02pd/rec54#editor> _:g47106478084520 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2001/02pd/rec54#editor> _:g47106478083680 .
+<https://data.europa.eu/m8g> <http://www.w3.org/2001/02pd/rec54#editor> _:g47106478082840 .
+<https://data.europa.eu/m8g> <http://purl.org/dc/terms/contributor> _:g47106478081960 .
+<https://data.europa.eu/m8g> <http://purl.org/dc/terms/issued> "TODO" .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/person#Person> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://xmlns.com/foaf/0.1/name> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://xmlns.com/foaf/0.1/givenName> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://xmlns.com/foaf/0.1/familyName> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/person#placeOfDeath> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/person#placeOfBirth> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/person#patronymicName> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/person#countryOfDeath> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/person#countryOfBirth> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/person#birthName> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/identifier> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/citizenship> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/alternative> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.europa.eu/m8g/matronymicName> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.europa.eu/m8g/gender> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.europa.eu/m8g/domicile> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.europa.eu/m8g/deathDate> .
+<https://data.europa.eu/m8g> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.europa.eu/m8g/birthDate> .
+_:g47106478064440 <http://xmlns.com/foaf/0.1/homepage> <https://semic.eu> .
+_:g47106478064440 <http://xmlns.com/foaf/0.1/name> "Semantic Interoperability Community (SEMIC)" .
+_:g47106478063780 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47106478063780 <http://xmlns.com/foaf/0.1/firstName> "Core Vocabularies Working Group" .
+_:g47106478087880 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47106478087880 <https://schema.org/affiliation> _:g47106478087500 .
+_:g47106478087880 <http://xmlns.com/foaf/0.1/firstName> "Bert" .
+_:g47106478087880 <http://xmlns.com/foaf/0.1/lastName> "Van Nuffelen" .
+_:g47106478087500 <http://xmlns.com/foaf/0.1/name> "TenForce" .
+_:g47106478087040 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47106478087040 <https://schema.org/affiliation> _:g47106478086660 .
+_:g47106478087040 <http://xmlns.com/foaf/0.1/firstName> "Emidio" .
+_:g47106478087040 <http://xmlns.com/foaf/0.1/lastName> "Stani" .
+_:g47106478086660 <http://xmlns.com/foaf/0.1/name> "PwC EU Services" .
+_:g47106478086200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47106478086200 <https://schema.org/affiliation> _:g47106478085820 .
+_:g47106478086200 <http://xmlns.com/foaf/0.1/firstName> "Dimitri" .
+_:g47106478086200 <http://xmlns.com/foaf/0.1/lastName> "Schepers" .
+_:g47106478085820 <http://xmlns.com/foaf/0.1/name> "PwC EU Services" .
+_:g47106478085360 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47106478085360 <https://schema.org/affiliation> _:g47106478084980 .
+_:g47106478085360 <http://xmlns.com/foaf/0.1/firstName> "Pavlina" .
+_:g47106478085360 <http://xmlns.com/foaf/0.1/lastName> "Fragkou" .
+_:g47106478084980 <http://xmlns.com/foaf/0.1/name> "European Commission" .
+_:g47106478084520 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47106478084520 <https://schema.org/affiliation> _:g47106478084140 .
+_:g47106478084520 <http://xmlns.com/foaf/0.1/firstName> "Michiel" .
+_:g47106478084520 <http://xmlns.com/foaf/0.1/lastName> "De Keyzer" .
+_:g47106478084140 <http://xmlns.com/foaf/0.1/name> "PwC EU Services" .
+_:g47106478083680 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47106478083680 <https://schema.org/affiliation> _:g47106478083300 .
+_:g47106478083680 <http://xmlns.com/foaf/0.1/firstName> "Alexandre" .
+_:g47106478083680 <http://xmlns.com/foaf/0.1/lastName> "Beaufays" .
+_:g47106478083300 <http://xmlns.com/foaf/0.1/name> "PwC EU Services" .
+_:g47106478082840 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47106478082840 <https://schema.org/affiliation> _:g47106478082460 .
+_:g47106478082840 <http://xmlns.com/foaf/0.1/firstName> "Florian" .
+_:g47106478082840 <http://xmlns.com/foaf/0.1/lastName> "Barthelemy" .
+_:g47106478082460 <http://xmlns.com/foaf/0.1/name> "PwC EU Services" .
+_:g47106478081960 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g47106478081960 <https://schema.org/affiliation> _:g47106478081580 .
+_:g47106478081960 <http://xmlns.com/foaf/0.1/firstName> "Seth" .
+_:g47106478081960 <http://xmlns.com/foaf/0.1/lastName> "van Hooland" .
+_:g47106478081580 <http://xmlns.com/foaf/0.1/name> "European Commission" .
+<http://www.w3.org/ns/person#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/person#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "full name"@en .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#label> "given name (forename)"@en .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2000/01/rdf-schema#label> "family name (surname)"@en .
+<http://www.w3.org/ns/person#placeOfDeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/person#placeOfDeath> <http://www.w3.org/2000/01/rdf-schema#label> "place of death"@en .
+<http://www.w3.org/ns/person#placeOfBirth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/person#placeOfBirth> <http://www.w3.org/2000/01/rdf-schema#label> "place of birth"@en .
+<http://www.w3.org/ns/person#patronymicName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/person#patronymicName> <http://www.w3.org/2000/01/rdf-schema#label> "patronymic name"@en .
+<http://www.w3.org/ns/person#countryOfDeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/person#countryOfDeath> <http://www.w3.org/2000/01/rdf-schema#label> "country of death"@en .
+<http://www.w3.org/ns/person#countryOfBirth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/person#countryOfBirth> <http://www.w3.org/2000/01/rdf-schema#label> "residency"@en .
+<http://www.w3.org/ns/person#countryOfBirth> <http://www.w3.org/2000/01/rdf-schema#label> "country of birth"@en .
+<http://www.w3.org/ns/person#birthName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/person#birthName> <http://www.w3.org/2000/01/rdf-schema#label> "birth name"@en .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
+<http://purl.org/dc/terms/citizenship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/terms/citizenship> <http://www.w3.org/2000/01/rdf-schema#label> "citizenship"@en .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/2000/01/rdf-schema#label> "alternative name"@en .
+<http://data.europa.eu/m8g/matronymicName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://data.europa.eu/m8g/matronymicName> <http://www.w3.org/2000/01/rdf-schema#label> "matronymic name"@en .
+<http://data.europa.eu/m8g/gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://data.europa.eu/m8g/gender> <http://www.w3.org/2000/01/rdf-schema#label> "gender"@en .
+<http://data.europa.eu/m8g/domicile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://data.europa.eu/m8g/domicile> <http://www.w3.org/2000/01/rdf-schema#label> "domicile"@en .
+<http://data.europa.eu/m8g/deathDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://data.europa.eu/m8g/deathDate> <http://www.w3.org/2000/01/rdf-schema#label> "date of death"@en .
+<http://data.europa.eu/m8g/birthDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://data.europa.eu/m8g/birthDate> <http://www.w3.org/2000/01/rdf-schema#label> "date of birth"@en .
