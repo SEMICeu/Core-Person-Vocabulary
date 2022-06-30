@@ -8,6 +8,8 @@ This specification was produced by the Core Vocabularies Working Group (Person T
 
 The current version of the Core Person Vocabulary can be downloaded from https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/.
 
+Discussions about the version 2.0.0 of Core Person took place during the webinar of the 23rd of April 2021[https://www.youtube.com/watch?v=x22TEeU89i0]
+
 Any problems encountered, or suggestions for new functionalities can be submitted as issues on the Core Person Vocabulary repository on GitHub. A short guideline for submitting issues can be found at https://github.com/SEMICeu/Core-Person-Vocabulary/wiki.
 
 Copyright © 2021 European Union. All material in this repository is published under the license [CC-By 4.0](https://creativecommons.org/licenses/by/4.0/), unless explicitly otherwise mentioned.
