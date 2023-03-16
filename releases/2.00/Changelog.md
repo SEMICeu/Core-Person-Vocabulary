@@ -4,8 +4,7 @@
 
 This document describes the (major) changes to [the current version 1.0.0](https://github.com/SEMICeu/Core-Person-Vocabulary/tree/master/releases/1.00) of the Core Person Vocabulary for which a new version is being proposed ([version 2.0.0](https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/)). The list of changes results in the new version to be considered as a major release.
 
-
-## Changes since April 2021 
+## Changes since March 2022 
 The table below gives an overview of the classes (and their definitions) within both data models. Classes that are related are juxta-positioned.
 
 **C** stands for changes in classes
@@ -15,6 +14,16 @@ The table below gives an overview of the classes (and their definitions) within 
 **P** stands for changes in properties
 
 **D** stands for changes in data types
+
+### Terms
+
+| Nr | Core Person Vocabulary v2.0.0 | Core Person Vocabulary v2.1.0 | Rationale                           | GitHub/Change                                                      |
+| -- | ----------------------------- | ----------------------------- | ----------------------------------- | ------------------------------------------------------------------ |
+| P1 | \-                            | sex                           | differentiate gender and sex        | [#38](https://github.com/SEMICeu/Core-Person-Vocabulary/issues/38) |
+| C1 | \-                            | ContactPoint                  | add contact information to a person | [#36](https://github.com/SEMICeu/Core-Person-Vocabulary/issues/36) |
+
+## Changes since April 2021 
+
 ### Terms
 
 | Nr | Core Person Vocabulary v2.0.0 2021 | Core Person Vocabulary v2.0.0 2022   | Rationale                                                                  | GitHub/Change                                                                                                                  |
