@@ -19,8 +19,10 @@ The table below gives an overview of the classes (and their definitions) within 
 
 | Nr | Core Person Vocabulary v2.0.0 | Core Person Vocabulary v2.1.0 | Rationale                           | GitHub/Change                                                      |
 | -- | ----------------------------- | ----------------------------- | ----------------------------------- | ------------------------------------------------------------------ |
-| P1 | \-                            | sex                           | differentiate gender and sex        | [#38](https://github.com/SEMICeu/Core-Person-Vocabulary/issues/38) |
+| P1 | \-                            | Person.sex                    | differentiate gender and sex        | [#38](https://github.com/SEMICeu/Core-Person-Vocabulary/issues/38) |
 | C1 | \-                            | ContactPoint                  | add contact information to a person | [#36](https://github.com/SEMICeu/Core-Person-Vocabulary/issues/36) |
+| P2 | \-                            | Agent.type                    | Comply with ADMS                    |                                                                    |
+| P3 | \-                            | Agent.name                    | Comply with ADMS                    |
 
 ## Changes since April 2021 
 
