@@ -65,7 +65,7 @@
     "Agent.type": {
       "@container": "@set",
       "@id": "http://purl.org/dc/terms/type",
-      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      "@type": "@id"
     },
     "ContactPoint": "http://data.europa.eu/m8g/ContactPoint",
     "ContactPoint.contactPage": {

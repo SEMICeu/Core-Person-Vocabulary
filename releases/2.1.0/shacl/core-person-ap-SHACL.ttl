@@ -222,6 +222,7 @@
 <https://semiceu.github.io//doc/core-vocabulary/core-person#AgentShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property <https://semiceu.github.io//doc/core-vocabulary/core-person#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc>,
+    <https://semiceu.github.io//doc/core-vocabulary/core-person#AgentShape/322371a77364a50f049d46180f6192532eea26dc>,
     <https://semiceu.github.io//doc/core-vocabulary/core-person#AgentShape/4f381639bb6e021939f65b4f41409d1edaeade9b>,
     <https://semiceu.github.io//doc/core-vocabulary/core-person#AgentShape/9caf9e629daa0e64ece77788576468821d7cff8c>,
     <https://semiceu.github.io//doc/core-vocabulary/core-person#AgentShape/be01df43f1c288b656b3ca3879eb3dd9d8c700b9>;
@@ -234,12 +235,19 @@
   shacl:path dc:title;
   <https://purl.eu/ns/shacl#message> "The range of name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."@en .
 
+<https://semiceu.github.io//doc/core-vocabulary/core-person#AgentShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://semiceu.github.io//doc/core-vocabulary/core-person#Agent%3Atype";
+  shacl:class skos:Concept;
+  shacl:description "A classification assigned to an Agent."@en;
+  shacl:name "type"@en;
+  shacl:path dc:type;
+  <https://purl.eu/ns/shacl#message> "The range of type must be of type <http://www.w3.org/2004/02/skos/core#Concept>."@en .
+
 <https://semiceu.github.io//doc/core-vocabulary/core-person#AgentShape/4f381639bb6e021939f65b4f41409d1edaeade9b> rdfs:seeAlso "https://semiceu.github.io//doc/core-vocabulary/core-person#Agent%3Atype";
   shacl:description "A classification assigned to an Agent."@en;
   shacl:name "type"@en;
-  shacl:nodeKind shacl:Literal;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path dc:type;
-  <https://purl.eu/ns/shacl#message> "The expected value for type is a Literal"@en .
+  <https://purl.eu/ns/shacl#message> "The expected value for type is a rdfs:Resource (URI or blank node)"@en .
 
 <https://semiceu.github.io//doc/core-vocabulary/core-person#AgentShape/9caf9e629daa0e64ece77788576468821d7cff8c> rdfs:seeAlso "https://semiceu.github.io//doc/core-vocabulary/core-person#Agent%3Aname";
   shacl:description "The noun given to the Agent."@en;

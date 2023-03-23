@@ -11,76 +11,64 @@
   rdfs:label "Person"@en .
 
 <http://data.europa.eu/m8g/birthDate> a owl:DatatypeProperty;
-  <http://purl.org/vocab/vann/usageNote> """The date of birth could be expressed as date, gYearMonth or gYear, example:<br/>
-- 1980-09-16^^xs:date<br/>
-- 1980-09^^xs:gYearMonth<br/>
-- 1980^^xs:gYear"""@en;
+  <http://purl.org/vocab/vann/usageNote> """The date of birth could be expressed as date, gYearMonth or gYear, example:
+<ul>
+<li>- 1980-09-16^^xs:date</li>
+<li>- 1980-09^^xs:gYearMonth</li>
+<li>- 1980^^xs:gYear</li>
+</ul>"""@en;
   rdfs:domain <http://www.w3.org/ns/person#Person>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range <http://data.europa.eu/m8g/GenericDate> .
 
+<http://data.europa.eu/m8g/contactPage> a owl:ObjectProperty;
+  rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range foaf:Document .
+
 <http://data.europa.eu/m8g/deathDate> a owl:DatatypeProperty;
-  <http://purl.org/vocab/vann/usageNote> """The date of birth could be expressed as date, gYearMonth or gYear, example:<br/>
-- 1980-09-16^^xs:date<br/>
-- 1980-09^^xs:gYearMonth<br/>
-- 1980^^xs:gYear"""@en;
+  <http://purl.org/vocab/vann/usageNote> """The date of birth could be expressed as date, gYearMonth or gYear, example:
+<ul>
+<li>- 1980-09-16^^xs:date</li>
+<li>- 1980-09^^xs:gYearMonth</li>
+<li>- 1980^^xs:gYear</li>
+</ul>"""@en;
   rdfs:domain <http://www.w3.org/ns/person#Person>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range <http://data.europa.eu/m8g/GenericDate> .
 
 <http://data.europa.eu/m8g/email> a owl:DatatypeProperty;
-  rdfs:domain <http://data.europa.e/m8g/ContactPoint>;
+  rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range rdfs:Literal .
 
 <http://data.europa.eu/m8g/gender> a owl:ObjectProperty;
-  <http://purl.org/vocab/vann/usageNote> "The gender of an individual should be recorded using a controlled vocabulary that is appropriate for the specific context."@en;
+  <http://purl.org/vocab/vann/usageNote> "The gender of an individual should be recorded using a controlled vocabulary that is appropriate for the specific context. In some cases, the chromosomal or physical state of an individual will be more important than the gender that they express, in others the reverse will be true. What is always important is that the controlled vocabulary used to describe an individual's gender is stated explicitly."@en;
   rdfs:domain <http://www.w3.org/ns/person#Person>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range skos:Concept .
 
 <http://data.europa.eu/m8g/matronymicName> a owl:DatatypeProperty;
-  <http://purl.org/vocab/vann/usageNote> """It is useful for names and descriptions that are available in multiple languages. Where this is so, each version of the data should be included and each one associated with the relevant language identifier. RFC 3066 provides a commonly used set of identifiers for natural languages. This is the set recognised by UN/CEFACT and XML Schema.<br/>
-Languages are represented by two character codes, optionally followed by a locale definition such as \"de\" meaning German and \"de-at\" meaning \"German as spoken in Austria.\""""@en;
-  rdfs:domain <http://data.europa.eu/m8g/Name>;
+  rdfs:domain <http://www.w3.org/ns/person#Person>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range rdf:langString .
 
-<http://data.europa.eu/m8g/openingHours> a owl:ObjectProperty;
-  <http://purl.org/vocab/vann/usageNote> "Days are specified using two-letter combinations: Mo, Tu, We, Th, Fr, Sa, Su. For example, if the contact point is open Monday-Friday, 9 -5, the value of the openingHours property would be Mo-Fr 09:00-17:00. If the Contact Point is only available on Tuesday and Thursday between 6 and 8pm, the value would be Tu,Th 16:00-20:00."@en;
-  rdfs:domain <http://data.europa.e/m8g/ContactPoint>;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
-  rdfs:range foaf:Document .
-
 <http://data.europa.eu/m8g/sex> a owl:ObjectProperty;
-  <http://purl.org/vocab/vann/usageNote> "The recommended controlled vocabulary is the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/human-sex\">Human sex</a> from Publications Office."@en;
+  <http://purl.org/vocab/vann/usageNote> "The recommended controlled vocabulary for this property is <a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/human-sex\">the sex authority table of the Publications Office.</a>"@en;
   rdfs:domain <http://www.w3.org/ns/person#Person>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range skos:Concept .
 
 <http://data.europa.eu/m8g/telephone> a owl:DatatypeProperty;
-  rdfs:domain <http://data.europa.e/m8g/ContactPoint>;
+  rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range rdfs:Literal .
 
-<http://data.europa.eu/m8g/validFrom> a owl:DatatypeProperty;
-  rdfs:domain <http://data.europa.eu/m8g/Name>;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
-  rdfs:range <http://data.europa.eu/m8g/GenericDate> .
-
-<http://data.europa.eu/m8g/validUntil> a owl:DatatypeProperty;
-  rdfs:domain <http://data.europa.eu/m8g/Name>;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
-  rdfs:range <http://data.europa.eu/m8g/GenericDate> .
+<http://data.europa.eu/m8g/contactPoint> a rdf:Property;
+  rdfs:label "contact point"@en .
 
 <http://data.europa.eu/m8g/domicile> a rdf:Property;
   rdfs:label "domicile"@en .
-
-<http://data.europa.eu/m8g/hasName> a rdf:Property;
-  rdfs:label "has name"@en .
-
-<http://data.europe.eu/m8g/middleName> a rdf:Property;
-  rdfs:label "middle name"@en .
 
 dc:alternative a rdf:Property;
   rdfs:label "alternative name"@en .
@@ -95,8 +83,7 @@ dc:identifier a rdf:Property;
   rdfs:label "birth name"@en .
 
 <http://www.w3.org/ns/person#countryOfBirth> a rdf:Property;
-  rdfs:label "residency"@en,
-    "country of birth"@en .
+  rdfs:label "country of birth"@en .
 
 <http://www.w3.org/ns/person#countryOfDeath> a rdf:Property;
   rdfs:label "country of death"@en .
@@ -110,6 +97,9 @@ dc:identifier a rdf:Property;
 <http://www.w3.org/ns/person#placeOfDeath> a rdf:Property;
   rdfs:label "place of death"@en .
 
+<http://www.w3.org/ns/person#residency> a rdf:Property;
+  rdfs:label "residency"@en .
+
 foaf:familyName a rdf:Property;
   rdfs:label "family name"@en .
 
@@ -119,10 +109,11 @@ foaf:givenName a rdf:Property;
 foaf:name a rdf:Property;
   rdfs:label "full name"@en .
 
-<http://data.europa.eu/m8g/Name> a owl:Class;
+<http://data.europa.eu/m8g/GenericDate> a owl:Class;
   rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
-<http://data.europa.eu/m8g/GenericDate> a owl:Class;
+<http://data.europa.eu/m8g/ContactPoint> a owl:Class;
+  <http://purl.org/vocab/vann/usageNote> "The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's ContactPoint class (http://schema.org/ContactPoint) that has additional properties that some implementations may find useful."@en;
   rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
 <http://data.europa.eu/m8g> a owl:Ontology;
@@ -145,6 +136,7 @@ foaf:name a rdf:Property;
     foaf:name,
     foaf:givenName,
     foaf:familyName,
+    <http://www.w3.org/ns/person#residency>,
     <http://www.w3.org/ns/person#placeOfDeath>,
     <http://www.w3.org/ns/person#placeOfBirth>,
     <http://www.w3.org/ns/person#patronymicName>,
@@ -154,9 +146,8 @@ foaf:name a rdf:Property;
     dc:identifier,
     dc:citizenship,
     dc:alternative,
-    <http://data.europe.eu/m8g/middleName>,
-    <http://data.europa.eu/m8g/hasName>,
-    <http://data.europa.eu/m8g/domicile>;
+    <http://data.europa.eu/m8g/domicile>,
+    <http://data.europa.eu/m8g/contactPoint>;
   <http://www.w3.org/2001/02pd/rec54#editor> [
     a foaf:Person;
     foaf:firstName "Bert";
