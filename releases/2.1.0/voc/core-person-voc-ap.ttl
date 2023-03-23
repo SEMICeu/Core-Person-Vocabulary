@@ -1,0 +1,199 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schemas: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.w3.org/ns/person#Person> a rdfs:Class;
+  rdfs:label "Person"@en .
+
+<http://data.europa.eu/m8g/birthDate> a owl:DatatypeProperty;
+  <http://purl.org/vocab/vann/usageNote> """The date of birth could be expressed as date, gYearMonth or gYear, example:<br/>
+- 1980-09-16^^xs:date<br/>
+- 1980-09^^xs:gYearMonth<br/>
+- 1980^^xs:gYear"""@en;
+  rdfs:domain <http://www.w3.org/ns/person#Person>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range <http://data.europa.eu/m8g/GenericDate> .
+
+<http://data.europa.eu/m8g/deathDate> a owl:DatatypeProperty;
+  <http://purl.org/vocab/vann/usageNote> """The date of birth could be expressed as date, gYearMonth or gYear, example:<br/>
+- 1980-09-16^^xs:date<br/>
+- 1980-09^^xs:gYearMonth<br/>
+- 1980^^xs:gYear"""@en;
+  rdfs:domain <http://www.w3.org/ns/person#Person>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range <http://data.europa.eu/m8g/GenericDate> .
+
+<http://data.europa.eu/m8g/email> a owl:DatatypeProperty;
+  rdfs:domain <http://data.europa.e/m8g/ContactPoint>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range rdfs:Literal .
+
+<http://data.europa.eu/m8g/gender> a owl:ObjectProperty;
+  <http://purl.org/vocab/vann/usageNote> "The gender of an individual should be recorded using a controlled vocabulary that is appropriate for the specific context."@en;
+  rdfs:domain <http://www.w3.org/ns/person#Person>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range skos:Concept .
+
+<http://data.europa.eu/m8g/matronymicName> a owl:DatatypeProperty;
+  <http://purl.org/vocab/vann/usageNote> """It is useful for names and descriptions that are available in multiple languages. Where this is so, each version of the data should be included and each one associated with the relevant language identifier. RFC 3066 provides a commonly used set of identifiers for natural languages. This is the set recognised by UN/CEFACT and XML Schema.<br/>
+Languages are represented by two character codes, optionally followed by a locale definition such as \"de\" meaning German and \"de-at\" meaning \"German as spoken in Austria.\""""@en;
+  rdfs:domain <http://data.europa.eu/m8g/Name>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range rdf:langString .
+
+<http://data.europa.eu/m8g/openingHours> a owl:ObjectProperty;
+  <http://purl.org/vocab/vann/usageNote> "Days are specified using two-letter combinations: Mo, Tu, We, Th, Fr, Sa, Su. For example, if the contact point is open Monday-Friday, 9 -5, the value of the openingHours property would be Mo-Fr 09:00-17:00. If the Contact Point is only available on Tuesday and Thursday between 6 and 8pm, the value would be Tu,Th 16:00-20:00."@en;
+  rdfs:domain <http://data.europa.e/m8g/ContactPoint>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range foaf:Document .
+
+<http://data.europa.eu/m8g/sex> a owl:ObjectProperty;
+  <http://purl.org/vocab/vann/usageNote> "The recommended controlled vocabulary is the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/human-sex\">Human sex</a> from Publications Office."@en;
+  rdfs:domain <http://www.w3.org/ns/person#Person>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range skos:Concept .
+
+<http://data.europa.eu/m8g/telephone> a owl:DatatypeProperty;
+  rdfs:domain <http://data.europa.e/m8g/ContactPoint>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range rdfs:Literal .
+
+<http://data.europa.eu/m8g/validFrom> a owl:DatatypeProperty;
+  rdfs:domain <http://data.europa.eu/m8g/Name>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range <http://data.europa.eu/m8g/GenericDate> .
+
+<http://data.europa.eu/m8g/validUntil> a owl:DatatypeProperty;
+  rdfs:domain <http://data.europa.eu/m8g/Name>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range <http://data.europa.eu/m8g/GenericDate> .
+
+<http://data.europa.eu/m8g/domicile> a rdf:Property;
+  rdfs:label "domicile"@en .
+
+<http://data.europa.eu/m8g/hasName> a rdf:Property;
+  rdfs:label "has name"@en .
+
+<http://data.europe.eu/m8g/middleName> a rdf:Property;
+  rdfs:label "middle name"@en .
+
+dc:alternative a rdf:Property;
+  rdfs:label "alternative name"@en .
+
+dc:citizenship a rdf:Property;
+  rdfs:label "citizenship"@en .
+
+dc:identifier a rdf:Property;
+  rdfs:label "identifier"@en .
+
+<http://www.w3.org/ns/person#birthName> a rdf:Property;
+  rdfs:label "birth name"@en .
+
+<http://www.w3.org/ns/person#countryOfBirth> a rdf:Property;
+  rdfs:label "residency"@en,
+    "country of birth"@en .
+
+<http://www.w3.org/ns/person#countryOfDeath> a rdf:Property;
+  rdfs:label "country of death"@en .
+
+<http://www.w3.org/ns/person#patronymicName> a rdf:Property;
+  rdfs:label "patronymic name"@en .
+
+<http://www.w3.org/ns/person#placeOfBirth> a rdf:Property;
+  rdfs:label "place of birth"@en .
+
+<http://www.w3.org/ns/person#placeOfDeath> a rdf:Property;
+  rdfs:label "place of death"@en .
+
+foaf:familyName a rdf:Property;
+  rdfs:label "family name"@en .
+
+foaf:givenName a rdf:Property;
+  rdfs:label "given name"@en .
+
+foaf:name a rdf:Property;
+  rdfs:label "full name"@en .
+
+<http://data.europa.eu/m8g/Name> a owl:Class;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+
+<http://data.europa.eu/m8g/GenericDate> a owl:Class;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+
+<http://data.europa.eu/m8g> a owl:Ontology;
+  rdfs:label "core-person-voc"@en,
+    "core-person-voc"@nl;
+  dc:contributor [
+    a foaf:Person;
+    foaf:firstName "Seth";
+    foaf:lastName "van Hooland";
+    schemas:affiliation [foaf:name "European Commission"]
+  ];
+  dc:issued "TODO";
+  dc:license "https://creativecommons.org/licenses/by/4.0/",
+    <https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic>;
+  dc:mediator [
+    foaf:homepage <https://semic.eu>;
+    foaf:name "Semantic Interoperability Community (SEMIC)"
+  ];
+  rdfs:seeAlso <http://www.w3.org/ns/person#Person>,
+    foaf:name,
+    foaf:givenName,
+    foaf:familyName,
+    <http://www.w3.org/ns/person#placeOfDeath>,
+    <http://www.w3.org/ns/person#placeOfBirth>,
+    <http://www.w3.org/ns/person#patronymicName>,
+    <http://www.w3.org/ns/person#countryOfDeath>,
+    <http://www.w3.org/ns/person#countryOfBirth>,
+    <http://www.w3.org/ns/person#birthName>,
+    dc:identifier,
+    dc:citizenship,
+    dc:alternative,
+    <http://data.europe.eu/m8g/middleName>,
+    <http://data.europa.eu/m8g/hasName>,
+    <http://data.europa.eu/m8g/domicile>;
+  <http://www.w3.org/2001/02pd/rec54#editor> [
+    a foaf:Person;
+    foaf:firstName "Bert";
+    foaf:lastName "Van Nuffelen";
+    schemas:affiliation [foaf:name "TenForce"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Emidio";
+    foaf:lastName "Stani";
+    schemas:affiliation [foaf:name "PwC EU Services"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Dimitri";
+    foaf:lastName "Schepers";
+    schemas:affiliation [foaf:name "PwC EU Services"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Pavlina";
+    foaf:lastName "Fragkou";
+    schemas:affiliation [foaf:name "European Commission"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Michiel";
+    foaf:lastName "De Keyzer";
+    schemas:affiliation [foaf:name "PwC EU Services"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Alexandre";
+    foaf:lastName "Beaufays";
+    schemas:affiliation [foaf:name "PwC EU Services"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Florian";
+    foaf:lastName "Barthelemy";
+    schemas:affiliation [foaf:name "PwC EU Services"]
+  ];
+  foaf:maker [
+    a foaf:Person;
+    foaf:firstName "Core Vocabularies Working Group"
+  ] .
