@@ -1064,7 +1064,7 @@
             "en": "citizenship"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://purl.org/dc/terms/citizenship",
+          "sh:path": "http://www.w3.org/ns/person#citizenshiphttp://www.w3.org/ns/person#citizenship",
           "vl:message": {
             "en": "The expected value for citizenship is a rdfs:Resource (URI or blank node)"
           }
@@ -1499,7 +1499,7 @@
           "sh:name": {
             "en": "citizenship"
           },
-          "sh:path": "http://purl.org/dc/terms/citizenship",
+          "sh:path": "http://www.w3.org/ns/person#citizenshiphttp://www.w3.org/ns/person#citizenship",
           "vl:message": {
             "en": "The range of citizenship must be of type <http://purl.org/dc/terms/Jurisdiction>."
           }

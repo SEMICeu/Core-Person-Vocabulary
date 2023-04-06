@@ -611,7 +611,6 @@
   shacl:description "The Jurisdiction that has conferred citizenship rights on the Person such as the right to vote, to receive certain protection from the community or the issuance of a passport."@en;
   shacl:name "citizenship"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path dc:citizenship;
   <https://purl.eu/ns/shacl#message> "The expected value for citizenship is a rdfs:Resource (URI or blank node)"@en .
 
 <https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/19af0495c16fad6fa54dbabc3f445a180383f36d> rdfs:seeAlso "https://semiceu.github.io//doc/core-vocabulary/core-person#Person%3Abirth%20name";
@@ -814,7 +813,6 @@
   shacl:class dc:Jurisdiction;
   shacl:description "The Jurisdiction that has conferred citizenship rights on the Person such as the right to vote, to receive certain protection from the community or the issuance of a passport."@en;
   shacl:name "citizenship"@en;
-  shacl:path dc:citizenship;
   <https://purl.eu/ns/shacl#message> "The range of citizenship must be of type <http://purl.org/dc/terms/Jurisdiction>."@en .
 
 <https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/c2c54ded0a433cc00911573f794f1aeab900c624> rdfs:seeAlso "https://semiceu.github.io//doc/core-vocabulary/core-person#Person%3Agender";
