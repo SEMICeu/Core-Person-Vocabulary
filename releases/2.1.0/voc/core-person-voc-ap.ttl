@@ -17,13 +17,11 @@
 <li>- 1980-09^^xs:gYearMonth</li>
 <li>- 1980^^xs:gYear</li>
 </ul>"""@en;
-  rdfs:comment "The point in time on which the Person was born."@en;
   rdfs:domain <http://www.w3.org/ns/person#Person>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range <http://data.europa.eu/m8g/GenericDate> .
 
 <http://data.europa.eu/m8g/contactPage> a owl:ObjectProperty;
-  rdfs:comment "A web page that could be used to reach out the Contact Point."@en;
   rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range foaf:Document .
@@ -35,39 +33,33 @@
 <li>- 1980-09^^xs:gYearMonth</li>
 <li>- 1980^^xs:gYear</li>
 </ul>"""@en;
-  rdfs:comment "The point in time on which the Person died."@en;
   rdfs:domain <http://www.w3.org/ns/person#Person>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range <http://data.europa.eu/m8g/GenericDate> .
 
 <http://data.europa.eu/m8g/email> a owl:DatatypeProperty;
-  rdfs:comment "An electronic address through which the Contact Point can be contacted."@en;
   rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range rdfs:Literal .
 
 <http://data.europa.eu/m8g/gender> a owl:ObjectProperty;
   <http://purl.org/vocab/vann/usageNote> "The gender of an individual should be recorded using a controlled vocabulary that is appropriate for the specific context. In some cases, the chromosomal or physical state of an individual will be more important than the gender that they express, in others the reverse will be true. What is always important is that the controlled vocabulary used to describe an individual's gender is stated explicitly."@en;
-  rdfs:comment "The identities, expressions and societal roles of the Person."@en;
   rdfs:domain <http://www.w3.org/ns/person#Person>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range skos:Concept .
 
 <http://data.europa.eu/m8g/matronymicName> a owl:DatatypeProperty;
-  rdfs:comment "Name based on the given name of the Person's mother."@en;
   rdfs:domain <http://www.w3.org/ns/person#Person>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range rdf:langString .
 
 <http://data.europa.eu/m8g/sex> a owl:ObjectProperty;
   <http://purl.org/vocab/vann/usageNote> "The recommended controlled vocabulary for this property is <a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/human-sex\">the sex authority table of the Publications Office.</a>"@en;
-  rdfs:comment "The organism's biological sex."@en;
   rdfs:domain <http://www.w3.org/ns/person#Person>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range skos:Concept .
 
 <http://data.europa.eu/m8g/telephone> a owl:DatatypeProperty;
-  rdfs:comment "A telephone number through which the Contact Point can be contacted."@en;
   rdfs:domain <http://data.europa.eu/m8g/ContactPoint>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
   rdfs:range rdfs:Literal .
@@ -115,12 +107,10 @@ foaf:name a rdf:Property;
   rdfs:label "full name"@en .
 
 <http://data.europa.eu/m8g/GenericDate> a owl:Class;
-  rdfs:comment "The date data type is the union of  xs:date, xs:gYearMonth and xs:gYear"@en;
   rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
 <http://data.europa.eu/m8g/ContactPoint> a owl:Class;
   <http://purl.org/vocab/vann/usageNote> "The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's ContactPoint class (http://schema.org/ContactPoint) that has additional properties that some implementations may find useful."@en;
-  rdfs:comment "Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with."@en;
   rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
 <http://data.europa.eu/m8g> a owl:Ontology;
@@ -140,44 +130,24 @@ foaf:name a rdf:Property;
     foaf:name "Semantic Interoperability Community (SEMIC)"
   ];
   rdfs:seeAlso <http://www.w3.org/ns/person#Person>,
-    foaf:name,
-    foaf:givenName,
-    foaf:familyName,
-    <http://www.w3.org/ns/person#residency>,
-    <http://www.w3.org/ns/person#placeOfDeath>,
-    <http://www.w3.org/ns/person#placeOfBirth>,
-    <http://www.w3.org/ns/person#patronymicName>,
-    <http://www.w3.org/ns/person#countryOfDeath>,
-    <http://www.w3.org/ns/person#countryOfBirth>,
-    <http://www.w3.org/ns/person#birthName>,
-    dc:identifier,
-    dc:alternative,
+    <http://data.europa.eu/m8g/contactPoint>,
     <http://data.europa.eu/m8g/domicile>,
-    <http://data.europa.eu/m8g/contactPoint>;
+    dc:alternative,
+    dc:identifier,
+    <http://www.w3.org/ns/person#birthName>,
+    <http://www.w3.org/ns/person#countryOfBirth>,
+    <http://www.w3.org/ns/person#countryOfDeath>,
+    <http://www.w3.org/ns/person#patronymicName>,
+    <http://www.w3.org/ns/person#placeOfBirth>,
+    <http://www.w3.org/ns/person#placeOfDeath>,
+    <http://www.w3.org/ns/person#residency>,
+    foaf:familyName,
+    foaf:givenName,
+    foaf:name;
   <http://www.w3.org/2001/02pd/rec54#editor> [
     a foaf:Person;
-    foaf:firstName "Bert";
-    foaf:lastName "Van Nuffelen";
-    schemas:affiliation [foaf:name "TenForce"]
-  ], [
-    a foaf:Person;
-    foaf:firstName "Emidio";
-    foaf:lastName "Stani";
-    schemas:affiliation [foaf:name "PwC EU Services"]
-  ], [
-    a foaf:Person;
-    foaf:firstName "Dimitri";
-    foaf:lastName "Schepers";
-    schemas:affiliation [foaf:name "PwC EU Services"]
-  ], [
-    a foaf:Person;
-    foaf:firstName "Pavlina";
-    foaf:lastName "Fragkou";
-    schemas:affiliation [foaf:name "European Commission"]
-  ], [
-    a foaf:Person;
-    foaf:firstName "Michiel";
-    foaf:lastName "De Keyzer";
+    foaf:firstName "Florian";
+    foaf:lastName "Barthelemy";
     schemas:affiliation [foaf:name "PwC EU Services"]
   ], [
     a foaf:Person;
@@ -186,9 +156,29 @@ foaf:name a rdf:Property;
     schemas:affiliation [foaf:name "PwC EU Services"]
   ], [
     a foaf:Person;
-    foaf:firstName "Florian";
-    foaf:lastName "Barthelemy";
+    foaf:firstName "Michiel";
+    foaf:lastName "De Keyzer";
     schemas:affiliation [foaf:name "PwC EU Services"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Pavlina";
+    foaf:lastName "Fragkou";
+    schemas:affiliation [foaf:name "European Commission"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Dimitri";
+    foaf:lastName "Schepers";
+    schemas:affiliation [foaf:name "PwC EU Services"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Emidio";
+    foaf:lastName "Stani";
+    schemas:affiliation [foaf:name "PwC EU Services"]
+  ], [
+    a foaf:Person;
+    foaf:firstName "Bert";
+    foaf:lastName "Van Nuffelen";
+    schemas:affiliation [foaf:name "TenForce"]
   ];
   foaf:maker [
     a foaf:Person;
