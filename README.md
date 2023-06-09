@@ -1,5 +1,5 @@
 ![SEMIC Core Vocabulary](/semic-icon-small.png)
-## About the Vocabulary
+## Core Person Vocabulary (CPV)
 
 This is the issue tracker for the maintenance of the Core Person Vocabulary.
 
