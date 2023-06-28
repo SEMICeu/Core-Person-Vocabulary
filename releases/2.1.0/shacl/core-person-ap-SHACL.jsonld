@@ -6,13 +6,6 @@
       "@id": "qb:codeList",
       "@type": "@id"
     },
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "rdf:first": {
-      "@type": "@id"
-    },
-    "rdf:rest": {
-      "@type": "@id"
-    },
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "rdfs:comment": {
       "@id": "rdfs:comment"
@@ -94,11 +87,7 @@
       "@type": "@id"
     },
     "skos": "http://www.w3.org/2004/02/skos/core#",
-    "vl": "https://purl.eu/ns/shacl#",
-    "vl:message": {
-      "@container": "@language",
-      "@id": "vl:message"
-    }
+    "vl": "https://data.vlaanderen.be/ns/shacl#"
   },
   "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person",
   "shapes": [
@@ -108,6 +97,22 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#ContactPointShape/0867cf853418cb9d7d1fb8b906e353ec44462596",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-person#ContactPoint%3Ahas%20email",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "en": "An electronic address through which the Contact Point can be contacted."
+          },
+          "sh:name": {
+            "en": "has email"
+          },
+          "sh:path": "http://data.europa.eu/m8g/email",
+          "vl:message": {
+            "en": "De range van has email moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#ContactPointShape/0c404fa56c64463c15f65878d02efa16eec065b0",
           "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-person#ContactPoint%3Ahas%20email",
           "sh:description": {
@@ -116,11 +121,28 @@
           "sh:name": {
             "en": "has email"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://data.europa.eu/m8g/email",
           "vl:message": {
-            "en": "The expected value for has email is a Literal"
-          }
+            "en": "De verwachte waarde voor has email is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#ContactPointShape/81d774660d4c0f4b9837a4c09b8cd7b9bbe24567",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-person#ContactPoint%3Ahas%20telephone",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "en": "A telephone number through which the Contact Point can be contacted."
+          },
+          "sh:name": {
+            "en": "has telephone"
+          },
+          "sh:path": "http://data.europa.eu/m8g/telephone",
+          "vl:message": {
+            "en": "De range van has telephone moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#ContactPointShape/8547f9fea103d51b54d608cf10f98b003fde7378",
@@ -131,11 +153,12 @@
           "sh:name": {
             "en": "has telephone"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://data.europa.eu/m8g/telephone",
           "vl:message": {
-            "en": "The expected value for has telephone is a Literal"
-          }
+            "en": "De verwachte waarde voor has telephone is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0",
@@ -149,8 +172,9 @@
           },
           "sh:path": "http://data.europa.eu/m8g/contactPage",
           "vl:message": {
-            "en": "The range of contact page must be of type <http://xmlns.com/foaf/0.1/Document>."
-          }
+            "en": "De range van contact page moet van het type <http://xmlns.com/foaf/0.1/Document> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#ContactPointShape/a736c4b01ea7557518c0c146f3e311947ce00ccc",
@@ -161,11 +185,12 @@
           "sh:name": {
             "en": "contact page"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.europa.eu/m8g/contactPage",
           "vl:message": {
-            "en": "The expected value for contact page is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor contact page is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
         }
       ],
       "sh:targetClass": "http://data.europa.eu/m8g/ContactPoint"
@@ -194,8 +219,9 @@
           },
           "sh:path": "http://purl.org/dc/terms/identifier",
           "vl:message": {
-            "en": "The range of id must be of type <http://www.w3.org/2001/XMLSchema#anyURI>."
-          }
+            "en": "De range van id moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#JurisdictionShape/1bf6b202f78591cc7dc23e70eebefda2d3e72ec5",
@@ -206,11 +232,12 @@
           "sh:name": {
             "en": "id"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/identifier",
           "vl:message": {
-            "en": "The expected value for id is a Literal"
-          }
+            "en": "De verwachte waarde voor id is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#JurisdictionShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc",
@@ -224,8 +251,9 @@
           },
           "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
           "vl:message": {
-            "en": "The range of name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van name moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#JurisdictionShape/9caf9e629daa0e64ece77788576468821d7cff8c",
@@ -236,11 +264,12 @@
           "sh:name": {
             "en": "name"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
           "vl:message": {
-            "en": "The expected value for name is a Literal"
-          }
+            "en": "De verwachte waarde voor name is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#JurisdictionShape/be01df43f1c288b656b3ca3879eb3dd9d8c700b9",
@@ -254,8 +283,9 @@
           "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for name"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor name"
+          },
+          "vl:rule": ""
         }
       ],
       "sh:targetClass": "http://purl.org/dc/terms/Jurisdiction"
@@ -277,8 +307,9 @@
           },
           "sh:path": "http://www.w3.org/ns/locn#geographicName",
           "vl:message": {
-            "en": "The range of geographic name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van geographic name moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#LocationShape/33e381ee565d4967597190de5407462136b5201f",
@@ -289,11 +320,12 @@
           "sh:name": {
             "en": "geographic name"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#geographicName",
           "vl:message": {
-            "en": "The expected value for geographic name is a Literal"
-          }
+            "en": "De verwachte waarde voor geographic name is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#LocationShape/de64768127c2c96295191bbf7ced703cb1b65346",
@@ -307,8 +339,9 @@
           },
           "sh:path": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
           "vl:message": {
-            "en": "The range of geographic identifier must be of type <http://www.w3.org/2001/XMLSchema#anyURI>."
-          }
+            "en": "De range van geographic identifier moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#LocationShape/e8ee1e84cb83b9448511b77b2105dcaebb8942df",
@@ -319,11 +352,12 @@
           "sh:name": {
             "en": "geographic identifier"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
           "vl:message": {
-            "en": "The expected value for geographic identifier is a Literal"
-          }
+            "en": "De verwachte waarde voor geographic identifier is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#LocationShape/f8c12ef1d65e2f95cdc24b099e3c0f5ac229e8fe",
@@ -337,8 +371,9 @@
           "sh:path": "http://www.w3.org/ns/locn#geographicName",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for geographic name"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor geographic name"
+          },
+          "vl:rule": ""
         }
       ],
       "sh:targetClass": "http://purl.org/dc/terms/Location"
@@ -357,11 +392,12 @@
           "sh:name": {
             "en": "identifies"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/adms#identifies",
           "vl:message": {
-            "en": "The expected value for identifies is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor identifies is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/053d0ae3c4b213ae2f708e5e492b97e2cce08686",
@@ -372,11 +408,12 @@
           "sh:name": {
             "en": "notation"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/2004/02/skos/core#notation",
           "vl:message": {
-            "en": "The expected value for notation is a Literal"
-          }
+            "en": "De verwachte waarde voor notation is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/0881b6c6884db304d15b7a2a18fd20c54babde26",
@@ -387,11 +424,12 @@
           "sh:name": {
             "en": "issuing authority URI"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/creator",
           "vl:message": {
-            "en": "The expected value for issuing authority URI is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor issuing authority URI is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745",
@@ -405,8 +443,9 @@
           },
           "sh:path": "http://purl.org/dc/terms/conformsTo",
           "vl:message": {
-            "en": "The range of scheme URI must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van scheme URI moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/19a8c28b6b8faa24df544d81a43730e4fa7878d0",
@@ -420,8 +459,9 @@
           "sh:path": "http://www.w3.org/ns/adms#schemeAgency",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for issuing authority name"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor issuing authority name"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/495aa44a236e78566cf7b2f54c299258b29602f9",
@@ -435,8 +475,9 @@
           },
           "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
           "vl:message": {
-            "en": "The range of scheme name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van scheme name moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/51bb668356193afa459fd0a35bef46bd1f351ccf",
@@ -450,8 +491,25 @@
           "sh:path": "http://purl.org/dc/terms/conformsTo",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for scheme URI"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor scheme URI"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/540857eb5364e19b19192903edb3521c4ca629d8",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-person#Identifier%3Anotation",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "en": "A string of characters to uniquely identify a concept."
+          },
+          "sh:name": {
+            "en": "notation"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#notation",
+          "vl:message": {
+            "en": "De range van notation moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/561379c5a289dfe97488bc20c49d7e80b1271b47",
@@ -462,11 +520,12 @@
           "sh:name": {
             "en": "issuing authority name"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/adms#schemeAgency",
           "vl:message": {
-            "en": "The expected value for issuing authority name is a Literal"
-          }
+            "en": "De verwachte waarde voor issuing authority name is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/886a37c0a64d5093fa1e6f0352c72d6c9999de5f",
@@ -477,11 +536,12 @@
           "sh:name": {
             "en": "date of issue"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/issued",
           "vl:message": {
-            "en": "The expected value for date of issue is a Literal"
-          }
+            "en": "De verwachte waarde voor date of issue is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/96725f4e9a21bc55e077ed6f796b20e9c550b021",
@@ -495,8 +555,9 @@
           },
           "sh:path": "http://www.w3.org/ns/adms#schemeAgency",
           "vl:message": {
-            "en": "The range of issuing authority name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van issuing authority name moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/b2d3ac00adf57ca47e24b371d036da25f0f2fb43",
@@ -510,8 +571,9 @@
           },
           "sh:path": "http://purl.org/dc/terms/issued",
           "vl:message": {
-            "en": "The range of date of issue must be of type <http://www.w3.org/2001/XMLSchema#date>."
-          }
+            "en": "De range van date of issue moet van het type <http://www.w3.org/2001/XMLSchema#date> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/b66ff3c38dc89b4412b1715099a98c00ae8118c9",
@@ -522,11 +584,12 @@
           "sh:name": {
             "en": "scheme name"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
           "vl:message": {
-            "en": "The expected value for scheme name is a Literal"
-          }
+            "en": "De verwachte waarde voor scheme name is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf",
@@ -540,8 +603,9 @@
           },
           "sh:path": "http://www.w3.org/ns/adms#identifies",
           "vl:message": {
-            "en": "The range of identifies must be of type <http://www.w3.org/ns/person#Person>."
-          }
+            "en": "De range van identifies moet van het type <http://www.w3.org/ns/person#Person> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/cc40d454ac926043491df929ab05a361896b0021",
@@ -552,11 +616,12 @@
           "sh:name": {
             "en": "scheme URI"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/conformsTo",
           "vl:message": {
-            "en": "The expected value for scheme URI is a Literal"
-          }
+            "en": "De verwachte waarde voor scheme URI is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/ce99d905817e35ff5ebdf871e45b1e25e2e85188",
@@ -570,8 +635,9 @@
           "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for scheme name"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor scheme name"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#IdentifierShape/d4ce8b1d928c1a262434416188d62d4422571148",
@@ -585,8 +651,9 @@
           },
           "sh:path": "http://purl.org/dc/terms/creator",
           "vl:message": {
-            "en": "The range of issuing authority URI must be of type <http://xmlns.com/foaf/0.1/Agent>."
-          }
+            "en": "De range van issuing authority URI moet van het type <http://xmlns.com/foaf/0.1/Agent> zijn."
+          },
+          "vl:rule": ""
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/adms#Identifier"
@@ -605,11 +672,12 @@
           "sh:name": {
             "en": "locator name"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#locatorName",
           "vl:message": {
-            "en": "The expected value for locator name is a Literal"
-          }
+            "en": "De verwachte waarde voor locator name is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/03690748629ed1c685fc6a365780375be09bce76",
@@ -623,8 +691,9 @@
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL1",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for administrative unit level 1"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor administrative unit level 1"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676",
@@ -638,8 +707,9 @@
           },
           "sh:path": "http://www.w3.org/ns/locn#thoroughfare",
           "vl:message": {
-            "en": "The range of thoroughfare must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van thoroughfare moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/256ffe464f9c7682e950f7853ef0b6060580435b",
@@ -650,11 +720,28 @@
           "sh:name": {
             "en": "administrative unit level 2"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL2",
           "vl:message": {
-            "en": "The expected value for administrative unit level 2 is a Literal"
-          }
+            "en": "De verwachte waarde voor administrative unit level 2 is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/2a00282e88009a074dbdbf158b265c330964c1d7",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-person#Address%3Apost%20office%20box",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "en": "A location designator for a postal delivery point at a post office, usually a number."
+          },
+          "sh:name": {
+            "en": "post office box"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#poBox",
+          "vl:message": {
+            "en": "De range van post office box moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce",
@@ -668,8 +755,9 @@
           },
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL1",
           "vl:message": {
-            "en": "The range of administrative unit level 1 must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van administrative unit level 1 moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/3a0fcecd9e5f4e8deb4d102b9d072a4b067b773e",
@@ -683,8 +771,9 @@
           "sh:path": "http://www.w3.org/ns/locn#fullAddress",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for full address"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor full address"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e",
@@ -698,8 +787,41 @@
           },
           "sh:path": "http://www.w3.org/ns/locn#addressArea",
           "vl:message": {
-            "en": "The range of address area must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van address area moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/685aa96e0ad9933fb7afe810c607adee1a821f6a",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-person#Address%3Apost%20code",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "en": "The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."
+          },
+          "sh:name": {
+            "en": "post code"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#postCode",
+          "vl:message": {
+            "en": "De range van post code moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/6e68b263ff6691874a96806549be459766bcdd21",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-person#Address%3Alocator%20designator",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "en": "A number or sequence of characters that uniquely identifies the locator within the relevant scope."
+          },
+          "sh:name": {
+            "en": "locator designator"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#locatorDesignator",
+          "vl:message": {
+            "en": "De range van locator designator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/6f98d6d917a0e0b73d8614923f953e1ee2533918",
@@ -713,8 +835,9 @@
           "sh:path": "http://www.w3.org/ns/locn#locatorName",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for locator name"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor locator name"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5",
@@ -728,8 +851,9 @@
           },
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL2",
           "vl:message": {
-            "en": "The range of administrative unit level 2 must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van administrative unit level 2 moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/8b4c4bdd61e921f78483a3141338773693d4b2ef",
@@ -740,11 +864,12 @@
           "sh:name": {
             "en": "address ID"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#addressId",
           "vl:message": {
-            "en": "The expected value for address ID is a Literal"
-          }
+            "en": "De verwachte waarde voor address ID is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/9097b947404def8604330ec2fc5a0bd405128b35",
@@ -755,11 +880,12 @@
           "sh:name": {
             "en": "locator designator"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#locatorDesignator",
           "vl:message": {
-            "en": "The expected value for locator designator is a Literal"
-          }
+            "en": "De verwachte waarde voor locator designator is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79",
@@ -773,8 +899,9 @@
           },
           "sh:path": "http://www.w3.org/ns/locn#postName",
           "vl:message": {
-            "en": "The range of post name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van post name moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/9aaaf1750887d905949d78ac718f18c02809a28e",
@@ -785,11 +912,12 @@
           "sh:name": {
             "en": "administrative unit level 1"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL1",
           "vl:message": {
-            "en": "The expected value for administrative unit level 1 is a Literal"
-          }
+            "en": "De verwachte waarde voor administrative unit level 1 is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/9c278b09ca17b0ef710224829c0354dc4c2f9a40",
@@ -800,11 +928,12 @@
           "sh:name": {
             "en": "post office box"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#poBox",
           "vl:message": {
-            "en": "The expected value for post office box is a Literal"
-          }
+            "en": "De verwachte waarde voor post office box is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/9c2d6af39a55e5e6a76f6b852bbcbada029c21af",
@@ -815,11 +944,12 @@
           "sh:name": {
             "en": "full address"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#fullAddress",
           "vl:message": {
-            "en": "The expected value for full address is a Literal"
-          }
+            "en": "De verwachte waarde voor full address is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/a9a46434014b93624ab68c9a56a5bc66a38da9a4",
@@ -833,8 +963,9 @@
           "sh:path": "http://www.w3.org/ns/locn#postName",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for post name"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor post name"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/aa9622c05f497ef1b06496716742dd5cbfc6f0c9",
@@ -845,11 +976,12 @@
           "sh:name": {
             "en": "thoroughfare"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#thoroughfare",
           "vl:message": {
-            "en": "The expected value for thoroughfare is a Literal"
-          }
+            "en": "De verwachte waarde voor thoroughfare is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/ac2d62a08fd924f88a79f0e70cda9fca4d484fd2",
@@ -863,8 +995,9 @@
           "sh:path": "http://www.w3.org/ns/locn#thoroughfare",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for thoroughfare"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor thoroughfare"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/ae24e9fc95115753cabe5ad6bd3c05b9751cd13c",
@@ -878,8 +1011,9 @@
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL2",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for administrative unit level 2"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor administrative unit level 2"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/b35e8c8ed2d85ea47f163d53cafca733ecb29389",
@@ -893,8 +1027,9 @@
           "sh:path": "http://www.w3.org/ns/locn#addressArea",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for address area"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor address area"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/c0a2b78a80a731301e2f54d040ca9aa2c9b125b1",
@@ -905,11 +1040,28 @@
           "sh:name": {
             "en": "post code"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#postCode",
           "vl:message": {
-            "en": "The expected value for post code is a Literal"
-          }
+            "en": "De verwachte waarde voor post code is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/d681cbab014b3cae793721d3f3782d595e083835",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-person#Address%3Aaddress%20ID",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "en": "A globally unique identifier for each instance of an Address."
+          },
+          "sh:name": {
+            "en": "address ID"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#addressId",
+          "vl:message": {
+            "en": "De range van address ID moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391",
@@ -923,8 +1075,9 @@
           },
           "sh:path": "http://www.w3.org/ns/locn#locatorName",
           "vl:message": {
-            "en": "The range of locator name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van locator name moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7",
@@ -938,8 +1091,9 @@
           },
           "sh:path": "http://www.w3.org/ns/locn#fullAddress",
           "vl:message": {
-            "en": "The range of full address must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van full address moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/f1144df3e852614939e86f2e427788162aa7cb72",
@@ -950,11 +1104,12 @@
           "sh:name": {
             "en": "address area"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#addressArea",
           "vl:message": {
-            "en": "The expected value for address area is a Literal"
-          }
+            "en": "De verwachte waarde voor address area is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AddressShape/f8d38c3580ea5d4e47ea9e1ad447a47ebe91d5fa",
@@ -965,11 +1120,12 @@
           "sh:name": {
             "en": "post name"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#postName",
           "vl:message": {
-            "en": "The expected value for post name is a Literal"
-          }
+            "en": "De verwachte waarde voor post name is een Literal"
+          },
+          "vl:rule": ""
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/locn#Address"
@@ -991,8 +1147,9 @@
           "sh:path": "http://xmlns.com/foaf/0.1/familyName",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for family name"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor family name"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/04e2a7f3717362cd45d6ed88689062f505b55288",
@@ -1006,8 +1163,9 @@
           },
           "sh:path": "http://www.w3.org/ns/person#patronymicName",
           "vl:message": {
-            "en": "The range of patronymic name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van patronymic name moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/06c52015ab780d7c69de3691cd20cb0e13a246ea",
@@ -1021,8 +1179,9 @@
           "sh:path": "http://www.w3.org/ns/person#birthName",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for birth name"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor birth name"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/0dcae38d37919a3205164e6f0695b1ad233bb64a",
@@ -1036,8 +1195,9 @@
           },
           "sh:path": "http://www.w3.org/ns/person#placeOfBirth",
           "vl:message": {
-            "en": "The range of place of birth must be of type <http://purl.org/dc/terms/Location>."
-          }
+            "en": "De range van place of birth moet van het type <http://purl.org/dc/terms/Location> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/1572a063cf6e42858dabf5017baf40a96bf7155d",
@@ -1051,8 +1211,9 @@
           },
           "sh:path": "http://xmlns.com/foaf/0.1/familyName",
           "vl:message": {
-            "en": "The range of family name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van family name moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/17753da6f4f2354f710c8038acdf91bd263e20a4",
@@ -1063,11 +1224,12 @@
           "sh:name": {
             "en": "citizenship"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://www.w3.org/ns/person#citizenshiphttp://www.w3.org/ns/person#citizenship",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/person#citizenship",
           "vl:message": {
-            "en": "The expected value for citizenship is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor citizenship is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/19af0495c16fad6fa54dbabc3f445a180383f36d",
@@ -1078,11 +1240,12 @@
           "sh:name": {
             "en": "birth name"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/person#birthName",
           "vl:message": {
-            "en": "The expected value for birth name is a Literal"
-          }
+            "en": "De verwachte waarde voor birth name is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/23e0d5b7e102a68f695e96d6488725cad24bf86e",
@@ -1096,8 +1259,9 @@
           },
           "sh:path": "http://xmlns.com/foaf/0.1/name",
           "vl:message": {
-            "en": "The range of full name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van full name moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/2b456dbde8d1cdc5d16ddb6e98a33d1e6a27ec36",
@@ -1108,11 +1272,12 @@
           "sh:name": {
             "en": "matronymic name"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://data.europa.eu/m8g/matronymicName",
           "vl:message": {
-            "en": "The expected value for matronymic name is a Literal"
-          }
+            "en": "De verwachte waarde voor matronymic name is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/2d4ab81c49e1cc374cae75653a67dc10f350a9db",
@@ -1126,8 +1291,9 @@
           },
           "sh:path": "http://www.w3.org/ns/person#birthName",
           "vl:message": {
-            "en": "The range of birth name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van birth name moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/31f5162b6f738e046e7b41e5f46acaf3ea3b370a",
@@ -1141,8 +1307,9 @@
           "sh:path": "http://data.europa.eu/m8g/matronymicName",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for matronymic name"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor matronymic name"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/32bbe808d9f048d5ad8c63c38ca9f0979a5f6e22",
@@ -1153,11 +1320,12 @@
           "sh:name": {
             "en": "country of birth"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/person#countryOfBirth",
           "vl:message": {
-            "en": "The expected value for country of birth is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor country of birth is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/334d3973959379776995cf58843d5c7d9053dd25",
@@ -1168,11 +1336,12 @@
           "sh:name": {
             "en": "full name"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://xmlns.com/foaf/0.1/name",
           "vl:message": {
-            "en": "The expected value for full name is a Literal"
-          }
+            "en": "De verwachte waarde voor full name is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/417049e481f126bd62d475e78214104517de15cc",
@@ -1186,8 +1355,9 @@
           },
           "sh:path": "http://data.europa.eu/m8g/sex",
           "vl:message": {
-            "en": "The range of sex must be of type <http://www.w3.org/2004/02/skos/core#Concept>."
-          }
+            "en": "De range van sex moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/45b15ba29c98ac584fc8a034f731f0f0183997ad",
@@ -1201,8 +1371,9 @@
           "sh:path": "http://purl.org/dc/terms/alternative",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for alternative name"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor alternative name"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/4680da147ff3c3187fb3650f553fedcd70b0c9f8",
@@ -1213,11 +1384,12 @@
           "sh:name": {
             "en": "place of birth"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/person#placeOfBirth",
           "vl:message": {
-            "en": "The expected value for place of birth is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor place of birth is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/4cf95d28daf701f2920393efc9b24e00afd4b5c0",
@@ -1228,11 +1400,12 @@
           "sh:name": {
             "en": "country of death"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/person#countryOfDeath",
           "vl:message": {
-            "en": "The expected value for country of death is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor country of death is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/55b5451dbdf7a52f51562f996bc320d6e00bf47d",
@@ -1246,8 +1419,9 @@
           },
           "sh:path": "http://data.europa.eu/m8g/domicile",
           "vl:message": {
-            "en": "The range of domicile must be of type <http://www.w3.org/ns/locn#Address>."
-          }
+            "en": "De range van domicile moet van het type <http://www.w3.org/ns/locn#Address> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/62a70e171ece563e50b91a1f8de081dc77de6024",
@@ -1261,8 +1435,9 @@
           },
           "sh:path": "http://data.europa.eu/m8g/matronymicName",
           "vl:message": {
-            "en": "The range of matronymic name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van matronymic name moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/7349aedd98256d90685571bddc6da8ac9eab1767",
@@ -1273,11 +1448,12 @@
           "sh:name": {
             "en": "given name"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://xmlns.com/foaf/0.1/givenName",
           "vl:message": {
-            "en": "The expected value for given name is a Literal"
-          }
+            "en": "De verwachte waarde voor given name is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e",
@@ -1291,8 +1467,9 @@
           },
           "sh:path": "http://data.europa.eu/m8g/contactPoint",
           "vl:message": {
-            "en": "The range of contact point must be of type <http://data.europa.eu/m8g/ContactPoint>."
-          }
+            "en": "De range van contact point moet van het type <http://data.europa.eu/m8g/ContactPoint> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/7d0aad3aaae427f799249eafced4cbb0b8a36dc5",
@@ -1303,11 +1480,12 @@
           "sh:name": {
             "en": "family name"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://xmlns.com/foaf/0.1/familyName",
           "vl:message": {
-            "en": "The expected value for family name is a Literal"
-          }
+            "en": "De verwachte waarde voor family name is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/865ba935520021b8f25482279eb8ad77a9783e05",
@@ -1318,11 +1496,12 @@
           "sh:name": {
             "en": "residency"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/person#residency",
           "vl:message": {
-            "en": "The expected value for residency is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor residency is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/866a37e9b1a9dba8235fae06f696a8292c4af3ff",
@@ -1333,11 +1512,28 @@
           "sh:name": {
             "en": "date of death"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://data.europa.eu/m8g/deathDate",
           "vl:message": {
-            "en": "The expected value for date of death is a Literal"
-          }
+            "en": "De verwachte waarde voor date of death is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/8f703f9439512e8c87ba785191c4c40a23a687f1",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-person#Person%3Adate%20of%20death",
+          "sh:datatype": "http://data.europa.eu/m8g/GenericDate",
+          "sh:description": {
+            "en": "The point in time on which the Person died."
+          },
+          "sh:name": {
+            "en": "date of death"
+          },
+          "sh:path": "http://data.europa.eu/m8g/deathDate",
+          "vl:message": {
+            "en": "De range van date of death moet van het type <http://data.europa.eu/m8g/GenericDate> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/91a4a6a43abf6ac412ca05007c92c27a574894d4",
@@ -1348,11 +1544,12 @@
           "sh:name": {
             "en": "place of death"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/person#placeOfDeath",
           "vl:message": {
-            "en": "The expected value for place of death is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor place of death is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/9adf9f5890592909cf3e67021ae7ab4f895a7745",
@@ -1363,11 +1560,28 @@
           "sh:name": {
             "en": "contact point"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.europa.eu/m8g/contactPoint",
           "vl:message": {
-            "en": "The expected value for contact point is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor contact point is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/a19b499d3e09af07721918e266dc7b096e12538d",
+          "rdfs:seeAlso": "https://semiceu.github.io//doc/core-vocabulary/core-person#Person%3Adate%20of%20birth",
+          "sh:datatype": "http://data.europa.eu/m8g/GenericDate",
+          "sh:description": {
+            "en": "The point in time on which the Person was born."
+          },
+          "sh:name": {
+            "en": "date of birth"
+          },
+          "sh:path": "http://data.europa.eu/m8g/birthDate",
+          "vl:message": {
+            "en": "De range van date of birth moet van het type <http://data.europa.eu/m8g/GenericDate> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
@@ -1378,11 +1592,12 @@
           "sh:name": {
             "en": "identifier"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/identifier",
           "vl:message": {
-            "en": "The expected value for identifier is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor identifier is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/add99084b28b7f1f702646fec9ee5516646831c7",
@@ -1396,8 +1611,9 @@
           "sh:path": "http://xmlns.com/foaf/0.1/name",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for full name"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor full name"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/b3a65155abdf78e609997919f6f053e252c52153",
@@ -1408,11 +1624,12 @@
           "sh:name": {
             "en": "gender"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.europa.eu/m8g/gender",
           "vl:message": {
-            "en": "The expected value for gender is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor gender is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/b844cc3c7b96c856fc32491171cb4c945ce4b713",
@@ -1423,11 +1640,12 @@
           "sh:name": {
             "en": "domicile"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.europa.eu/m8g/domicile",
           "vl:message": {
-            "en": "The expected value for domicile is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor domicile is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/b9605829b15a0ab0c6ee0dabdc938356d40617b9",
@@ -1441,8 +1659,9 @@
           },
           "sh:path": "http://www.w3.org/ns/person#countryOfDeath",
           "vl:message": {
-            "en": "The range of country of death must be of type <http://purl.org/dc/terms/Location>."
-          }
+            "en": "De range van country of death moet van het type <http://purl.org/dc/terms/Location> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/b9da0bb511b75552c4edec2383d2c9ebb35f0774",
@@ -1453,11 +1672,12 @@
           "sh:name": {
             "en": "date of birth"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://data.europa.eu/m8g/birthDate",
           "vl:message": {
-            "en": "The expected value for date of birth is a Literal"
-          }
+            "en": "De verwachte waarde voor date of birth is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/ba21b6c4a9251ed67b6b3113dc1d857640fd4534",
@@ -1471,8 +1691,9 @@
           "sh:path": "http://xmlns.com/foaf/0.1/givenName",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for given name"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor given name"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/bc8332ea8570ca419c8fa93a6ec025e632ec3291",
@@ -1486,8 +1707,9 @@
           },
           "sh:path": "http://www.w3.org/ns/person#placeOfDeath",
           "vl:message": {
-            "en": "The range of place of death must be of type <http://purl.org/dc/terms/Location>."
-          }
+            "en": "De range van place of death moet van het type <http://purl.org/dc/terms/Location> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/bf74cccfec7e50f438b22e22a005bb1546874a66",
@@ -1499,10 +1721,11 @@
           "sh:name": {
             "en": "citizenship"
           },
-          "sh:path": "http://www.w3.org/ns/person#citizenshiphttp://www.w3.org/ns/person#citizenship",
+          "sh:path": "http://www.w3.org/ns/person#citizenship",
           "vl:message": {
-            "en": "The range of citizenship must be of type <http://purl.org/dc/terms/Jurisdiction>."
-          }
+            "en": "De range van citizenship moet van het type <http://purl.org/dc/terms/Jurisdiction> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/c2c54ded0a433cc00911573f794f1aeab900c624",
@@ -1516,8 +1739,9 @@
           },
           "sh:path": "http://data.europa.eu/m8g/gender",
           "vl:message": {
-            "en": "The range of gender must be of type <http://www.w3.org/2004/02/skos/core#Concept>."
-          }
+            "en": "De range van gender moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/c56ed5a233a70e9c4a6338f07a2aee5cfc6bacbf",
@@ -1528,11 +1752,12 @@
           "sh:name": {
             "en": "alternative name"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/alternative",
           "vl:message": {
-            "en": "The expected value for alternative name is a Literal"
-          }
+            "en": "De verwachte waarde voor alternative name is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/c5e60dadb51bdf0b453282c1f7f7f1ea7dce5c5b",
@@ -1543,11 +1768,12 @@
           "sh:name": {
             "en": "sex"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.europa.eu/m8g/sex",
           "vl:message": {
-            "en": "The expected value for sex is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor sex is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/c8d5fd103b31c793398287afa3d1dcc3de45e33a",
@@ -1561,8 +1787,9 @@
           "sh:path": "http://www.w3.org/ns/person#patronymicName",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for patronymic name"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor patronymic name"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/d4cd8f8edede55428d7e23a183edf5ac726e1139",
@@ -1576,8 +1803,9 @@
           },
           "sh:path": "http://www.w3.org/ns/person#residency",
           "vl:message": {
-            "en": "The range of residency must be of type <http://purl.org/dc/terms/Jurisdiction>."
-          }
+            "en": "De range van residency moet van het type <http://purl.org/dc/terms/Jurisdiction> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/dc60ac739d4282afbbd5564ac77327a70022cede",
@@ -1591,8 +1819,9 @@
           },
           "sh:path": "http://www.w3.org/ns/person#countryOfBirth",
           "vl:message": {
-            "en": "The range of country of birth must be of type <http://purl.org/dc/terms/Location>."
-          }
+            "en": "De range van country of birth moet van het type <http://purl.org/dc/terms/Location> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/e2017f72421063cd9ff494011ec78f35f9632a4a",
@@ -1606,8 +1835,9 @@
           },
           "sh:path": "http://purl.org/dc/terms/identifier",
           "vl:message": {
-            "en": "The range of identifier must be of type <http://www.w3.org/ns/adms#Identifier>."
-          }
+            "en": "De range van identifier moet van het type <http://www.w3.org/ns/adms#Identifier> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd",
@@ -1621,8 +1851,9 @@
           },
           "sh:path": "http://purl.org/dc/terms/alternative",
           "vl:message": {
-            "en": "The range of alternative name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van alternative name moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/f5c4d42ae8c2ec2c79ad93cca23bee5c9ddf09bc",
@@ -1633,11 +1864,12 @@
           "sh:name": {
             "en": "patronymic name"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/person#patronymicName",
           "vl:message": {
-            "en": "The expected value for patronymic name is a Literal"
-          }
+            "en": "De verwachte waarde voor patronymic name is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#PersonShape/f888a185270cac3f6e32d6e1a22eb6a89d617ba8",
@@ -1651,8 +1883,9 @@
           },
           "sh:path": "http://xmlns.com/foaf/0.1/givenName",
           "vl:message": {
-            "en": "The range of given name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van given name moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/person#Person"
@@ -1674,8 +1907,9 @@
           },
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
-            "en": "The range of name must be of type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>."
-          }
+            "en": "De range van name moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AgentShape/322371a77364a50f049d46180f6192532eea26dc",
@@ -1689,8 +1923,9 @@
           },
           "sh:path": "http://purl.org/dc/terms/type",
           "vl:message": {
-            "en": "The range of type must be of type <http://www.w3.org/2004/02/skos/core#Concept>."
-          }
+            "en": "De range van type moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AgentShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
@@ -1701,11 +1936,12 @@
           "sh:name": {
             "en": "type"
           },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:nodekind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/type",
           "vl:message": {
-            "en": "The expected value for type is a rdfs:Resource (URI or blank node)"
-          }
+            "en": "De verwachte waarde voor type is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AgentShape/9caf9e629daa0e64ece77788576468821d7cff8c",
@@ -1716,11 +1952,12 @@
           "sh:name": {
             "en": "name"
           },
-          "sh:nodeKind": "sh:Literal",
+          "sh:nodekind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
-            "en": "The expected value for name is a Literal"
-          }
+            "en": "De verwachte waarde voor name is een Literal"
+          },
+          "vl:rule": ""
         },
         {
           "@id": "https://semiceu.github.io//doc/core-vocabulary/core-person#AgentShape/be01df43f1c288b656b3ca3879eb3dd9d8c700b9",
@@ -1734,8 +1971,9 @@
           "sh:path": "http://purl.org/dc/terms/title",
           "sh:uniqueLang": "true",
           "vl:message": {
-            "en": "Only 1 value for each language is allowed for name"
-          }
+            "en": "Slechts 1 waarde voor elke taal toegelaten voor name"
+          },
+          "vl:rule": ""
         }
       ],
       "sh:targetClass": "http://xmlns.com/foaf/0.1/Agent"
