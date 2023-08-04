@@ -1,4 +1,4 @@
-# Core Person Vocabulary (CPV) - Version 2.00
+# Core Person Vocabulary (CPV) - Version 2.1.0
 
 The version 2.1.0 of the Core Person Vocabulary (CPV) is available as: 
 
