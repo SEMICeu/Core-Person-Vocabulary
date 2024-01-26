@@ -1,0 +1,273 @@
+{
+  "@context": {
+    "Address": {
+      "@context": {
+        "addressArea": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/locn#addressArea",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "addressId": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/locn#addressId"
+        },
+        "administrativeUnitLevel1": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/locn#adminUnitL1",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "administrativeUnitLevel2": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/locn#adminUnitL2",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "fullAddress": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/locn#fullAddress",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "locatorDesignator": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/locn#locatorDesignator"
+        },
+        "locatorName": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/locn#locatorName",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "postCode": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/locn#postCode"
+        },
+        "postName": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/locn#postName",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "postOfficeBox": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/locn#poBox"
+        },
+        "thoroughfare": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/locn#thoroughfare",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      },
+      "@id": "http://www.w3.org/ns/locn#Address"
+    },
+    "Agent": {
+      "@context": {
+        "name": {
+          "@container": "@set",
+          "@id": "http://purl.org/dc/terms/title",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "type": {
+          "@container": "@set",
+          "@id": "http://purl.org/dc/terms/type",
+          "@type": "@id"
+        }
+      },
+      "@id": "http://xmlns.com/foaf/0.1/Agent"
+    },
+    "Code": "http://www.w3.org/2004/02/skos/core#Concept",
+    "ContactPoint": {
+      "@context": {
+        "contactPage": {
+          "@container": "@set",
+          "@id": "http://data.europa.eu/m8g/contactPage",
+          "@type": "@id"
+        },
+        "hasEmail": {
+          "@container": "@set",
+          "@id": "http://data.europa.eu/m8g/email"
+        },
+        "hasTelephone": {
+          "@container": "@set",
+          "@id": "http://data.europa.eu/m8g/telephone"
+        }
+      },
+      "@id": "http://data.europa.eu/m8g/ContactPoint"
+    },
+    "Date": "http://www.w3.org/2001/XMLSchema#date",
+    "Document": "http://xmlns.com/foaf/0.1/Document",
+    "GenericDate": "http://data.europa.eu/m8g/GenericDate",
+    "Identifier": {
+      "@context": {
+        "dateOfIssue": {
+          "@container": "@set",
+          "@id": "http://purl.org/dc/terms/issued",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "identifies": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/adms#identifies",
+          "@type": "@id"
+        },
+        "issuingAuthorityUri": {
+          "@container": "@set",
+          "@id": "http://purl.org/dc/terms/creator",
+          "@type": "@id"
+        },
+        "notation": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "schemaAgency": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/adms#schemeAgency"
+        },
+        "schemeName": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "schemeUri": {
+          "@container": "@set",
+          "@id": "http://purl.org/dc/terms/conformsTo",
+          "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+        }
+      },
+      "@id": "http://www.w3.org/ns/adms#Identifier"
+    },
+    "Jurisdiction": {
+      "@context": {
+        "id": {
+          "@container": "@set",
+          "@id": "http://purl.org/dc/terms/identifier",
+          "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+        },
+        "name": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      },
+      "@id": "http://purl.org/dc/terms/Jurisdiction"
+    },
+    "Literal": "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "Location": {
+      "@context": {
+        "geographicIdentifier": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+        },
+        "geographicName": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/locn#geographicName",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      },
+      "@id": "http://purl.org/dc/terms/Location"
+    },
+    "Person": {
+      "@context": {
+        "alternativeName": {
+          "@container": "@set",
+          "@id": "http://purl.org/dc/terms/alternative",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "birthName": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/person#birthName",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "citizenship": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/person#citizenship",
+          "@type": "@id"
+        },
+        "contactPoint": {
+          "@container": "@set",
+          "@id": "http://data.europa.eu/m8g/contactPoint",
+          "@type": "@id"
+        },
+        "countryOfBirth": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/person#countryOfBirth",
+          "@type": "@id"
+        },
+        "countryOfDeath": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/person#countryOfDeath",
+          "@type": "@id"
+        },
+        "dateOfBirth": {
+          "@container": "@set",
+          "@id": "http://data.europa.eu/m8g/birthDate",
+          "@type": "http://data.europa.eu/m8g/GenericDate"
+        },
+        "dateOfDeath": {
+          "@container": "@set",
+          "@id": "http://data.europa.eu/m8g/deathDate",
+          "@type": "http://data.europa.eu/m8g/GenericDate"
+        },
+        "domicile": {
+          "@container": "@set",
+          "@id": "http://data.europa.eu/m8g/domicile",
+          "@type": "@id"
+        },
+        "familyName": {
+          "@container": "@set",
+          "@id": "http://xmlns.com/foaf/0.1/familyName",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "fullName": {
+          "@container": "@set",
+          "@id": "http://xmlns.com/foaf/0.1/name",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "gender": {
+          "@container": "@set",
+          "@id": "http://data.europa.eu/m8g/gender",
+          "@type": "@id"
+        },
+        "givenName": {
+          "@container": "@set",
+          "@id": "http://xmlns.com/foaf/0.1/givenName",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "identifier": {
+          "@container": "@set",
+          "@id": "http://purl.org/dc/terms/identifier",
+          "@type": "@id"
+        },
+        "matronymicName": {
+          "@container": "@set",
+          "@id": "http://data.europa.eu/m8g/matronymicName",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "patronymicName": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/person#patronymicName",
+          "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "placeOfBirth": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/person#placeOfBirth",
+          "@type": "@id"
+        },
+        "placeOfDeath": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/person#placeOfDeath",
+          "@type": "@id"
+        },
+        "residency": {
+          "@container": "@set",
+          "@id": "http://www.w3.org/ns/person#residency",
+          "@type": "@id"
+        },
+        "sex": {
+          "@container": "@set",
+          "@id": "http://data.europa.eu/m8g/sex",
+          "@type": "@id"
+        }
+      },
+      "@id": "http://www.w3.org/ns/person#Person"
+    },
+    "Text": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+    "Uri": "http://www.w3.org/2001/XMLSchema#anyURI"
+  }
+}
