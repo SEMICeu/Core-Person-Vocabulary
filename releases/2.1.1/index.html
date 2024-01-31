@@ -228,6 +228,7 @@
 <section id="abstract">
     <h2>Abstract</h2>
 The Core Person Vocabulary is a simplified, reusable and extensible data model that captures the fundamental characteristics of a Person.
+</section>
 
 
 <section id="specintro">
@@ -555,7 +556,7 @@ The <a href="https://knowledge-base.inspire.ec.europa.eu/index_en">INSPIRE</a> m
 <br/><br/>
 Many datasets that include address data as one piece of information about something else are likely to have that data in simpler formats. These might be tailored to the specific need of the dataset, follow a national norm, or make use of a standard like vCard.
 <br/><br/>
-To provide maximum flexibility in the Core Vocabulary, whilst remaining interoperable with INSPIRE Address Guidelines (which EU Member States are obliged to use), the  Core Location Vocabulary provides the extra property of full address and makes use of INSPIRE's addressID.
+To provide maximum flexibility in the Core Vocabulary, whilst remaining interoperable with <a href="https://joinup.ec.europa.eu/collection/inspire/solution/inspire-data-specifications-addresses-guidelines-v301">INSPIRE Address Guidelines</a> (which EU Member States are obliged to use), the  Core Location Vocabulary provides the extra property of full address and makes use of INSPIRE's addressID.
 
 
                                 </td>
@@ -1320,7 +1321,7 @@ The key difference between a locator designator and a locator name is that the l
                         
                             <tr id="Identifier.identifies"
                                 typeof="rdfs:Property"
-                                resource="http://www.w3.org/ns/adms#identifies"
+                                resource="http://data.europa.eu/m8g/identifies"
                                 class="class mandatory">
                                 <td>
 				    <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20identifies%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/%23Identifier.identifies" target="_blank" rel="noopener noreferrer" >
@@ -1329,9 +1330,9 @@ The key difference between a locator designator and a locator name is that the l
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://www.w3.org/ns/adms#identifies"
+                                        <a href="http://data.europa.eu/m8g/identifies"
                                            data-toggle="tooltip"
-                                           data-content="http://www.w3.org/ns/adms#identifies"
+                                           data-content="http://data.europa.eu/m8g/identifies"
                                            data-placement="right">
                                         identifies</a>
                                 </td>
@@ -3440,7 +3441,7 @@ The Style Guide proposes two options either by using RDFS or SKOS lexicalisation
 SEMIC uses and will use the RDFS lexicalisation for all of its specifications. More specifically:
 <ul>
 <li> rdfs:label is used to provide a human-readable version of a resource's name.</li>
-<li> The usage of certain resource can be clarified in vann:usageNote.</li>
+<li> The usage of certain resource can be clarified in a skos:usageNote.</li>
 </ul>
 
 </section>
@@ -3779,7 +3780,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></td>
 								<td></td>
 								<td><a href="#Identifier.identifies">identifies </a></td>
-								<td><div class="shorten">http://www.w3.org/ns/adms#identifies</div></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/identifies</div></td>
 							</tr>
 						
 					

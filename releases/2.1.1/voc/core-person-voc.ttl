@@ -9,16 +9,16 @@
 
 <http://data.europa.eu/m8g/birthDate> a owl:DatatypeProperty;
   rdfs:label "date of birth"@en;
-  <http://purl.org/vocab/vann/usageNote> """The date of birth could be expressed as date, gYearMonth or gYear, example:
+  rdfs:comment "The point in time on which the Person was born."@en;
+  rdfs:domain <http://www.w3.org/ns/person#Person>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range <http://data.europa.eu/m8g/GenericDate>;
+  skos:scopeNote """The date of birth could be expressed as date, gYearMonth or gYear, example:
 <ul>
 <li>- 1980-09-16^^xs:date</li>
 <li>- 1980-09^^xs:gYearMonth</li>
 <li>- 1980^^xs:gYear</li>
-</ul>"""@en;
-  rdfs:comment "The point in time on which the Person was born."@en;
-  rdfs:domain <http://www.w3.org/ns/person#Person>;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
-  rdfs:range <http://data.europa.eu/m8g/GenericDate> .
+</ul>"""@en .
 
 <http://data.europa.eu/m8g/contactPage> a owl:ObjectProperty;
   rdfs:label "contact page"@en;
@@ -29,16 +29,16 @@
 
 <http://data.europa.eu/m8g/deathDate> a owl:DatatypeProperty;
   rdfs:label "date of death"@en;
-  <http://purl.org/vocab/vann/usageNote> """The date of birth could be expressed as date, gYearMonth or gYear, example:
+  rdfs:comment "The point in time on which the Person died."@en;
+  rdfs:domain <http://www.w3.org/ns/person#Person>;
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  rdfs:range <http://data.europa.eu/m8g/GenericDate>;
+  skos:scopeNote """The date of birth could be expressed as date, gYearMonth or gYear, example:
 <ul>
 <li>- 1980-09-16^^xs:date</li>
 <li>- 1980-09^^xs:gYearMonth</li>
 <li>- 1980^^xs:gYear</li>
-</ul>"""@en;
-  rdfs:comment "The point in time on which the Person died."@en;
-  rdfs:domain <http://www.w3.org/ns/person#Person>;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
-  rdfs:range <http://data.europa.eu/m8g/GenericDate> .
+</ul>"""@en .
 
 <http://data.europa.eu/m8g/email> a owl:DatatypeProperty;
   rdfs:label "has email"@en;
@@ -49,11 +49,11 @@
 
 <http://data.europa.eu/m8g/gender> a owl:ObjectProperty;
   rdfs:label "gender"@en;
-  <http://purl.org/vocab/vann/usageNote> "The gender of an individual should be recorded using a controlled vocabulary that is appropriate for the specific context. In some cases, the chromosomal or physical state of an individual will be more important than the gender that they express, in others the reverse will be true. What is always important is that the controlled vocabulary used to describe an individual's gender is stated explicitly."@en;
   rdfs:comment "The identities, expressions and societal roles of the Person."@en;
   rdfs:domain <http://www.w3.org/ns/person#Person>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
-  rdfs:range skos:Concept .
+  rdfs:range skos:Concept;
+  skos:scopeNote "The gender of an individual should be recorded using a controlled vocabulary that is appropriate for the specific context. In some cases, the chromosomal or physical state of an individual will be more important than the gender that they express, in others the reverse will be true. What is always important is that the controlled vocabulary used to describe an individual's gender is stated explicitly."@en .
 
 <http://data.europa.eu/m8g/matronymicName> a owl:DatatypeProperty;
   rdfs:label "matronymic name"@en;
@@ -64,11 +64,11 @@
 
 <http://data.europa.eu/m8g/sex> a owl:ObjectProperty;
   rdfs:label "sex"@en;
-  <http://purl.org/vocab/vann/usageNote> "The recommended controlled vocabulary for this property is <a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/human-sex\">the sex authority table of the Publications Office.</a>"@en;
   rdfs:comment "The organism's biological sex."@en;
   rdfs:domain <http://www.w3.org/ns/person#Person>;
   rdfs:isDefinedBy <http://data.europa.eu/m8g>;
-  rdfs:range skos:Concept .
+  rdfs:range skos:Concept;
+  skos:scopeNote "The recommended controlled vocabulary for this property is <a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/human-sex\">the sex authority table of the Publications Office.</a>"@en .
 
 <http://data.europa.eu/m8g/telephone> a owl:DatatypeProperty;
   rdfs:label "has telephone"@en;
@@ -84,9 +84,9 @@
 
 <http://data.europa.eu/m8g/ContactPoint> a owl:Class;
   rdfs:label "Contact Point"@en;
-  <http://purl.org/vocab/vann/usageNote> "The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's <a href=\"http://schema.org/ContactPoint\"> ContactPoint </a> class  that has additional properties that some implementations may find useful."@en;
   rdfs:comment "Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with."@en;
-  rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+  rdfs:isDefinedBy <http://data.europa.eu/m8g>;
+  skos:scopeNote "The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's <a href=\"http://schema.org/ContactPoint\"> ContactPoint </a> class  that has additional properties that some implementations may find useful."@en .
 
 <http://data.europa.eu/m8g> a owl:Ontology;
   rdfs:label "core-person-voc"@en,
