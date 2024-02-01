@@ -21,4 +21,4 @@ The table below gives an overview of the classes (and their definitions) within 
 | Nr | Core Person Vocabulary v2.1.0 | Core Person Vocabulary v2.1.1 | Rationale | GitHub / Change |
 | --- | --- | --- | --- | --- |
 | - | - | ReSpec Styling has been applied to the specification.| - | - |
-| R1 | adms:identifies | cv:identifies| adms:identifies no longer exists ans was replaced in other Core Vocabularies by CV:identifies | - |
+| R1 | adms:identifies | cv:identifies| adms:identifies no longer exists and was replaced in other Core Vocabularies by CV:identifies | - |
