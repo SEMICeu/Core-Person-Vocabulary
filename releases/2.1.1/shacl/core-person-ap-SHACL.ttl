@@ -6,332 +6,332 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/> rdfs:member <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#ContactPointShape>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#GenericDateShape>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#JurisdictionShape>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#LocationShape>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#TextShape>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#LiteralShape>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#URIShape>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#DateShape>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#CodeShape>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AgentShape>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#DocumentShape> .
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl> rdfs:member <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#ContactPointShape>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#GenericDateShape>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#JurisdictionShape>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#LocationShape>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#TextShape>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#LiteralShape>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#URIShape>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#DateShape>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#CodeShape>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AgentShape>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#DocumentShape> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape> a shacl:NodeShape;
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7>;
+  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7>;
   shacl:targetClass <http://www.w3.org/ns/locn#Address> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.thoroughfare";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.thoroughfare";
   shacl:datatype rdf:langString;
   shacl:description "The name of a passage or way through from one location to another."@en;
   shacl:name "thoroughfare"@en;
   shacl:path <http://www.w3.org/ns/locn#thoroughfare> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.administrativeunitlevel1";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.administrativeunitlevel1";
   shacl:datatype rdf:langString;
   shacl:description "The name of the uppermost level of the address, almost always a country."@en;
   shacl:name "administrative unit level 1"@en;
   shacl:path <http://www.w3.org/ns/locn#adminUnitL1> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.addressarea";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.addressarea";
   shacl:datatype rdf:langString;
   shacl:description "The name of a geographic area that groups Addresses."@en;
   shacl:name "address area"@en;
   shacl:path <http://www.w3.org/ns/locn#addressArea> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.administrativeunitlevel2";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.administrativeunitlevel2";
   shacl:datatype rdf:langString;
   shacl:description "The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities."@en;
   shacl:name "administrative unit level 2"@en;
   shacl:path <http://www.w3.org/ns/locn#adminUnitL2> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.postname";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.postname";
   shacl:datatype rdf:langString;
   shacl:description "A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points."@en;
   shacl:name "post name"@en;
   shacl:path <http://www.w3.org/ns/locn#postName> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.locatorname";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.locatorname";
   shacl:datatype rdf:langString;
   shacl:description "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."@en;
   shacl:name "locator name"@en;
   shacl:path <http://www.w3.org/ns/locn#locatorName> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.fulladdress";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.fulladdress";
   shacl:datatype rdf:langString;
   shacl:description "The complete address written as a string."@en;
   shacl:name "full address"@en;
   shacl:path <http://www.w3.org/ns/locn#fullAddress> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AgentShape> a shacl:NodeShape;
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AgentShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AgentShape/322371a77364a50f049d46180f6192532eea26dc>;
+  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AgentShape/322371a77364a50f049d46180f6192532eea26dc>;
   shacl:targetClass foaf:Agent .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Agent.name";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Agent.name";
   shacl:datatype rdf:langString;
   shacl:description "The noun given to the Agent."@en;
   shacl:name "name"@en;
   shacl:path dc:title .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AgentShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Agent.type";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AgentShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Agent.type";
   shacl:class skos:Concept;
   shacl:description "A classification assigned to an Agent."@en;
   shacl:name "type"@en;
   shacl:path dc:type .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#CodeShape> a shacl:NodeShape;
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#CodeShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass skos:Concept .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#ContactPointShape> a shacl:NodeShape;
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#ContactPointShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0>;
+  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0>;
   shacl:targetClass <http://data.europa.eu/m8g/ContactPoint> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#ContactPoint.contactpage";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#ContactPoint.contactpage";
   shacl:class foaf:Document;
   shacl:description "A web page that could be used to reach out the Contact Point."@en;
   shacl:name "contact page"@en;
   shacl:path <http://data.europa.eu/m8g/contactPage> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#DateShape> a shacl:NodeShape;
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#DateShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass xsd:date .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#DocumentShape> a shacl:NodeShape;
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#DocumentShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass foaf:Document .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#GenericDateShape> a shacl:NodeShape;
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#GenericDateShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass <http://data.europa.eu/m8g/GenericDate> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape> a shacl:NodeShape;
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/495aa44a236e78566cf7b2f54c299258b29602f9>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/b2d3ac00adf57ca47e24b371d036da25f0f2fb43>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/d4ce8b1d928c1a262434416188d62d4422571148>;
+  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/495aa44a236e78566cf7b2f54c299258b29602f9>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/b2d3ac00adf57ca47e24b371d036da25f0f2fb43>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/d4ce8b1d928c1a262434416188d62d4422571148>;
   shacl:targetClass <http://www.w3.org/ns/adms#Identifier> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.schemeURI";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.schemeURI";
   shacl:datatype xsd:anyURI;
   shacl:description "URI of the scheme used to construct the identifier."@en;
   shacl:name "scheme URI"@en;
   shacl:path dc:conformsTo .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/495aa44a236e78566cf7b2f54c299258b29602f9> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.schemename";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/495aa44a236e78566cf7b2f54c299258b29602f9> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.schemename";
   shacl:datatype rdf:langString;
   shacl:description "Name of the scheme used to construct the identifier."@en;
   shacl:name "scheme name"@en;
   shacl:path rdfs:label .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/b2d3ac00adf57ca47e24b371d036da25f0f2fb43> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.dateofissue";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/b2d3ac00adf57ca47e24b371d036da25f0f2fb43> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.dateofissue";
   shacl:datatype xsd:date;
   shacl:description "The date on which the Identifier was assigned."@en;
   shacl:name "date of issue"@en;
   shacl:path dc:issued .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.identifies";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.identifies";
   shacl:class <http://www.w3.org/ns/person#Person>;
   shacl:description "The entity that is referenced by the Identifier."@en;
   shacl:name "identifies"@en;
   shacl:path <http://data.europa.eu/m8g/identifies> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/d4ce8b1d928c1a262434416188d62d4422571148> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.issuingauthorityURI";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/d4ce8b1d928c1a262434416188d62d4422571148> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.issuingauthorityURI";
   shacl:class foaf:Agent;
   shacl:description "The reference in the form of a Uniform Resource Identifier to the issuing authority."@en;
   shacl:name "issuing authority URI"@en;
   shacl:path dc:creator .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#JurisdictionShape> a shacl:NodeShape;
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#JurisdictionShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#JurisdictionShape/0d913ac7222b4a9b73152f30451f727c90294f39>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#JurisdictionShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc>;
+  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#JurisdictionShape/0d913ac7222b4a9b73152f30451f727c90294f39>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#JurisdictionShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc>;
   shacl:targetClass dc:Jurisdiction .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#JurisdictionShape/0d913ac7222b4a9b73152f30451f727c90294f39> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Jurisdiction.id";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#JurisdictionShape/0d913ac7222b4a9b73152f30451f727c90294f39> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Jurisdiction.id";
   shacl:datatype xsd:anyURI;
   shacl:description "A reference in the form of a Uniform Resource Identifier to the Jurisdiction."@en;
   shacl:name "id"@en;
   shacl:path dc:identifier .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#JurisdictionShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Jurisdiction.name";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#JurisdictionShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Jurisdiction.name";
   shacl:datatype rdf:langString;
   shacl:description "A string of characters that represents a Jurisdiction."@en;
   shacl:name "name"@en;
   shacl:path rdfs:label .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#LiteralShape> a shacl:NodeShape;
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#LiteralShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass rdfs:Literal .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#LocationShape> a shacl:NodeShape;
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#LocationShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#LocationShape/2481cfd943c5249d2ca01949dc073a42a579a3ab>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#LocationShape/de64768127c2c96295191bbf7ced703cb1b65346>;
+  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#LocationShape/2481cfd943c5249d2ca01949dc073a42a579a3ab>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#LocationShape/de64768127c2c96295191bbf7ced703cb1b65346>;
   shacl:targetClass dc:Location .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#LocationShape/2481cfd943c5249d2ca01949dc073a42a579a3ab> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Location.geographicname";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#LocationShape/2481cfd943c5249d2ca01949dc073a42a579a3ab> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Location.geographicname";
   shacl:datatype rdf:langString;
   shacl:description "A textual description for a Location."@en;
   shacl:name "geographic name"@en;
   shacl:path <http://www.w3.org/ns/locn#geographicName> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#LocationShape/de64768127c2c96295191bbf7ced703cb1b65346> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Location.geographicidentifier";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#LocationShape/de64768127c2c96295191bbf7ced703cb1b65346> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Location.geographicidentifier";
   shacl:datatype xsd:anyURI;
   shacl:description "A reference in the form of a Uniform Resource Identifier to the Location."@en;
   shacl:name "geographic identifier"@en;
   shacl:path rdfs:seeAlso .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape> a shacl:NodeShape;
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/04e2a7f3717362cd45d6ed88689062f505b55288>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/0dcae38d37919a3205164e6f0695b1ad233bb64a>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/1572a063cf6e42858dabf5017baf40a96bf7155d>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/23e0d5b7e102a68f695e96d6488725cad24bf86e>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/2d4ab81c49e1cc374cae75653a67dc10f350a9db>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/417049e481f126bd62d475e78214104517de15cc>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/55b5451dbdf7a52f51562f996bc320d6e00bf47d>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/62a70e171ece563e50b91a1f8de081dc77de6024>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/b9605829b15a0ab0c6ee0dabdc938356d40617b9>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/bc8332ea8570ca419c8fa93a6ec025e632ec3291>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/bf74cccfec7e50f438b22e22a005bb1546874a66>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/c2c54ded0a433cc00911573f794f1aeab900c624>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/d4cd8f8edede55428d7e23a183edf5ac726e1139>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/dc60ac739d4282afbbd5564ac77327a70022cede>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/e2017f72421063cd9ff494011ec78f35f9632a4a>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/f888a185270cac3f6e32d6e1a22eb6a89d617ba8>;
+  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/04e2a7f3717362cd45d6ed88689062f505b55288>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/0dcae38d37919a3205164e6f0695b1ad233bb64a>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/1572a063cf6e42858dabf5017baf40a96bf7155d>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/23e0d5b7e102a68f695e96d6488725cad24bf86e>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/2d4ab81c49e1cc374cae75653a67dc10f350a9db>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/417049e481f126bd62d475e78214104517de15cc>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/55b5451dbdf7a52f51562f996bc320d6e00bf47d>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/62a70e171ece563e50b91a1f8de081dc77de6024>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/b9605829b15a0ab0c6ee0dabdc938356d40617b9>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/bc8332ea8570ca419c8fa93a6ec025e632ec3291>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/bf74cccfec7e50f438b22e22a005bb1546874a66>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/c2c54ded0a433cc00911573f794f1aeab900c624>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/d4cd8f8edede55428d7e23a183edf5ac726e1139>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/dc60ac739d4282afbbd5564ac77327a70022cede>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/e2017f72421063cd9ff494011ec78f35f9632a4a>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/f888a185270cac3f6e32d6e1a22eb6a89d617ba8>;
   shacl:targetClass <http://www.w3.org/ns/person#Person> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/04e2a7f3717362cd45d6ed88689062f505b55288> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.patronymicname";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/04e2a7f3717362cd45d6ed88689062f505b55288> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.patronymicname";
   shacl:datatype rdf:langString;
   shacl:description "Name based on the given name of the Person's father."@en;
   shacl:name "patronymic name"@en;
   shacl:path <http://www.w3.org/ns/person#patronymicName> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/0dcae38d37919a3205164e6f0695b1ad233bb64a> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.placeofbirth";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/0dcae38d37919a3205164e6f0695b1ad233bb64a> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.placeofbirth";
   shacl:class dc:Location;
   shacl:description "The Location where the Person was born."@en;
   shacl:name "place of birth"@en;
   shacl:path <http://www.w3.org/ns/person#placeOfBirth> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/1572a063cf6e42858dabf5017baf40a96bf7155d> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.familyname";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/1572a063cf6e42858dabf5017baf40a96bf7155d> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.familyname";
   shacl:datatype rdf:langString;
   shacl:description "The hereditary surname of a family."@en;
   shacl:name "family name"@en;
   shacl:path foaf:familyName .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/23e0d5b7e102a68f695e96d6488725cad24bf86e> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.fullname";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/23e0d5b7e102a68f695e96d6488725cad24bf86e> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.fullname";
   shacl:datatype rdf:langString;
   shacl:description "The complete name of the Person as one string."@en;
   shacl:name "full name"@en;
   shacl:path foaf:name .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/2d4ab81c49e1cc374cae75653a67dc10f350a9db> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.birthname";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/2d4ab81c49e1cc374cae75653a67dc10f350a9db> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.birthname";
   shacl:datatype rdf:langString;
   shacl:description "Full name of the Person given upon their birth."@en;
   shacl:name "birth name"@en;
   shacl:path <http://www.w3.org/ns/person#birthName> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/417049e481f126bd62d475e78214104517de15cc> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.sex";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/417049e481f126bd62d475e78214104517de15cc> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.sex";
   shacl:class skos:Concept;
   shacl:description "The organism's biological sex."@en;
   shacl:name "sex"@en;
   shacl:path <http://data.europa.eu/m8g/sex> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/55b5451dbdf7a52f51562f996bc320d6e00bf47d> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.domicile";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/55b5451dbdf7a52f51562f996bc320d6e00bf47d> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.domicile";
   shacl:class <http://www.w3.org/ns/locn#Address>;
   shacl:description "The place that the Person treats as permanent home."@en;
   shacl:name "domicile"@en;
   shacl:path <http://data.europa.eu/m8g/domicile> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/62a70e171ece563e50b91a1f8de081dc77de6024> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.matronymicname";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/62a70e171ece563e50b91a1f8de081dc77de6024> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.matronymicname";
   shacl:datatype rdf:langString;
   shacl:description "Name based on the given name of the Person's mother."@en;
   shacl:name "matronymic name"@en;
   shacl:path <http://data.europa.eu/m8g/matronymicName> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.contactpoint";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.contactpoint";
   shacl:class <http://data.europa.eu/m8g/ContactPoint>;
   shacl:description "The main contact information of the resource."@en;
   shacl:name "contact point"@en;
   shacl:path <http://data.europa.eu/m8g/contactPoint> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/b9605829b15a0ab0c6ee0dabdc938356d40617b9> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.countryofdeath";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/b9605829b15a0ab0c6ee0dabdc938356d40617b9> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.countryofdeath";
   shacl:class dc:Location;
   shacl:description "The country in which the Person died."@en;
   shacl:name "country of death"@en;
   shacl:path <http://www.w3.org/ns/person#countryOfDeath> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/bc8332ea8570ca419c8fa93a6ec025e632ec3291> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.placeofdeath";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/bc8332ea8570ca419c8fa93a6ec025e632ec3291> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.placeofdeath";
   shacl:class dc:Location;
   shacl:description "The Location where the Person died."@en;
   shacl:name "place of death"@en;
   shacl:path <http://www.w3.org/ns/person#placeOfDeath> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/bf74cccfec7e50f438b22e22a005bb1546874a66> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.citizenship";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/bf74cccfec7e50f438b22e22a005bb1546874a66> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.citizenship";
   shacl:class dc:Jurisdiction;
   shacl:description "The Jurisdiction that has conferred citizenship rights on the Person such as the right to vote, to receive certain protection from the community or the issuance of a passport."@en;
   shacl:name "citizenship"@en;
   shacl:path <http://www.w3.org/ns/person#citizenship> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/c2c54ded0a433cc00911573f794f1aeab900c624> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.gender";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/c2c54ded0a433cc00911573f794f1aeab900c624> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.gender";
   shacl:class skos:Concept;
   shacl:description "The identities, expressions and societal roles of the Person."@en;
   shacl:name "gender"@en;
   shacl:path <http://data.europa.eu/m8g/gender> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/d4cd8f8edede55428d7e23a183edf5ac726e1139> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.residency";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/d4cd8f8edede55428d7e23a183edf5ac726e1139> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.residency";
   shacl:class dc:Jurisdiction;
   shacl:description "Jurisdiction where the Person has their dwelling."@en;
   shacl:name "residency"@en;
   shacl:path <http://www.w3.org/ns/person#residency> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/dc60ac739d4282afbbd5564ac77327a70022cede> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.countryofbirth";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/dc60ac739d4282afbbd5564ac77327a70022cede> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.countryofbirth";
   shacl:class dc:Location;
   shacl:description "The country in which the Person was born."@en;
   shacl:name "country of birth"@en;
   shacl:path <http://www.w3.org/ns/person#countryOfBirth> .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/e2017f72421063cd9ff494011ec78f35f9632a4a> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.identifier";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/e2017f72421063cd9ff494011ec78f35f9632a4a> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.identifier";
   shacl:class <http://www.w3.org/ns/adms#Identifier>;
   shacl:description "The unambiguous structured reference to the Person."@en;
   shacl:name "identifier"@en;
   shacl:path dc:identifier .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.alternativename";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.alternativename";
   shacl:datatype rdf:langString;
   shacl:description "Any name by which a Person is known, other than their full name."@en;
   shacl:name "alternative name"@en;
   shacl:path dc:alternative .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/f888a185270cac3f6e32d6e1a22eb6a89d617ba8> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.givenname";
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/f888a185270cac3f6e32d6e1a22eb6a89d617ba8> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.givenname";
   shacl:datatype rdf:langString;
   shacl:description "The name(s) that identify the Person within a family with a common surname."@en;
   shacl:name "given name"@en;
   shacl:path foaf:givenName .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#TextShape> a shacl:NodeShape;
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#TextShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass rdf:langString .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#URIShape> a shacl:NodeShape;
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#URIShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass xsd:anyURI .

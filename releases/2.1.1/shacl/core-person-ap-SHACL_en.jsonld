@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@vocab": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/",
+    "@vocab": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl",
     "qb": "http://purl.org/linked-data/cube#",
     "qb:codeList": {
       "@id": "qb:codeList",
@@ -100,15 +100,15 @@
       "@id": "vl:message"
     }
   },
-  "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/",
+  "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl",
   "shapes": [
     {
-      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#ContactPointShape",
+      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#ContactPointShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#ContactPointShape/95cf5318d1604f72f1c5d4d22a360ce268437bf0",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#ContactPoint.contactpage",
           "sh:class": "http://xmlns.com/foaf/0.1/Document",
           "sh:description": {
@@ -123,19 +123,19 @@
       "sh:targetClass": "http://data.europa.eu/m8g/ContactPoint"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#GenericDateShape",
+      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#GenericDateShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://data.europa.eu/m8g/GenericDate"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#JurisdictionShape",
+      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#JurisdictionShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#JurisdictionShape/0d913ac7222b4a9b73152f30451f727c90294f39",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#JurisdictionShape/0d913ac7222b4a9b73152f30451f727c90294f39",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Jurisdiction.id",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
           "sh:description": {
@@ -147,7 +147,7 @@
           "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#JurisdictionShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#JurisdictionShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Jurisdiction.name",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -162,12 +162,12 @@
       "sh:targetClass": "http://purl.org/dc/terms/Jurisdiction"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#LocationShape",
+      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#LocationShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#LocationShape/2481cfd943c5249d2ca01949dc073a42a579a3ab",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#LocationShape/2481cfd943c5249d2ca01949dc073a42a579a3ab",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Location.geographicname",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -179,7 +179,7 @@
           "sh:path": "http://www.w3.org/ns/locn#geographicName"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#LocationShape/de64768127c2c96295191bbf7ced703cb1b65346",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#LocationShape/de64768127c2c96295191bbf7ced703cb1b65346",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Location.geographicidentifier",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
           "sh:description": {
@@ -194,47 +194,47 @@
       "sh:targetClass": "http://purl.org/dc/terms/Location"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#TextShape",
+      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#TextShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#LiteralShape",
+      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#LiteralShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#URIShape",
+      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#URIShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#DateShape",
+      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#DateShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2001/XMLSchema#date"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#CodeShape",
+      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#CodeShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape",
+      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/0d2f12fd4ed87d3af4f1300097bea7985cc94745",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.schemeURI",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
           "sh:description": {
@@ -246,7 +246,7 @@
           "sh:path": "http://purl.org/dc/terms/conformsTo"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/495aa44a236e78566cf7b2f54c299258b29602f9",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/495aa44a236e78566cf7b2f54c299258b29602f9",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.schemename",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -258,7 +258,7 @@
           "sh:path": "http://www.w3.org/2000/01/rdf-schema#label"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/b2d3ac00adf57ca47e24b371d036da25f0f2fb43",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/b2d3ac00adf57ca47e24b371d036da25f0f2fb43",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.dateofissue",
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#date",
           "sh:description": {
@@ -270,7 +270,7 @@
           "sh:path": "http://purl.org/dc/terms/issued"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.identifies",
           "sh:class": "http://www.w3.org/ns/person#Person",
           "sh:description": {
@@ -282,7 +282,7 @@
           "sh:path": "http://data.europa.eu/m8g/identifies"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#IdentifierShape/d4ce8b1d928c1a262434416188d62d4422571148",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#IdentifierShape/d4ce8b1d928c1a262434416188d62d4422571148",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Identifier.issuingauthorityURI",
           "sh:class": "http://xmlns.com/foaf/0.1/Agent",
           "sh:description": {
@@ -297,12 +297,12 @@
       "sh:targetClass": "http://www.w3.org/ns/adms#Identifier"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape",
+      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/17384dfa4a75117e7dd2bc0f2bbf61ac91fd8676",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.thoroughfare",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -314,7 +314,7 @@
           "sh:path": "http://www.w3.org/ns/locn#thoroughfare"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.administrativeunitlevel1",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -326,7 +326,7 @@
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL1"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/470060a15e97aeacd56fcc5beb701e647a6aa56e",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.addressarea",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -338,7 +338,7 @@
           "sh:path": "http://www.w3.org/ns/locn#addressArea"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/854a17171901a9c000eff34a7ccd77814891e3d5",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.administrativeunitlevel2",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -350,7 +350,7 @@
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL2"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/98016263ed1fd03fc2066e397f3ae3343ce3bf79",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.postname",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -362,7 +362,7 @@
           "sh:path": "http://www.w3.org/ns/locn#postName"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/d75b5d4c221e6b0bf47c853c0be92d078c39e391",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.locatorname",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -374,7 +374,7 @@
           "sh:path": "http://www.w3.org/ns/locn#locatorName"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AddressShape/dee03556e405a14f1e410c960b43b8eee149efe7",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Address.fulladdress",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -389,12 +389,12 @@
       "sh:targetClass": "http://www.w3.org/ns/locn#Address"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape",
+      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/04e2a7f3717362cd45d6ed88689062f505b55288",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/04e2a7f3717362cd45d6ed88689062f505b55288",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.patronymicname",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -406,7 +406,7 @@
           "sh:path": "http://www.w3.org/ns/person#patronymicName"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/0dcae38d37919a3205164e6f0695b1ad233bb64a",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/0dcae38d37919a3205164e6f0695b1ad233bb64a",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.placeofbirth",
           "sh:class": "http://purl.org/dc/terms/Location",
           "sh:description": {
@@ -418,7 +418,7 @@
           "sh:path": "http://www.w3.org/ns/person#placeOfBirth"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/1572a063cf6e42858dabf5017baf40a96bf7155d",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/1572a063cf6e42858dabf5017baf40a96bf7155d",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.familyname",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -430,7 +430,7 @@
           "sh:path": "http://xmlns.com/foaf/0.1/familyName"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/23e0d5b7e102a68f695e96d6488725cad24bf86e",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/23e0d5b7e102a68f695e96d6488725cad24bf86e",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.fullname",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -442,7 +442,7 @@
           "sh:path": "http://xmlns.com/foaf/0.1/name"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/2d4ab81c49e1cc374cae75653a67dc10f350a9db",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/2d4ab81c49e1cc374cae75653a67dc10f350a9db",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.birthname",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -454,7 +454,7 @@
           "sh:path": "http://www.w3.org/ns/person#birthName"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/417049e481f126bd62d475e78214104517de15cc",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/417049e481f126bd62d475e78214104517de15cc",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.sex",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
@@ -466,7 +466,7 @@
           "sh:path": "http://data.europa.eu/m8g/sex"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/55b5451dbdf7a52f51562f996bc320d6e00bf47d",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/55b5451dbdf7a52f51562f996bc320d6e00bf47d",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.domicile",
           "sh:class": "http://www.w3.org/ns/locn#Address",
           "sh:description": {
@@ -478,7 +478,7 @@
           "sh:path": "http://data.europa.eu/m8g/domicile"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/62a70e171ece563e50b91a1f8de081dc77de6024",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/62a70e171ece563e50b91a1f8de081dc77de6024",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.matronymicname",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -490,7 +490,7 @@
           "sh:path": "http://data.europa.eu/m8g/matronymicName"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.contactpoint",
           "sh:class": "http://data.europa.eu/m8g/ContactPoint",
           "sh:description": {
@@ -502,7 +502,7 @@
           "sh:path": "http://data.europa.eu/m8g/contactPoint"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/b9605829b15a0ab0c6ee0dabdc938356d40617b9",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/b9605829b15a0ab0c6ee0dabdc938356d40617b9",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.countryofdeath",
           "sh:class": "http://purl.org/dc/terms/Location",
           "sh:description": {
@@ -514,7 +514,7 @@
           "sh:path": "http://www.w3.org/ns/person#countryOfDeath"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/bc8332ea8570ca419c8fa93a6ec025e632ec3291",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/bc8332ea8570ca419c8fa93a6ec025e632ec3291",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.placeofdeath",
           "sh:class": "http://purl.org/dc/terms/Location",
           "sh:description": {
@@ -526,7 +526,7 @@
           "sh:path": "http://www.w3.org/ns/person#placeOfDeath"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/bf74cccfec7e50f438b22e22a005bb1546874a66",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/bf74cccfec7e50f438b22e22a005bb1546874a66",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.citizenship",
           "sh:class": "http://purl.org/dc/terms/Jurisdiction",
           "sh:description": {
@@ -538,7 +538,7 @@
           "sh:path": "http://www.w3.org/ns/person#citizenship"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/c2c54ded0a433cc00911573f794f1aeab900c624",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/c2c54ded0a433cc00911573f794f1aeab900c624",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.gender",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
@@ -550,7 +550,7 @@
           "sh:path": "http://data.europa.eu/m8g/gender"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/d4cd8f8edede55428d7e23a183edf5ac726e1139",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/d4cd8f8edede55428d7e23a183edf5ac726e1139",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.residency",
           "sh:class": "http://purl.org/dc/terms/Jurisdiction",
           "sh:description": {
@@ -562,7 +562,7 @@
           "sh:path": "http://www.w3.org/ns/person#residency"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/dc60ac739d4282afbbd5564ac77327a70022cede",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/dc60ac739d4282afbbd5564ac77327a70022cede",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.countryofbirth",
           "sh:class": "http://purl.org/dc/terms/Location",
           "sh:description": {
@@ -574,7 +574,7 @@
           "sh:path": "http://www.w3.org/ns/person#countryOfBirth"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/e2017f72421063cd9ff494011ec78f35f9632a4a",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/e2017f72421063cd9ff494011ec78f35f9632a4a",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.identifier",
           "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:description": {
@@ -586,7 +586,7 @@
           "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/f138612a5fffed0d4daa1a176e0de7d53a99eddd",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.alternativename",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -598,7 +598,7 @@
           "sh:path": "http://purl.org/dc/terms/alternative"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#PersonShape/f888a185270cac3f6e32d6e1a22eb6a89d617ba8",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#PersonShape/f888a185270cac3f6e32d6e1a22eb6a89d617ba8",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Person.givenname",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -613,12 +613,12 @@
       "sh:targetClass": "http://www.w3.org/ns/person#Person"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AgentShape",
+      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AgentShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Agent.name",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
@@ -630,7 +630,7 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#AgentShape/322371a77364a50f049d46180f6192532eea26dc",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#AgentShape/322371a77364a50f049d46180f6192532eea26dc",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#Agent.type",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
@@ -645,7 +645,7 @@
       "sh:targetClass": "http://xmlns.com/foaf/0.1/Agent"
     },
     {
-      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/#DocumentShape",
+      "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1//shacl/core-person-ap-SHACL.ttl#DocumentShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
