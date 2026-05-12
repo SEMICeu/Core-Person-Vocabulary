@@ -157,7 +157,7 @@
       edDraftURI: "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/",
       latestVersion: "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/",
       specStatus: "LD",
-      publishDate: "2026-05-05",
+      publishDate: "2026-05-12",
       editors: myeditors,
       authors: myauthors,
       github: "SEMICeu/Core-Person-Vocabulary",
@@ -238,22 +238,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msapplication-TileColor" content="#7ED956" />
     
-    <!-- Matomo -->
-    <script>
-    var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-        var u="//health.semic.eu/matomo/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '3']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-    </script>
-    <!-- End Matomo Code -->
-
     
 </head>
 <body>
@@ -290,7 +274,7 @@ The Core Person Vocabulary is a simplified, reusable and extensible data model t
 <section id="specstatus">
     <h2>Status</h2>
         <p>
-            This Core Vocabulary has the status SEMIC Recommendation published at 2026-05-05.
+            This Core Vocabulary has the status SEMIC Recommendation published at 2026-05-12.
         </p>
         <p>
             Information about the process and the decisions involved in the creation of this specification can be found at the <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/blob/master/releases/2.1.2/Changelog.md">Changelog</a>.
@@ -469,7 +453,7 @@ This class belongs to <a href="https://semiceu.github.io/Core-Location-Vocabular
                         <dd>
                             For this entity the following properties are defined: <a href="#Address.addressarea">address area</a>
                             , <a href="#Address.addressID">address ID</a>
-                            , <a href="#Address.AdministrativeUnit">Administrative Unit</a>
+                            , <a href="#Address.administrativeunit">administrative unit</a>
                             , <a href="#Address.administrativeunitlevel1">administrative unit level 1</a>
                             , <a href="#Address.administrativeunitlevel2">administrative unit level 2</a>
                             , <a href="#Address.fulladdress">full address</a>
@@ -612,22 +596,22 @@ To provide maximum flexibility in the Core Vocabulary, whilst remaining interope
                                 </td>
                             </tr>
                         
-                            <tr id="Address.AdministrativeUnit"
+                            <tr id="Address.administrativeunit"
                                 typeof="rdf:Property"
-                                resource="http://data.europa.eu/m8g/AdminUnit"
+                                resource="http://data.europa.eu/m8g/adminUnit"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20Administrative Unit%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/%23Address.AdministrativeUnit" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20administrative unit%20in%20Address&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/%23Address.administrativeunit" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data.europa.eu/m8g/AdminUnit"
+                                        <a href="http://data.europa.eu/m8g/adminUnit"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/m8g/AdminUnit"
+                                           data-content="http://data.europa.eu/m8g/adminUnit"
                                            data-placement="right">
-                                        Administrative Unit</a>
+                                        administrative unit</a>
                                 </td>
                                 <td>
                                     
@@ -1564,7 +1548,7 @@ The key difference between a locator designator and a locator name is that the l
                                     The name of the agency that issued the identifier.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal..
+                                    use dct:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal..
                                 </td>
 				<!--
                                 <td>
@@ -3488,7 +3472,7 @@ The shapes can be found <a href="./shacl/core-person-ap-SHACL.ttl">here</a>.
 The RDF representation of the Core Person Vocabulary is available <a href="./voc/core-person-ap.ttl">here</a>.
 
 <h3>UML representation</h3>
-The UML representation from which the Core Person Vocabulary has been build is available <a href="./uml">here</a>.
+The UML representation from which the Core Person Vocabulary has been build is available <a href="./uml/CoreVocabularies.EAP">here</a>.
 
 <!--
 <h3>Mapping</h3>
@@ -3651,8 +3635,8 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Address">Address</a></td>
 								<td><div class="shorten">http://www.w3.org/ns/locn#Address</div></td>
 								<td></td>
-								<td><a href="#Address.AdministrativeUnit">Administrative Unit </a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/AdminUnit</div></td>
+								<td><a href="#Address.administrativeunit">administrative unit </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/adminUnit</div></td>
 							</tr>
 						
 					
@@ -4318,6 +4302,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 	    var prefixes = [ 
 {'pref':'ad:', 'ns': 'http://inspire.ec.europa.eu/ont/ad#'},
 {'pref':'adms:', 'ns': 'http://www.w3.org/ns/adms#'},
+{'pref':'a4g:', 'ns': 'http://data.europa.eu/a4g/ontology#'},
 {'pref':'atu:', 'ns': 'http://data.europa.eu/88u/dataset/'},
 {'pref':'cav:', 'ns': 'http://data.europa.eu/2sa/cav#'},
 {'pref':'cpsv:', 'ns': 'http://purl.org/vocab/cpsv#'},

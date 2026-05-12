@@ -501,18 +501,6 @@
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL2"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AddressShape/32d0f083cc6f82b1b3a07e0715739869e4b65721",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Address.AdministrativeUnit",
-          "sh:class": "http://data.europa.eu/m8g/AdminUnit",
-          "sh:description": {
-            "en": "A detailed administrative unit organized in a hierarchy."
-          },
-          "sh:name": {
-            "en": "Administrative Unit"
-          },
-          "sh:path": "http://data.europa.eu/m8g/AdminUnit"
-        },
-        {
           "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AddressShape/362b7c3261b1d5eb024e72e4868babc25ed0c7ce",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Address.administrativeunitlevel1",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -549,16 +537,28 @@
           "sh:path": "http://www.w3.org/ns/locn#addressArea"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AddressShape/5de04ca3dfefdf7a52be368a3b55044ba0b56fe7",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Address.AdministrativeUnit",
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AddressShape/5d7f103641a62a590c3c6d874d2a14987e054924",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Address.administrativeunit",
           "sh:description": {
             "en": "A detailed administrative unit organized in a hierarchy."
           },
           "sh:name": {
-            "en": "Administrative Unit"
+            "en": "administrative unit"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/m8g/AdminUnit"
+          "sh:path": "http://data.europa.eu/m8g/adminUnit"
+        },
+        {
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AddressShape/60bff98f6076f0828e3b73d73fefc7b1eb56b93a",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Address.administrativeunit",
+          "sh:class": "http://data.europa.eu/m8g/AdminUnit",
+          "sh:description": {
+            "en": "A detailed administrative unit organized in a hierarchy."
+          },
+          "sh:name": {
+            "en": "administrative unit"
+          },
+          "sh:path": "http://data.europa.eu/m8g/adminUnit"
         },
         {
           "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AddressShape/6f98d6d917a0e0b73d8614923f953e1ee2533918",

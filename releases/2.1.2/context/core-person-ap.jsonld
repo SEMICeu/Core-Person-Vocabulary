@@ -36,7 +36,7 @@
     },
     "adminUnit": {
       "@container": "@set",
-      "@id": "http://data.europa.eu/m8g/AdminUnit",
+      "@id": "http://data.europa.eu/m8g/adminUnit",
       "@type": "@id"
     },
     "adminUnitL1": {
