@@ -253,7 +253,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msapplication-TileColor" content="#7ED956" />
-      <!-- Matomo -->
+ 
+<!-- Matomo -->
     <script>
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -267,7 +268,7 @@
         g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
     })();
     </script>
-<!-- End Matomo Code -->  
+<!-- End Matomo Code -->    
     
 </head>
 <body>
@@ -387,6 +388,7 @@ This specification uses the following prefixes to shorten the URIs for readabili
                             <br />
                             |
 			      <a href="#Address">Address</a> |
+			      <a href="#AdministrativeUnit">Administrative Unit</a> |
 			      <a href="#ContactPoint">Contact Point</a> |
 			      <a href="#Identifier">Identifier</a> |
 			      <a href="#Location">Location</a> |
@@ -396,7 +398,6 @@ This specification uses the following prefixes to shorten the URIs for readabili
                             The main entities are supported by:
                             <br />
                             |
-			      <a href="#AdministrativeUnit">Administrative Unit</a> |
 			      <a href="#Agent">Agent</a> |
 			      <a href="#Document">Document</a> |
 			      <a href="#Jurisdiction">Jurisdiction</a> |
@@ -654,7 +655,7 @@ To provide maximum flexibility in the Core Vocabulary, whilst remaining interope
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    A detailed administrative unit organized in a hierarchy.
+                                    The adminUnit relationship links an Address with the Administrative Unit class.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -1066,6 +1067,223 @@ The key difference between a locator designator and a locator name is that the l
 </section>
 
 
+
+
+
+   
+        <section>
+            <h3 id="AdministrativeUnit">
+                <a href="http://data.europa.eu/m8g/AdminUnit"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/m8g/AdminUnit"
+                   data-placement="right">Administrative Unit</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20AdministrativeUnit&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A detailed administrative unit organized in a hierarchy.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        This class should be used whenever a classification mechanism is in place, in alternative to the properties adminUnitL1 and adminUnitL2 of the Address class which allow free text.
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#AdministrativeUnit.code">code</a>
+                            , <a href="#AdministrativeUnit.level">level</a>
+                            , <a href="#AdministrativeUnit.name">name</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="AdministrativeUnit.code"
+                                typeof="rdf:Property"
+                                resource="http://data.europa.eu/m8g/code"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20code%20in%20Administrative Unit&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/%23AdministrativeUnit.code" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/code"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/code"
+                                           data-placement="right">
+                                        code</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The classification of the administrative unit.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="AdministrativeUnit.level"
+                                typeof="rdf:Property"
+                                resource="http://data.europa.eu/m8g/level"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20level%20in%20Administrative Unit&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/%23AdministrativeUnit.level" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/level"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/level"
+                                           data-placement="right">
+                                        level</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The level of the administrative unit in the hierarchy.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    The recommended code list to indicate the level of an Admin Unit is the <a href=https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/atu-type>Administrative territorial unit type</a> Controlled Vocabulary maintained by the Publications Office of the EU. 
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="AdministrativeUnit.name"
+                                typeof="rdf:Property"
+                                resource="http://www.w3.org/2000/01/rdf-schema#label"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20name%20in%20Administrative Unit&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/%23AdministrativeUnit.name" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/2000/01/rdf-schema#label"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/2000/01/rdf-schema#label"
+                                           data-placement="right">
+                                        name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Official, geographical name of the administrative unit, given in different languages where required.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
 
 
 
@@ -2795,54 +3013,6 @@ They are included in the Core Vocabulary because they form the range of properti
 
 
 
-   
-        <section>
-            <h3 id="AdministrativeUnit">
-                <a href="http://data.europa.eu/m8g/AdminUnit"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/m8g/AdminUnit"
-                   data-placement="right">Administrative Unit</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20AdministrativeUnit&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    A detailed administrative unit organized in a hierarchy.
-                </dd>
-                
-                
-                    <dt>
-                        Usage Note
-                    </dt>
-                    <dd>
-                        This class should be used whenever a classification mechanism is in place, in alternative to the properties adminUnitL1 and adminUnitL2 of the Address class which allow free text.
-                    </dd>
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                    <dd>
-                        This specification does not impose any additional requirements to properties for this entity.
-                    </dd>
-                
-            </dl>
-        </div>
-        
-    </div>
-</section>
-
-
-
 
 
    
@@ -3720,13 +3890,51 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 			</tr>
 		
 				
-					<tr>
-						<td><a href="#AdministrativeUnit">Administrative Unit</a></td>
-						<td><div class="shorten">http://data.europa.eu/m8g/AdminUnit</div></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#AdministrativeUnit">Administrative Unit</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/AdminUnit</div></td>
+								<td></td>
+								<td><a href="#AdministrativeUnit.code">code </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/code</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#AdministrativeUnit">Administrative Unit</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/AdminUnit</div></td>
+								<td></td>
+								<td><a href="#AdministrativeUnit.level">level </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/level</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#AdministrativeUnit">Administrative Unit</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/AdminUnit</div></td>
+								<td></td>
+								<td><a href="#AdministrativeUnit.name">name </a></td>
+								<td><div class="shorten">http://www.w3.org/2000/01/rdf-schema#label</div></td>
+							</tr>
+						
+					
 				
 			</tr>
 		

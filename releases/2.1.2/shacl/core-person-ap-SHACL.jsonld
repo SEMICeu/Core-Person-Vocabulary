@@ -106,7 +106,92 @@
       "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
-      "sh:property": [],
+      "sh:property": [
+        {
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/0624f53106f6c8e265a6637987aa84df1f51e3ec",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdministrativeUnit.level",
+          "sh:description": {
+            "en": "The level of the administrative unit in the hierarchy."
+          },
+          "sh:name": {
+            "en": "level"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/level"
+        },
+        {
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdministrativeUnit.name",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "Official, geographical name of the administrative unit, given in different languages where required."
+          },
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:path": "http://www.w3.org/2000/01/rdf-schema#label"
+        },
+        {
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/34d95733daf7d992483c679b8caea965979b76a8",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdministrativeUnit.code",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "The classification of the administrative unit."
+          },
+          "sh:name": {
+            "en": "code"
+          },
+          "sh:path": "http://data.europa.eu/m8g/code"
+        },
+        {
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/77e1a71f3cfcae1acdb545a44042b811133bc6ee",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdministrativeUnit.code",
+          "sh:description": {
+            "en": "The classification of the administrative unit."
+          },
+          "sh:name": {
+            "en": "code"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/code"
+        },
+        {
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/9b437af682d747dd61e73577261bf72c00014cc4",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdministrativeUnit.level",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "en": "The level of the administrative unit in the hierarchy."
+          },
+          "sh:name": {
+            "en": "level"
+          },
+          "sh:path": "http://data.europa.eu/m8g/level"
+        },
+        {
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/9caf9e629daa0e64ece77788576468821d7cff8c",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdministrativeUnit.name",
+          "sh:description": {
+            "en": "Official, geographical name of the administrative unit, given in different languages where required."
+          },
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2000/01/rdf-schema#label"
+        },
+        {
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/be01df43f1c288b656b3ca3879eb3dd9d8c700b9",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdministrativeUnit.name",
+          "sh:description": {
+            "en": "Official, geographical name of the administrative unit, given in different languages where required."
+          },
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
+          "sh:uniqueLang": "true"
+        }
+      ],
       "sh:targetClass": "http://data.europa.eu/m8g/AdminUnit"
     },
     {
@@ -373,18 +458,6 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#notation"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/0881b6c6884db304d15b7a2a18fd20c54babde26",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Identifier.issuingauthorityURI",
-          "sh:description": {
-            "en": "The reference in the form of a Uniform Resource Identifier to the issuing authority."
-          },
-          "sh:name": {
-            "en": "issuing authority URI"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://purl.org/dc/terms/creator"
-        },
-        {
           "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/16a39520e446e5b794a01467eaeb5fe3e10ab704",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Identifier.dateissued",
           "sh:description": {
@@ -397,6 +470,30 @@
           "sh:path": "http://purl.org/dc/terms/issued"
         },
         {
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/2a651d971ab01625b0570bd938c92580ad8fea8b",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Identifier.issuedby",
+          "sh:description": {
+            "en": "Agent legally responsible for the Identifier."
+          },
+          "sh:name": {
+            "en": "issued by"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/creator"
+        },
+        {
+          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/484a62152227f981b9f1377e7b0d39f16f7b7433",
+          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Identifier.issuedby",
+          "sh:class": "http://xmlns.com/foaf/0.1/Agent",
+          "sh:description": {
+            "en": "Agent legally responsible for the Identifier."
+          },
+          "sh:name": {
+            "en": "issued by"
+          },
+          "sh:path": "http://purl.org/dc/terms/creator"
+        },
+        {
           "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Identifier.identifies",
           "sh:class": "http://www.w3.org/ns/person#Person",
@@ -407,18 +504,6 @@
             "en": "identifies"
           },
           "sh:path": "http://data.europa.eu/m8g/identifies"
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/d4ce8b1d928c1a262434416188d62d4422571148",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Identifier.issuingauthorityURI",
-          "sh:class": "http://xmlns.com/foaf/0.1/Agent",
-          "sh:description": {
-            "en": "The reference in the form of a Uniform Resource Identifier to the issuing authority."
-          },
-          "sh:name": {
-            "en": "issuing authority URI"
-          },
-          "sh:path": "http://purl.org/dc/terms/creator"
         },
         {
           "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/e17cae15cd3a2db8b6c9aeef586141ff8b261cab",
@@ -540,7 +625,7 @@
           "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AddressShape/5d7f103641a62a590c3c6d874d2a14987e054924",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Address.administrativeunit",
           "sh:description": {
-            "en": "A detailed administrative unit organized in a hierarchy."
+            "en": "The adminUnit relationship links an Address with the Administrative Unit class."
           },
           "sh:name": {
             "en": "administrative unit"
@@ -553,7 +638,7 @@
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Address.administrativeunit",
           "sh:class": "http://data.europa.eu/m8g/AdminUnit",
           "sh:description": {
-            "en": "A detailed administrative unit organized in a hierarchy."
+            "en": "The adminUnit relationship links an Address with the Administrative Unit class."
           },
           "sh:name": {
             "en": "administrative unit"
@@ -1345,18 +1430,6 @@
           "sh:path": "http://purl.org/dc/terms/title"
         },
         {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/2a651d971ab01625b0570bd938c92580ad8fea8b",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Agent.issuedby",
-          "sh:description": {
-            "en": "Agent legally responsible for the Identifier."
-          },
-          "sh:name": {
-            "en": "issued by"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://purl.org/dc/terms/creator"
-        },
-        {
           "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/322371a77364a50f049d46180f6192532eea26dc",
           "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Agent.type",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1367,18 +1440,6 @@
             "en": "type"
           },
           "sh:path": "http://purl.org/dc/terms/type"
-        },
-        {
-          "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/484a62152227f981b9f1377e7b0d39f16f7b7433",
-          "rdfs:seeAlso": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Agent.issuedby",
-          "sh:class": "http://www.w3.org/ns/adms#Identifier",
-          "sh:description": {
-            "en": "Agent legally responsible for the Identifier."
-          },
-          "sh:name": {
-            "en": "issued by"
-          },
-          "sh:path": "http://purl.org/dc/terms/creator"
         },
         {
           "@id": "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
