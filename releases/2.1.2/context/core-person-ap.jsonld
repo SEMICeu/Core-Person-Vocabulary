@@ -2,6 +2,11 @@
   "@context": {
     "Address": "http://www.w3.org/ns/locn#Address",
     "AdminUnit": "http://data.europa.eu/m8g/AdminUnit",
+    "AdminUnit.name": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
     "Agent": "http://xmlns.com/foaf/0.1/Agent",
     "Agent.name": {
       "@container": "@set",
@@ -62,6 +67,11 @@
     "citizenship": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/person#citizenship",
+      "@type": "@id"
+    },
+    "code": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/code",
       "@type": "@id"
     },
     "contactPage": {
@@ -167,9 +177,9 @@
       "@id": "http://purl.org/dc/terms/creator",
       "@type": "@id"
     },
-    "issuingAuthorityURI": {
+    "level": {
       "@container": "@set",
-      "@id": "http://purl.org/dc/terms/creator",
+      "@id": "http://data.europa.eu/m8g/level",
       "@type": "@id"
     },
     "locatorDesignator": {

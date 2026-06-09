@@ -84,7 +84,7 @@
 		    name: "Anastasia Sofou",
 		      
 		      
-		    company: "European Commission",
+		    company: "DIGIT-EXT",
 		      
 		      
 		    }
@@ -135,7 +135,17 @@
 	
 	
 		]
-		
+			
+    var myowners = [
+            {
+                value: "SEMIC",
+                href: "https://interoperable-europe.ec.europa.eu/collection/semic-support-centre",
+            },
+            {
+                value: "Georges Lobo (DIGIT)",
+            }
+		]
+	
 	function quickreference() {
 		$('#table-quickoverview').DataTable();
     };
@@ -160,6 +170,12 @@
       publishDate: "2026-05-12",
       editors: myeditors,
       authors: myauthors,
+      otherLinks: [
+        {
+          key: "Owners:",
+          data: myowners
+        }
+	  ],
       github: "SEMICeu/Core-Person-Vocabulary",
       shortName: "Core Person Vocabulary",
       xref: "web-platform",
@@ -230,7 +246,7 @@
     </style>
      
     <p class="copyright">
-        Copyright © 2024
+        Copyright © 2026
     </p>
     
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -357,6 +373,7 @@ This specification uses the following prefixes to shorten the URIs for readabili
                             <br />
                             |
 			      <a href="#Address">Address</a> |
+			      <a href="#AdministrativeUnit">Administrative Unit</a> |
 			      <a href="#ContactPoint">Contact Point</a> |
 			      <a href="#Identifier">Identifier</a> |
 			      <a href="#Location">Location</a> |
@@ -366,7 +383,6 @@ This specification uses the following prefixes to shorten the URIs for readabili
                             The main entities are supported by:
                             <br />
                             |
-			      <a href="#AdministrativeUnit">Administrative Unit</a> |
 			      <a href="#Agent">Agent</a> |
 			      <a href="#Document">Document</a> |
 			      <a href="#Jurisdiction">Jurisdiction</a> |
@@ -381,9 +397,9 @@ This specification uses the following prefixes to shorten the URIs for readabili
                 
     </div>
     <div>
-        <a href="https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/html/overview.jpg"
+        <a href="./html/overview.jpg"
            target="_blank">
-            <img src="https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/html/overview.jpg"/>
+            <img src="./html/overview.jpg"/>
         </a>
     </div>
 </section>
@@ -624,7 +640,7 @@ To provide maximum flexibility in the Core Vocabulary, whilst remaining interope
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    A detailed administrative unit organized in a hierarchy.
+                                    The adminUnit relationship links an Address with the Administrative Unit class.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -1039,6 +1055,223 @@ The key difference between a locator designator and a locator name is that the l
 
 
 
+   
+        <section>
+            <h3 id="AdministrativeUnit">
+                <a href="http://data.europa.eu/m8g/AdminUnit"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/m8g/AdminUnit"
+                   data-placement="right">Administrative Unit</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20AdministrativeUnit&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A detailed administrative unit organized in a hierarchy.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        This class should be used whenever a classification mechanism is in place, in alternative to the properties adminUnitL1 and adminUnitL2 of the Address class which allow free text.
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#AdministrativeUnit.code">code</a>
+                            , <a href="#AdministrativeUnit.level">level</a>
+                            , <a href="#AdministrativeUnit.name">name</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="AdministrativeUnit.code"
+                                typeof="rdf:Property"
+                                resource="http://data.europa.eu/m8g/code"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20code%20in%20Administrative Unit&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/%23AdministrativeUnit.code" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/code"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/code"
+                                           data-placement="right">
+                                        code</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The classification of the administrative unit.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="AdministrativeUnit.level"
+                                typeof="rdf:Property"
+                                resource="http://data.europa.eu/m8g/level"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20level%20in%20Administrative Unit&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/%23AdministrativeUnit.level" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/m8g/level"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/m8g/level"
+                                           data-placement="right">
+                                        level</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The level of the administrative unit in the hierarchy.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    The recommended code list to indicate the level of an Admin Unit is the <a href=https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/atu-type>Administrative territorial unit type</a> Controlled Vocabulary maintained by the Publications Office of the EU. 
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr id="AdministrativeUnit.name"
+                                typeof="rdf:Property"
+                                resource="http://www.w3.org/2000/01/rdf-schema#label"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20name%20in%20Administrative Unit&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/%23AdministrativeUnit.name" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/2000/01/rdf-schema#label"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/2000/01/rdf-schema#label"
+                                           data-placement="right">
+                                        name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Official, geographical name of the administrative unit, given in different languages where required.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+
+
 
 
 
@@ -1303,7 +1536,7 @@ The key difference between a locator designator and a locator name is that the l
                         <dd>
                             For this entity the following properties are defined: <a href="#Identifier.dateissued">date issued</a>
                             , <a href="#Identifier.identifies">identifies</a>
-                            , <a href="#Identifier.issuingauthorityURI">issuing authority URI</a>
+                            , <a href="#Identifier.issuedby">issued by</a>
                             , <a href="#Identifier.notation">notation</a>
                             , <a href="#Identifier.schemaagency">schema agency</a>
                             .
@@ -1431,12 +1664,12 @@ The key difference between a locator designator and a locator name is that the l
                                 </td>
                             </tr>
                         
-                            <tr id="Identifier.issuingauthorityURI"
+                            <tr id="Identifier.issuedby"
                                 typeof="rdf:Property"
                                 resource="http://purl.org/dc/terms/creator"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20issuing authority URI%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/%23Identifier.issuingauthorityURI" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20issued by%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/%23Identifier.issuedby" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -1446,7 +1679,7 @@ The key difference between a locator designator and a locator name is that the l
                                            data-toggle="tooltip"
                                            data-content="http://purl.org/dc/terms/creator"
                                            data-placement="right">
-                                        issuing authority URI</a>
+                                        issued by</a>
                                 </td>
                                 <td>
                                     
@@ -1459,10 +1692,10 @@ The key difference between a locator designator and a locator name is that the l
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    The reference in the form of a Uniform Resource Identifier to the issuing authority.
+                                    Agent legally responsible for the Identifier.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    Example: "https://belgium.be/id/organizations/1233".
+                                    
                                 </td>
 				<!--
                                 <td>
@@ -2765,54 +2998,6 @@ They are included in the Core Vocabulary because they form the range of properti
 
 
 
-   
-        <section>
-            <h3 id="AdministrativeUnit">
-                <a href="http://data.europa.eu/m8g/AdminUnit"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/m8g/AdminUnit"
-                   data-placement="right">Administrative Unit</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20AdministrativeUnit&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    A detailed administrative unit organized in a hierarchy.
-                </dd>
-                
-                
-                    <dt>
-                        Usage Note
-                    </dt>
-                    <dd>
-                        This class should be used whenever a classification mechanism is in place, in alternative to the properties adminUnitL1 and adminUnitL2 of the Address class which allow free text.
-                    </dd>
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                    <dd>
-                        This specification does not impose any additional requirements to properties for this entity.
-                    </dd>
-                
-            </dl>
-        </div>
-        
-    </div>
-</section>
-
-
-
 
 
    
@@ -2852,8 +3037,7 @@ They are included in the Core Vocabulary because they form the range of properti
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#Agent.issuedby">issued by</a>
-                            , <a href="#Agent.name">name</a>
+                            For this entity the following properties are defined: <a href="#Agent.name">name</a>
                             , <a href="#Agent.type">type</a>
                             .
                     </dd>
@@ -2893,49 +3077,6 @@ They are included in the Core Vocabulary because they form the range of properti
                         </tr>
                     </thead>
                     <tbody class="supertype">
-                        
-                            <tr id="Agent.issuedby"
-                                typeof="rdf:Property"
-                                resource="http://purl.org/dc/terms/creator"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/Core-Person-Vocabulary/issues/new?title=Issue%20for%20issued by%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/%23Agent.issuedby" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/creator"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/creator"
-                                           data-placement="right">
-                                        issued by</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Identifier" data-placement="right">Identifier</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Agent legally responsible for the Identifier.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
                         
                             <tr id="Agent.name"
                                 typeof="rdf:Property"
@@ -3472,7 +3613,7 @@ The shapes can be found <a href="./shacl/core-person-ap-SHACL.ttl">here</a>.
 The RDF representation of the Core Person Vocabulary is available <a href="./voc/core-person-ap.ttl">here</a>.
 
 <h3>UML representation</h3>
-The UML representation from which the Core Person Vocabulary has been build is available <a href="./uml/CoreVocabularies.EAP">here</a>.
+The UML representation from which the Core Person Vocabulary has been build is available <a href="./uml">here</a>.
 
 <!--
 <h3>Mapping</h3>
@@ -3734,17 +3875,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 			</tr>
 		
 				
-					<tr>
-						<td><a href="#AdministrativeUnit">Administrative Unit</a></td>
-						<td><div class="shorten">http://data.europa.eu/m8g/AdminUnit</div></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-				
-			</tr>
-		
-				
 					
 						
 					
@@ -3762,13 +3892,48 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 							<tr>
-								<td><a href="#Agent">Agent</a></td>
-								<td><div class="shorten">http://xmlns.com/foaf/0.1/Agent</div></td>
+								<td><a href="#AdministrativeUnit">Administrative Unit</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/AdminUnit</div></td>
 								<td></td>
-								<td><a href="#Agent.issuedby">issued by </a></td>
-								<td><div class="shorten">http://purl.org/dc/terms/creator</div></td>
+								<td><a href="#AdministrativeUnit.code">code </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/code</div></td>
 							</tr>
 						
+					
+						
+							<tr>
+								<td><a href="#AdministrativeUnit">Administrative Unit</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/AdminUnit</div></td>
+								<td></td>
+								<td><a href="#AdministrativeUnit.level">level </a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/level</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#AdministrativeUnit">Administrative Unit</a></td>
+								<td><div class="shorten">http://data.europa.eu/m8g/AdminUnit</div></td>
+								<td></td>
+								<td><a href="#AdministrativeUnit.name">name </a></td>
+								<td><div class="shorten">http://www.w3.org/2000/01/rdf-schema#label</div></td>
+							</tr>
+						
+					
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
 					
 						
 							<tr>
@@ -3902,7 +4067,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 								<td><a href="#Identifier">Identifier</a></td>
 								<td><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></td>
 								<td></td>
-								<td><a href="#Identifier.issuingauthorityURI">issuing authority URI </a></td>
+								<td><a href="#Identifier.issuedby">issued by </a></td>
 								<td><div class="shorten">http://purl.org/dc/terms/creator</div></td>
 							</tr>
 						

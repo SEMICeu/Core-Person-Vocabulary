@@ -96,14 +96,14 @@
   shacl:path <http://www.w3.org/ns/locn#addressArea> .
 
 <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AddressShape/5d7f103641a62a590c3c6d874d2a14987e054924> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Address.administrativeunit";
-  shacl:description "A detailed administrative unit organized in a hierarchy."@en;
+  shacl:description "The adminUnit relationship links an Address with the Administrative Unit class."@en;
   shacl:name "administrative unit"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
   shacl:path <http://data.europa.eu/m8g/adminUnit> .
 
 <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AddressShape/60bff98f6076f0828e3b73d73fefc7b1eb56b93a> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Address.administrativeunit";
   shacl:class <http://data.europa.eu/m8g/AdminUnit>;
-  shacl:description "A detailed administrative unit organized in a hierarchy."@en;
+  shacl:description "The adminUnit relationship links an Address with the Administrative Unit class."@en;
   shacl:name "administrative unit"@en;
   shacl:path <http://data.europa.eu/m8g/adminUnit> .
 
@@ -217,14 +217,61 @@
 
 <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape> a shacl:NodeShape;
   shacl:closed false;
+  shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/0624f53106f6c8e265a6637987aa84df1f51e3ec>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/34d95733daf7d992483c679b8caea965979b76a8>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/77e1a71f3cfcae1acdb545a44042b811133bc6ee>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/9b437af682d747dd61e73577261bf72c00014cc4>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/9caf9e629daa0e64ece77788576468821d7cff8c>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/be01df43f1c288b656b3ca3879eb3dd9d8c700b9>;
   shacl:targetClass <http://data.europa.eu/m8g/AdminUnit> .
+
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/0624f53106f6c8e265a6637987aa84df1f51e3ec> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdministrativeUnit.level";
+  shacl:description "The level of the administrative unit in the hierarchy."@en;
+  shacl:name "level"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/m8g/level> .
+
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdministrativeUnit.name";
+  shacl:datatype rdf:langString;
+  shacl:description "Official, geographical name of the administrative unit, given in different languages where required."@en;
+  shacl:name "name"@en;
+  shacl:path rdfs:label .
+
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/34d95733daf7d992483c679b8caea965979b76a8> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdministrativeUnit.code";
+  shacl:class skos:Concept;
+  shacl:description "The classification of the administrative unit."@en;
+  shacl:name "code"@en;
+  shacl:path <http://data.europa.eu/m8g/code> .
+
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/77e1a71f3cfcae1acdb545a44042b811133bc6ee> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdministrativeUnit.code";
+  shacl:description "The classification of the administrative unit."@en;
+  shacl:name "code"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/m8g/code> .
+
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/9b437af682d747dd61e73577261bf72c00014cc4> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdministrativeUnit.level";
+  shacl:class skos:Concept;
+  shacl:description "The level of the administrative unit in the hierarchy."@en;
+  shacl:name "level"@en;
+  shacl:path <http://data.europa.eu/m8g/level> .
+
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/9caf9e629daa0e64ece77788576468821d7cff8c> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdministrativeUnit.name";
+  shacl:description "Official, geographical name of the administrative unit, given in different languages where required."@en;
+  shacl:name "name"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path rdfs:label .
+
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdminUnitShape/be01df43f1c288b656b3ca3879eb3dd9d8c700b9> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AdministrativeUnit.name";
+  shacl:description "Official, geographical name of the administrative unit, given in different languages where required."@en;
+  shacl:name "name"@en;
+  shacl:path rdfs:label;
+  shacl:uniqueLang true .
 
 <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/263a563c5bed08cdaadf4a0fd0a5fb9874d742bc>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/2a651d971ab01625b0570bd938c92580ad8fea8b>,
     <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/322371a77364a50f049d46180f6192532eea26dc>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/484a62152227f981b9f1377e7b0d39f16f7b7433>,
     <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/4f381639bb6e021939f65b4f41409d1edaeade9b>,
     <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/9caf9e629daa0e64ece77788576468821d7cff8c>,
     <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/be01df43f1c288b656b3ca3879eb3dd9d8c700b9>;
@@ -236,23 +283,11 @@
   shacl:name "name"@en;
   shacl:path dc:title .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/2a651d971ab01625b0570bd938c92580ad8fea8b> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Agent.issuedby";
-  shacl:description "Agent legally responsible for the Identifier."@en;
-  shacl:name "issued by"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path dc:creator .
-
 <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Agent.type";
   shacl:class skos:Concept;
   shacl:description "A classification assigned to an Agent."@en;
   shacl:name "type"@en;
   shacl:path dc:type .
-
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/484a62152227f981b9f1377e7b0d39f16f7b7433> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Agent.issuedby";
-  shacl:class <http://www.w3.org/ns/adms#Identifier>;
-  shacl:description "Agent legally responsible for the Identifier."@en;
-  shacl:name "issued by"@en;
-  shacl:path dc:creator .
 
 <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#AgentShape/4f381639bb6e021939f65b4f41409d1edaeade9b> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Agent.type";
   shacl:description "A classification assigned to an Agent."@en;
@@ -324,10 +359,10 @@
   shacl:closed false;
   shacl:property <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/02979d67c706a6886ef581ec3af63f1c67325a24>,
     <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/053d0ae3c4b213ae2f708e5e492b97e2cce08686>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/0881b6c6884db304d15b7a2a18fd20c54babde26>,
     <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/16a39520e446e5b794a01467eaeb5fe3e10ab704>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/2a651d971ab01625b0570bd938c92580ad8fea8b>,
+    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/484a62152227f981b9f1377e7b0d39f16f7b7433>,
     <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf>,
-    <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/d4ce8b1d928c1a262434416188d62d4422571148>,
     <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/e17cae15cd3a2db8b6c9aeef586141ff8b261cab>,
     <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/f4d3e24a8374fe765ac04ca800506ff76a678ea8>;
   shacl:targetClass <http://www.w3.org/ns/adms#Identifier> .
@@ -344,29 +379,29 @@
   shacl:nodeKind shacl:Literal;
   shacl:path skos:notation .
 
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/0881b6c6884db304d15b7a2a18fd20c54babde26> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Identifier.issuingauthorityURI";
-  shacl:description "The reference in the form of a Uniform Resource Identifier to the issuing authority."@en;
-  shacl:name "issuing authority URI"@en;
-  shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path dc:creator .
-
 <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/16a39520e446e5b794a01467eaeb5fe3e10ab704> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Identifier.dateissued";
   shacl:description "Date of formal issuance of the identifier."@en;
   shacl:name "date issued"@en;
   shacl:nodeKind shacl:Literal;
   shacl:path dc:issued .
 
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/2a651d971ab01625b0570bd938c92580ad8fea8b> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Identifier.issuedby";
+  shacl:description "Agent legally responsible for the Identifier."@en;
+  shacl:name "issued by"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path dc:creator .
+
+<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/484a62152227f981b9f1377e7b0d39f16f7b7433> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Identifier.issuedby";
+  shacl:class foaf:Agent;
+  shacl:description "Agent legally responsible for the Identifier."@en;
+  shacl:name "issued by"@en;
+  shacl:path dc:creator .
+
 <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/c623dd0ee9911f8266a229393e26001684e14eaf> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Identifier.identifies";
   shacl:class <http://www.w3.org/ns/person#Person>;
   shacl:description "The entity that is referenced by the Identifier."@en;
   shacl:name "identifies"@en;
   shacl:path <http://data.europa.eu/m8g/identifies> .
-
-<https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/d4ce8b1d928c1a262434416188d62d4422571148> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Identifier.issuingauthorityURI";
-  shacl:class foaf:Agent;
-  shacl:description "The reference in the form of a Uniform Resource Identifier to the issuing authority."@en;
-  shacl:name "issuing authority URI"@en;
-  shacl:path dc:creator .
 
 <https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#IdentifierShape/e17cae15cd3a2db8b6c9aeef586141ff8b261cab> rdfs:seeAlso "https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.2/#Identifier.schemaagency";
   shacl:description "The name of the agency that issued the identifier."@en;
